@@ -2,21 +2,24 @@
 namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
-
+use Cake\ORM\Behavior\Translate\TranslateTrait;
 /**
  * Store Entity
  *
  * @property int $id
  * @property string $name
  * @property string $phone
- * @property string $email
- * @property int $id_user
+ * @property \Cake\I18n\FrozenTime $created
+ * @property \Cake\I18n\FrozenTime $modified
+ * @property int $user_id
  *
- * @property \App\Model\Entity\CustomerOrder[] $customer_orders
+ * @property \App\Model\Entity\User $user
+ * @property \App\Model\Entity\Product[] $products
  */
 class Store extends Entity
 {
 
+    use TranslateTrait;
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
      *
@@ -29,8 +32,10 @@ class Store extends Entity
     protected $_accessible = [
         'name' => true,
         'phone' => true,
-        'email' => true,
-        'id_user' => true,
-        'customer_orders' => true
+        'created' => true,
+        'modified' => true,
+        'user_id' => true,
+        'user' => true,
+        'products' => true
     ];
 }

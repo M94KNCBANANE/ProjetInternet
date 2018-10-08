@@ -12,7 +12,7 @@ use App\Controller\AppController;
  */
 class CustomersController extends AppController
 {
-
+    
     /**
      * Index method
      *
@@ -20,6 +20,9 @@ class CustomersController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Users']
+        ];
         $customers = $this->paginate($this->Customers);
 
         $this->set(compact('customers'));
@@ -35,7 +38,7 @@ class CustomersController extends AppController
     public function view($id = null)
     {
         $customer = $this->Customers->get($id, [
-            'contain' => ['CustomerOrders']
+            'contain' => ['Users', 'OrderItems']
         ]);
 
         $this->set('customer', $customer);
@@ -46,19 +49,26 @@ class CustomersController extends AppController
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
+    
+
     public function add()
     {
         $customer = $this->Customers->newEntity();
-        if ($this->request->is('post')) {
+		if ($this->request->is('post')) {
             $customer = $this->Customers->patchEntity($customer, $this->request->getData());
-            if ($this->Customers->save($customer)) {
+            if($this->Auth->user('type') != 3){
+				$customer->user_id = $this->Auth->user('id');
+			}
+			
+			if ($this->Customers->save($customer)) {
                 $this->Flash->success(__('The customer has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The customer could not be saved. Please, try again.'));
         }
-        $this->set(compact('customer'));
+        $users = $this->Customers->Users->find('list', ['limit' => 200]);
+        $this->set(compact('customer', 'users'));
     }
 
     /**
@@ -74,7 +84,9 @@ class CustomersController extends AppController
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $customer = $this->Customers->patchEntity($customer, $this->request->getData());
+            $customer = $this->Customers->patchEntity($customer, $this->request->getData(),[
+			'accessibleFields' => ['user_id' => false]
+			]);
             if ($this->Customers->save($customer)) {
                 $this->Flash->success(__('The customer has been saved.'));
 
@@ -82,7 +94,8 @@ class CustomersController extends AppController
             }
             $this->Flash->error(__('The customer could not be saved. Please, try again.'));
         }
-        $this->set(compact('customer'));
+        $users = $this->Customers->Users->find('list', ['limit' => 200]);
+        $this->set(compact('customer', 'users'));
     }
 
     /**
@@ -91,7 +104,7 @@ class CustomersController extends AppController
      * @param string|null $id Customer id.
      * @return \Cake\Http\Response|null Redirects to index.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
+     */ 
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);

@@ -9,7 +9,8 @@ use Cake\Validation\Validator;
 /**
  * Stores Model
  *
- * @property \App\Model\Table\CustomerOrdersTable|\Cake\ORM\Association\HasMany $CustomerOrders
+ * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
+ * @property \App\Model\Table\ProductsTable|\Cake\ORM\Association\HasMany $Products
  *
  * @method \App\Model\Entity\Store get($primaryKey, $options = [])
  * @method \App\Model\Entity\Store newEntity($data = null, array $options = [])
@@ -19,6 +20,8 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\Store patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \App\Model\Entity\Store[] patchEntities($entities, array $data, array $options = [])
  * @method \App\Model\Entity\Store findOrCreate($search, callable $callback = null, $options = [])
+ *
+ * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class StoresTable extends Table
 {
@@ -37,7 +40,13 @@ class StoresTable extends Table
         $this->setDisplayField('name');
         $this->setPrimaryKey('id');
 
-        $this->hasMany('CustomerOrders', [
+        $this->addBehavior('Timestamp');
+
+        $this->belongsTo('Users', [
+            'foreignKey' => 'user_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->hasMany('Products', [
             'foreignKey' => 'store_id'
         ]);
     }
@@ -66,16 +75,6 @@ class StoresTable extends Table
             ->requirePresence('phone', 'create')
             ->notEmpty('phone');
 
-        $validator
-            ->email('email')
-            ->requirePresence('email', 'create')
-            ->notEmpty('email');
-
-        $validator
-            ->integer('id_user')
-            ->requirePresence('id_user', 'create')
-            ->notEmpty('id_user');
-
         return $validator;
     }
 
@@ -88,7 +87,7 @@ class StoresTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->isUnique(['email']));
+        $rules->add($rules->existsIn(['user_id'], 'Users'));
 
         return $rules;
     }

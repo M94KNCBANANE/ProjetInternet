@@ -8,6 +8,10 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Customers'), ['controller' => 'Customers', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Customer'), ['controller' => 'users', 'action' => 'addCustomer']) ?></li>
+        <li><?= $this->Html->link(__('List Stores'), ['controller' => 'Stores', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Store representative'), ['controller' => 'users', 'action' => 'addStore']) ?></li>
     </ul>
 </nav>
 <div class="users form large-9 medium-8 columns content">
@@ -17,7 +21,7 @@
         <?php
             echo $this->Form->control('email');
             echo $this->Form->control('password');
-			$test = array(' ','Customer', 'Store');
+            $test = array(' ','Customer', 'Representative');
             echo $this->Form->control('type',  ['options' => $test]);
         ?>
     </fieldset>

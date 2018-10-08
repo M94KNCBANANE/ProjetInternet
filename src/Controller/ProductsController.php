@@ -18,8 +18,32 @@ class ProductsController extends AppController
      *
      * @return \Cake\Http\Response|void
      */
+
+    public function initialize() {
+        parent::initialize();
+        $this->Auth->allow(['view', 'index']);
+    }
+
+    public function isAuthorized($user) {
+        $action = $this->request->getParam('action');
+         if(isset($user['type'])){
+           if($user['type'] == 2 ){
+            if(in_array($action, ['add','edit'])){
+                return true;
+            }
+            }
+        }
+       $valeur = parent::isAuthorized($user);
+        return $valeur;
+    }
+
+
     public function index()
     {
+        
+        $this->paginate = [
+            'contain' => ['ProductTypes', 'Stores']
+        ];
         $products = $this->paginate($this->Products);
 
         $this->set(compact('products'));
@@ -33,12 +57,16 @@ class ProductsController extends AppController
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function view($id = null)
-    {
+    {  
         $product = $this->Products->get($id, [
-            'contain' => ['OrderItems']
+            'contain' => ['ProductTypes', 'Stores', 'OrderItems', 'Files']
         ]);
+        $this->paginate = [
+            'contain' => ['ProductTypes', 'Stores']
+        ];
+        $products = $this->paginate($this->Products);
 
-        $this->set('product', $product);
+        $this->set(compact('product', 'products'));
     }
 
     /**
@@ -58,7 +86,10 @@ class ProductsController extends AppController
             }
             $this->Flash->error(__('The product could not be saved. Please, try again.'));
         }
-        $this->set(compact('product'));
+        $productTypes = $this->Products->ProductTypes->find('list', ['limit' => 200]);
+        $stores = $this->Products->Stores->find('list', ['limit' => 200]);
+        $files = $this->Products->files->find('list', ['limit' => 200]);
+        $this->set(compact('product', 'productTypes', 'stores', 'files'));
     }
 
     /**
@@ -82,7 +113,10 @@ class ProductsController extends AppController
             }
             $this->Flash->error(__('The product could not be saved. Please, try again.'));
         }
-        $this->set(compact('product'));
+        $productTypes = $this->Products->ProductTypes->find('list', ['limit' => 200]);
+        $stores = $this->Products->Stores->find('list', ['limit' => 200]);
+        $files = $this->Products->files->find('list', ['limit' => 200]);
+        $this->set(compact('product', 'productTypes', 'stores','files'));
     }
 
     /**

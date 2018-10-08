@@ -9,6 +9,8 @@ use Cake\Validation\Validator;
 /**
  * Products Model
  *
+ * @property \App\Model\Table\ProductTypesTable|\Cake\ORM\Association\BelongsTo $ProductTypes
+ * @property \App\Model\Table\StoresTable|\Cake\ORM\Association\BelongsTo $Stores
  * @property \App\Model\Table\OrderItemsTable|\Cake\ORM\Association\HasMany $OrderItems
  *
  * @method \App\Model\Entity\Product get($primaryKey, $options = [])
@@ -19,6 +21,8 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\Product patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \App\Model\Entity\Product[] patchEntities($entities, array $data, array $options = [])
  * @method \App\Model\Entity\Product findOrCreate($search, callable $callback = null, $options = [])
+ *
+ * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class ProductsTable extends Table
 {
@@ -33,10 +37,28 @@ class ProductsTable extends Table
     {
         parent::initialize($config);
 
+        $this->addBehavior('Translate', ['fields' => ['name']]);
+
         $this->setTable('products');
         $this->setDisplayField('name');
         $this->setPrimaryKey('id');
 
+        $this->addBehavior('Timestamp');
+
+        $this->belongsTo('ProductTypes', [
+            'foreignKey' => 'productType_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->belongsTo('Stores', [
+            'foreignKey' => 'store_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->belongsToMany('Files', [
+            'foreignKey' => 'product_id',
+            'targetForeignKey' => 'file_id',
+            'joinTable' => 'products_files'
+        ]);
+            
         $this->hasMany('OrderItems', [
             'foreignKey' => 'product_id'
         ]);
@@ -71,9 +93,10 @@ class ProductsTable extends Table
             ->notEmpty('description');
 
         $validator
-            ->integer('id_store')
-            ->requirePresence('id_store', 'create')
-            ->notEmpty('id_store');
+            ->scalar('image')
+            ->maxLength('image', 255)
+            ->requirePresence('image', 'create')
+            ->notEmpty('image');
 
         $validator
             ->boolean('deleted')
@@ -81,5 +104,20 @@ class ProductsTable extends Table
             ->notEmpty('deleted');
 
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['productType_id'], 'ProductTypes'));
+        $rules->add($rules->existsIn(['store_id'], 'Stores'));
+
+        return $rules;
     }
 }

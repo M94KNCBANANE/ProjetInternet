@@ -9,7 +9,7 @@ use Cake\Validation\Validator;
 /**
  * OrderItems Model
  *
- * @property \App\Model\Table\CustomerOrdersTable|\Cake\ORM\Association\BelongsTo $CustomerOrders
+ * @property \App\Model\Table\CustomersTable|\Cake\ORM\Association\BelongsTo $Customers
  * @property \App\Model\Table\ProductsTable|\Cake\ORM\Association\BelongsTo $Products
  *
  * @method \App\Model\Entity\OrderItem get($primaryKey, $options = [])
@@ -20,6 +20,8 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\OrderItem patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \App\Model\Entity\OrderItem[] patchEntities($entities, array $data, array $options = [])
  * @method \App\Model\Entity\OrderItem findOrCreate($search, callable $callback = null, $options = [])
+ *
+ * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class OrderItemsTable extends Table
 {
@@ -38,8 +40,10 @@ class OrderItemsTable extends Table
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
 
-        $this->belongsTo('CustomerOrders', [
-            'foreignKey' => 'order_id',
+        $this->addBehavior('Timestamp');
+
+        $this->belongsTo('Customers', [
+            'foreignKey' => 'customer_id',
             'joinType' => 'INNER'
         ]);
         $this->belongsTo('Products', [
@@ -70,6 +74,11 @@ class OrderItemsTable extends Table
             ->requirePresence('price', 'create')
             ->notEmpty('price');
 
+        $validator
+            ->date('date')
+            ->requirePresence('date', 'create')
+            ->notEmpty('date');
+
         return $validator;
     }
 
@@ -82,7 +91,7 @@ class OrderItemsTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['order_id'], 'CustomerOrders'));
+        $rules->add($rules->existsIn(['customer_id'], 'Customers'));
         $rules->add($rules->existsIn(['product_id'], 'Products'));
 
         return $rules;

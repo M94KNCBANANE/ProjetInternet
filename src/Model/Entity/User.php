@@ -2,6 +2,7 @@
 namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
+use Cake\Auth\DefaultPasswordHasher; // Add this line
 
 /**
  * User Entity
@@ -10,10 +11,25 @@ use Cake\ORM\Entity;
  * @property string $email
  * @property string $password
  * @property int $type
+ * @property \Cake\I18n\FrozenTime $created
+ * @property \Cake\I18n\FrozenTime $modified
+ *
+ * @property \App\Model\Entity\Customer[] $customers
+ * @property \App\Model\Entity\Store[] $stores
  */
 class User extends Entity
 {
 
+
+	protected function _setPassword($value)
+    {
+        if (strlen($value)) {
+            $hasher = new DefaultPasswordHasher();
+
+            return $hasher->hash($value);
+        }
+    } 
+		 
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
      *
@@ -26,7 +42,11 @@ class User extends Entity
     protected $_accessible = [
         'email' => true,
         'password' => true,
-        'type' => true
+        'type' => true,
+        'created' => true,
+        'modified' => true,
+        'customers' => true,
+        'stores' => true
     ];
 
     /**

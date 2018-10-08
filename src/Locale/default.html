@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PROJECT VERSION</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <style>
+
+
+/*
+Based on Minimal CSS (minimalcss.com) under the MIT license.
+*/
+
+/* Reset */
+* { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* Layout */
+body { background-color: #fff; color: #333;	font: 14px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+header { width: 100%; margin: 0 auto; position: relative; padding: 20px 0; margin-bottom: 20px; }
+
+nav ul { margin: 0; }
+nav ul li { display: inline; margin-right: 20px; font-size: 16px; line-height: 28px; color: #333; }
+nav ul li a { color: #333; }
+
+.container { position: relative; max-width: 90%; margin: 0 auto; }
+
+footer { border-top:1px solid #ccc; font-size:11px; line-height:26px; color:#999; }
+footer a { color:#999999; }
+footer a:hover { color:#105CB6; }
+footer ul li { display:inline; list-style:none; padding-left:20px; }
+
+/* Typography */
+a { color: #105CB6; text-decoration: none; }
+a:hover, a:focus { color: #105CB6; text-decoration: underline; }
+a:active { color: #105CB6; }
+
+h1 { font-size: 24px; line-height: 20px; margin: 10px 0; }
+h2 { font-size: 20px; line-height: 20px; margin: 10px 0; }
+h3 { font-size: 16px; line-height: 20px; margin: 10px 0; }
+h4 { font-size: 14px; line-height: 20px; margin: 10px 0; }
+h5 { font-size: 12px; line-height: 20px; margin: 10px 0; }
+h5 { font-size: 10px; line-height: 20px; margin: 10px 0; }
+h1,h2,h3,h4,h5,h6 { color: #333; }
+
+p { margin-bottom: 10px; }
+
+.float-left     { float: left; }
+.float-right    { float: right; }
+img.float-left  { float: left; margin: 0 20px 20px 0; }
+img.float-right { float: right; margin: 0 0 20px 20px; }
+img.center      { margin: 0 auto; display: block; }
+
+.text-left    { text-align: left; }
+.text-center  { text-align: center; }
+.text-right   { text-align: right; }
+.text-justify { text-align: justify; }
+
+/* Misc */
+hr { background-color: #ccc; border: 0px; color: #ccc; height: 1px; margin: 8px 0 20px 0; }
+pre, code { background:#E0ECF6; display:block; margin-bottom: 20px; padding:10px; }
+
+blockquote { margin: 10px 10px 20px; padding: 9px; background-color: #f8f8f8; color: #666; border-left: 5px solid #ddd; font: 14px/20px Georgia, Times, serif; quotes: "\201C" "\201D"; }
+blockquote p { margin: 0; }
+blockquote:before { content: open-quote; font-weight: bold; }
+blockquote:after  { content: close-quote; font-weight: bold; }
+
+/* List */
+ul { list-style-position:inside; }
+ol { list-style-position:inside; }
+
+/* Table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th { font-weight: bold; }
+tfoot { font-style: italic; }
+
+/* Metadata part */
+
+.metadata {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 90%;
+}
+table.metadata td {
+  padding-right: 20px;
+}
+
+.stats {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.graph {
+  width: 100%;
+}
+.graph div { float: left; }
+.graph div:first-child { border-top-left-radius: 3px; border-bottom-left-radius: 3px; }
+.graph div:last-child { border-top-right-radius: 3px; border-bottom-right-radius: 3px; }
+.percent-done    { background-color: rgb(90, 228, 140); height: 10px; }
+.percent-fuzzy   { background-color: rgb(255, 167, 52); height: 10px; }
+.percent-untrans { background-color: #F1F1F1; height: 10px; }
+.legend {
+  font-size: smaller;
+  color: #aaa;
+  padding-top: 12px;
+  text-align: center;
+}
+
+/* Translations */
+table.translations {
+  width: 100%;
+  table-layout: fixed;
+}
+table.translations th, table.translations td {
+  padding: 5px 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #E1E1E1;
+}
+table.translations th {
+  text-align: left;
+}
+table.translations th:first-child, table.translations td:first-child { padding-left: 0; }
+table.translations th:last-child, table.translations td:last-child { padding-right: 0; }
+
+.with-comments td {
+  border-bottom: none !important;
+}
+tr.comments div {
+  float: right;
+  max-width: 75%;
+  font-size: smaller;
+  color: #aaa;
+}
+tr.comments div p:last-child { margin-bottom: 0; }
+
+.fuzzy .tra {
+  color: rgb(218, 123, 0);
+}
+
+.msgctxt {
+  color: rgb(70, 109, 137);
+  font-size: smaller;
+  background-color: rgb(217, 232, 242);
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin-right: 4px;
+}
+
+
+  </style>
+</head>
+<body>
+<div class='container'>
+<table class='metadata'>
+<tr><td>Project:</td><td>PROJECT VERSION</td></tr>
+</table>
+<div class='stats'>
+  <div class='graph'>
+    <div class='percent-untrans' style='width: 100%'>&nbsp;</div>
+  </div>
+  <div class='legend'>198 entries  </div>
+</div>
+<table class='translations'>
+  <thead>
+    <tr>
+      <th>Source text — English</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The customer has been saved.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The customer could not be saved. Please, try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The customer has been deleted.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The customer could not be deleted. Please, try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+File has been uploaded and inserted successfully.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Unable to upload file, please try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Unable to save file, please try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Please choose a file to upload.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The file has been saved.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The file could not be saved. Please, try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The file has been deleted.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The file could not be deleted. Please, try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The order item has been saved.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The order item could not be saved. Please, try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The order item has been deleted.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The order item could not be deleted. Please, try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The product type has been saved.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The product type could not be saved. Please, try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The product type has been deleted.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The product type could not be deleted. Please, try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The product has been saved.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The product could not be saved. Please, try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The product has been deleted.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The product could not be deleted. Please, try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The store has been saved.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The store could not be saved. Please, try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The store has been deleted.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The store could not be deleted. Please, try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The user has been saved.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The user could not be saved. Please, try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The user has been deleted.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The user could not be deleted. Please, try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The email exists already.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Your account is activated, please login</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The account could not be saved. Please, try again.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The account has been saved.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Actions</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+List Customers</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+List Users</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+New User</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+List Order Items</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+New Order Item</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Add Customer</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Submit</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Delete</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Are you sure you want to delete # {0}?</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Edit Customer</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+New Customer</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Customers</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+View</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Edit</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+first</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+previous</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+next</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+last</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Delete Customer</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Name</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Phone</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+User</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Id</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Created</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Modified</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Related Order Items</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Customer Id</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product Id</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Quantity</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Price</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Date</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+List Files</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Add File</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Edit File</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+New File</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Files</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Delete File</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Path</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Status</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Yes</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+No</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Main menu</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+logout</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+login</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Error</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Back</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+List Products</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+New Product</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Add Order Item</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Edit Order Item</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Order Items</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Delete Order Item</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Customer</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+List Stores</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+New Store</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+New Customer Account</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+List Product Types</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Add Product Type</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Edit Product Type</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+New Product Type</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product Types</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Delete Product Type</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Add Product</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Edit Product</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Order a Product</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+List of Order</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Products</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Order</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Order this Item</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Delete Product</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Image</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product Type</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Store</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Deleted</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Description</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Related Files</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Related Items</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+image</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+name</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+price</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+productType_id</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Add Store</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Edit Store</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Stores</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Delete Store</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+email</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Related Products</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ProductType Id</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Add User</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Edit User</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Users</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Delete User</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Email</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Type</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The requested address {0} was not found on this server.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+An Internal Error Has Occurred</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+You are not authorized to access that location.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Missing CSRF token cookie</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+CSRF token mismatch.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Not Found</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+An Internal Error Has Occurred.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The requested file contains `..` and will not be read.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The requested file was not found</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+{0,number,#,###.##} KB</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+{0,number,#,###.##} MB</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+{0,number,#,###.##} GB</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+{0,number,#,###.##} TB</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+<ol class='plurals'>
+  <li>{0,number,integer} Byte</li>
+  <li>{0,number,integer} Bytes</li>
+</ol>
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+{0} from now</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+{0} ago</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+{0} after</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+{0} before</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+just now</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+about a second ago</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+about a minute ago</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+about an hour ago</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+about a day ago</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+about a week ago</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+about a month ago</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+about a year ago</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+in about a second</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+in about a minute</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+in about an hour</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+in about a day</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+in about a week</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+in about a month</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+in about a year</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+today</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+%s ago</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+on %s</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+<ol class='plurals'>
+  <li>{0} year</li>
+  <li>{0} years</li>
+</ol>
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+<ol class='plurals'>
+  <li>{0} month</li>
+  <li>{0} months</li>
+</ol>
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+<ol class='plurals'>
+  <li>{0} week</li>
+  <li>{0} weeks</li>
+</ol>
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+<ol class='plurals'>
+  <li>{0} day</li>
+  <li>{0} days</li>
+</ol>
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+<ol class='plurals'>
+  <li>{0} hour</li>
+  <li>{0} hours</li>
+</ol>
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+<ol class='plurals'>
+  <li>{0} minute</li>
+  <li>{0} minutes</li>
+</ol>
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+<ol class='plurals'>
+  <li>{0} second</li>
+  <li>{0} seconds</li>
+</ol>
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+This value is already in use</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+This value does not exist</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The count does not match {0}{1}</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+and</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+This field is required</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+This field cannot be left empty</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+The provided value is invalid</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Edit {0}</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+New {0}</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Home</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+January</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+February</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+March</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+April</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+May</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+June</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+July</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+August</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+September</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+October</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+November</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+December</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

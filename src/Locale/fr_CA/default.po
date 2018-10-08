@@ -1,0 +1,953 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-10-08 17:53+0000\n"
+"PO-Revision-Date: 2018-10-08 14:30-0400\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: \n"
+"Language: fr_CA\n"
+
+#: Controller/CustomersController.php:64;91
+msgid "The customer has been saved."
+msgstr "Le client a été enregistré."
+
+#: Controller/CustomersController.php:68;95
+msgid "The customer could not be saved. Please, try again."
+msgstr "Le client n'a pas pu être enregistré. Veuillez réessayer."
+
+#: Controller/CustomersController.php:113
+msgid "The customer has been deleted."
+msgstr "Le client a été supprimé."
+
+#: Controller/CustomersController.php:115
+msgid "The customer could not be deleted. Please, try again."
+msgstr "Le client n'a pas pu être enregistré. Veuillez réessayer."
+
+#: Controller/FilesController.php:67
+msgid "File has been uploaded and inserted successfully."
+msgstr "Fichier a été téléchargé et inséré avec succès."
+
+#: Controller/FilesController.php:69
+msgid "Unable to upload file, please try again."
+msgstr ""
+"Impossible de télécharger le fichier, S'il vous plaît essayer à nouveau."
+
+#: Controller/FilesController.php:72
+msgid "Unable to save file, please try again."
+msgstr "Impossible d'enregistrer le fichier, Veuillez réessayer."
+
+#: Controller/FilesController.php:75
+msgid "Please choose a file to upload."
+msgstr "Veuillez choisir un fichier à télécharger."
+
+#: Controller/FilesController.php:95
+msgid "The file has been saved."
+msgstr "Le fichier a été sauvegardé."
+
+#: Controller/FilesController.php:99
+msgid "The file could not be saved. Please, try again."
+msgstr "Le fichier n'a pas pu être enregistré. Veuillez réessayer."
+
+#: Controller/FilesController.php:115
+msgid "The file has been deleted."
+msgstr "Le client a été supprimé."
+
+#: Controller/FilesController.php:117
+msgid "The file could not be deleted. Please, try again."
+msgstr "Le fichier n'a pas pu être supprimé. Veuillez réessayer."
+
+#: Controller/OrderItemsController.php:75;106
+msgid "The order item has been saved."
+msgstr "La commande du produit a été enregistré."
+
+#: Controller/OrderItemsController.php:79;110
+msgid "The order item could not be saved. Please, try again."
+msgstr ""
+"La commande du produit n'a pas pu être enregistré. Veuillez réessayer"
+
+#: Controller/OrderItemsController.php:129
+msgid "The order item has been deleted."
+msgstr "La commande du produit a été supprimé."
+
+#: Controller/OrderItemsController.php:131
+msgid "The order item could not be deleted. Please, try again."
+msgstr "La commande du produit n'a pas pu être supprimé. Veuillez réessayer."
+
+#: Controller/ProductTypesController.php:55;79
+msgid "The product type has been saved."
+msgstr "Le type de produit a été enregistré."
+
+#: Controller/ProductTypesController.php:59;83
+msgid "The product type could not be saved. Please, try again."
+msgstr "Le type de produit n'a pas pu être enregistré. Veuillez réessayer."
+
+#: Controller/ProductTypesController.php:100
+msgid "The product type has been deleted."
+msgstr "Le type de produit a été supprimé."
+
+#: Controller/ProductTypesController.php:102
+msgid "The product type could not be deleted. Please, try again."
+msgstr "Le type de produit n'a pas pu être supprimé. Veuillez réessayer."
+
+#: Controller/ProductsController.php:83;110
+msgid "The product has been saved."
+msgstr ""
+
+#: Controller/ProductsController.php:87;114
+msgid "The product could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ProductsController.php:134
+msgid "The product has been deleted."
+msgstr ""
+
+#: Controller/ProductsController.php:136
+msgid "The product could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/StoresController.php:59;84
+msgid "The store has been saved."
+msgstr ""
+
+#: Controller/StoresController.php:63;88
+msgid "The store could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/StoresController.php:106
+msgid "The store has been deleted."
+msgstr ""
+
+#: Controller/StoresController.php:108
+msgid "The store could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:105
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/UsersController.php:109
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:126
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:128
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:159;170
+msgid "The email exists already."
+msgstr ""
+
+#: Controller/UsersController.php:184;198
+msgid "Your account is activated, please login"
+msgstr ""
+
+#: Controller/UsersController.php:187;201;220
+msgid "The account could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:216
+msgid "The account has been saved."
+msgstr ""
+
+#: Template/Customers/add.ctp:9 Template/Customers/edit.ctp:9
+#: Template/Customers/index.ctp:9;28 Template/Customers/view.ctp:9;61
+#: Template/Files/add.ctp:9 Template/Files/edit.ctp:9
+#: Template/Files/index.ctp:9;24 Template/Files/view.ctp:9
+#: Template/OrderItems/add.ctp:15 Template/OrderItems/edit.ctp:9
+#: Template/OrderItems/index.ctp:9;30 Template/OrderItems/view.ctp:9
+#: Template/ProductTypes/add.ctp:9 Template/ProductTypes/edit.ctp:9
+#: Template/ProductTypes/index.ctp:9;20 Template/ProductTypes/view.ctp:9
+#: Template/Products/add.ctp:9 Template/Products/edit.ctp:10
+#: Template/Products/index.ctp:10;42 Template/Products/view.ctp:11;105
+#: Template/Stores/add.ctp:9 Template/Stores/edit.ctp:10
+#: Template/Stores/index.ctp:9;25 Template/Stores/view.ctp:9;55
+#: Template/Users/add.ctp:9 Template/Users/edit.ctp:9
+#: Template/Users/index.ctp:9;27 Template/Users/view.ctp:9
+msgid "Actions"
+msgstr ""
+
+#: Template/Customers/add.ctp:10 Template/Customers/edit.ctp:16
+#: Template/Customers/view.ctp:12 Template/OrderItems/add.ctp:17
+#: Template/OrderItems/edit.ctp:17 Template/OrderItems/index.ctp:11
+#: Template/OrderItems/view.ctp:14 Template/Pages/home.ctp:8
+#: Template/Users/add.ctp:11 Template/Users/edit.ctp:17
+#: Template/Users/index.ctp:11 Template/Users/view.ctp:15
+msgid "List Customers"
+msgstr ""
+
+#: Template/Customers/add.ctp:11 Template/Customers/edit.ctp:17
+#: Template/Customers/index.ctp:11 Template/Customers/view.ctp:14
+#: Template/Pages/home.ctp:9 Template/Stores/add.ctp:11
+#: Template/Stores/edit.ctp:18 Template/Stores/index.ctp:11
+#: Template/Stores/view.ctp:14 Template/Users/add.ctp:10
+#: Template/Users/edit.ctp:16 Template/Users/view.ctp:14
+msgid "List Users"
+msgstr ""
+
+#: Template/Customers/add.ctp:12 Template/Customers/edit.ctp:18
+#: Template/Customers/index.ctp:12 Template/Customers/view.ctp:15
+#: Template/Stores/add.ctp:12 Template/Stores/edit.ctp:19
+#: Template/Stores/view.ctp:15
+msgid "New User"
+msgstr ""
+
+#: Template/Customers/add.ctp:13 Template/Customers/edit.ctp:19
+#: Template/Customers/index.ctp:13 Template/Customers/view.ctp:16
+#: Template/OrderItems/add.ctp:16 Template/OrderItems/edit.ctp:16
+#: Template/OrderItems/view.ctp:12 Template/Products/add.ctp:15
+#: Template/Products/edit.ctp:22
+msgid "List Order Items"
+msgstr ""
+
+#: Template/Customers/add.ctp:14 Template/Customers/edit.ctp:20
+#: Template/Customers/index.ctp:14 Template/Customers/view.ctp:17
+#: Template/OrderItems/index.ctp:10 Template/OrderItems/view.ctp:13
+#: Template/Products/add.ctp:16 Template/Products/edit.ctp:23
+msgid "New Order Item"
+msgstr ""
+
+#: Template/Customers/add.ctp:20
+msgid "Add Customer"
+msgstr ""
+
+#: Template/Customers/add.ctp:27 Template/Customers/edit.ctp:33
+#: Template/Files/add.ctp:23 Template/Files/edit.ctp:29
+#: Template/OrderItems/add.ctp:35 Template/OrderItems/edit.ctp:35
+#: Template/ProductTypes/add.ctp:21 Template/ProductTypes/edit.ctp:27
+#: Template/Products/add.ctp:33 Template/Products/edit.ctp:41
+#: Template/Stores/add.ctp:27 Template/Stores/edit.ctp:36
+#: Template/Users/add.ctp:28 Template/Users/add_customer.ctp:19
+#: Template/Users/add_store.ctp:19 Template/Users/edit.ctp:33
+#: View/Helper/FormHelper.php:1988
+msgid "Submit"
+msgstr ""
+
+#: Template/Customers/edit.ctp:11 Template/Customers/index.ctp:43
+#: Template/Customers/view.ctp:76 Template/Files/edit.ctp:11
+#: Template/Files/index.ctp:39 Template/OrderItems/edit.ctp:11
+#: Template/OrderItems/index.ctp:47 Template/ProductTypes/edit.ctp:11
+#: Template/ProductTypes/index.ctp:31 Template/Products/edit.ctp:12
+#: Template/Products/index.ctp:69 Template/Stores/edit.ctp:12
+#: Template/Stores/index.ctp:38 Template/Stores/view.ctp:68
+#: Template/Users/edit.ctp:11 Template/Users/index.ctp:53
+msgid "Delete"
+msgstr ""
+
+#: Template/Customers/edit.ctp:13 Template/Customers/index.ctp:43
+#: Template/Customers/view.ctp:11;76 Template/Files/edit.ctp:13
+#: Template/Files/index.ctp:39 Template/Files/view.ctp:11
+#: Template/OrderItems/edit.ctp:13 Template/OrderItems/index.ctp:47
+#: Template/OrderItems/view.ctp:11 Template/ProductTypes/edit.ctp:13
+#: Template/ProductTypes/index.ctp:31 Template/ProductTypes/view.ctp:11
+#: Template/Products/edit.ctp:14 Template/Products/index.ctp:69
+#: Template/Products/view.ctp:24 Template/Stores/edit.ctp:14
+#: Template/Stores/index.ctp:38 Template/Stores/view.ctp:11;68
+#: Template/Users/edit.ctp:13 Template/Users/index.ctp:53
+#: Template/Users/view.ctp:13
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Customers/edit.ctp:26 Template/Customers/view.ctp:10
+msgid "Edit Customer"
+msgstr ""
+
+#: Template/Customers/index.ctp:10 Template/Customers/view.ctp:13
+#: Template/OrderItems/add.ctp:18 Template/OrderItems/edit.ctp:18
+#: Template/OrderItems/index.ctp:12 Template/OrderItems/view.ctp:15
+#: Template/Users/add.ctp:12 Template/Users/edit.ctp:18
+#: Template/Users/index.ctp:10 Template/Users/view.ctp:10
+msgid "New Customer"
+msgstr ""
+
+#: Template/Customers/index.ctp:18
+msgid "Customers"
+msgstr ""
+
+#: Template/Customers/index.ctp:41 Template/Customers/view.ctp:74
+#: Template/Files/index.ctp:37 Template/OrderItems/index.ctp:45
+#: Template/ProductTypes/index.ctp:29 Template/Products/index.ctp:61
+#: Template/Products/view.ctp:117 Template/Stores/index.ctp:36
+#: Template/Stores/view.ctp:66 Template/Users/index.ctp:51
+#: View/Helper/PaginatorHelper.php:1212
+msgid "View"
+msgstr ""
+
+#: Template/Customers/index.ctp:42 Template/Customers/view.ctp:75
+#: Template/Files/index.ctp:38 Template/OrderItems/index.ctp:46
+#: Template/ProductTypes/index.ctp:30 Template/Products/index.ctp:68
+#: Template/Stores/index.ctp:37 Template/Stores/view.ctp:67
+#: Template/Users/index.ctp:52
+msgid "Edit"
+msgstr ""
+
+#: Template/Customers/index.ctp:51 Template/Files/index.ctp:47
+#: Template/OrderItems/index.ctp:55 Template/ProductTypes/index.ctp:39
+#: Template/Products/index.ctp:79 Template/Stores/index.ctp:46
+#: Template/Users/index.ctp:62
+msgid "first"
+msgstr ""
+
+#: Template/Customers/index.ctp:52 Template/Files/index.ctp:48
+#: Template/OrderItems/index.ctp:56 Template/ProductTypes/index.ctp:40
+#: Template/Products/index.ctp:80 Template/Stores/index.ctp:47
+#: Template/Users/index.ctp:63
+msgid "previous"
+msgstr ""
+
+#: Template/Customers/index.ctp:54 Template/Files/index.ctp:50
+#: Template/OrderItems/index.ctp:58 Template/ProductTypes/index.ctp:42
+#: Template/Products/index.ctp:82 Template/Stores/index.ctp:49
+#: Template/Users/index.ctp:65
+msgid "next"
+msgstr ""
+
+#: Template/Customers/index.ctp:55 Template/Files/index.ctp:51
+#: Template/OrderItems/index.ctp:59 Template/ProductTypes/index.ctp:43
+#: Template/Products/index.ctp:83 Template/Stores/index.ctp:50
+#: Template/Users/index.ctp:66
+msgid "last"
+msgstr ""
+
+#: Template/Customers/index.ctp:57 Template/Files/index.ctp:53
+#: Template/OrderItems/index.ctp:61 Template/ProductTypes/index.ctp:45
+#: Template/Products/index.ctp:85 Template/Stores/index.ctp:52
+#: Template/Users/index.ctp:68
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+msgstr ""
+
+#: Template/Customers/view.ctp:11
+msgid "Delete Customer"
+msgstr ""
+
+#: Template/Customers/view.ctp:24 Template/Files/view.ctp:20
+#: Template/ProductTypes/view.ctp:20 Template/Products/view.ctp:40
+#: Template/Stores/view.ctp:24;50 Template/Users/view.ctp:53
+msgid "Name"
+msgstr ""
+
+#: Template/Customers/view.ctp:28 Template/Stores/view.ctp:28
+#: Template/Users/view.ctp:57;69
+msgid "Phone"
+msgstr ""
+
+#: Template/Customers/view.ctp:32
+msgid "User"
+msgstr ""
+
+#: Template/Customers/view.ctp:36;53 Template/Files/view.ctp:28
+#: Template/OrderItems/view.ctp:32 Template/ProductTypes/view.ctp:24
+msgid "Id"
+msgstr ""
+
+#: Template/Customers/view.ctp:40;59 Template/Files/view.ctp:32
+#: Template/OrderItems/view.ctp:48 Template/Products/view.ctp:60
+#: Template/Stores/view.ctp:37 Template/Users/view.ctp:43
+msgid "Created"
+msgstr ""
+
+#: Template/Customers/view.ctp:44;60 Template/Files/view.ctp:36
+#: Template/OrderItems/view.ctp:52 Template/Products/view.ctp:64
+#: Template/Stores/view.ctp:41 Template/Users/view.ctp:47
+msgid "Modified"
+msgstr ""
+
+#: Template/Customers/view.ctp:49
+msgid "Related Order Items"
+msgstr ""
+
+#: Template/Customers/view.ctp:54
+msgid "Customer Id"
+msgstr ""
+
+#: Template/Customers/view.ctp:55
+msgid "Product Id"
+msgstr ""
+
+#: Template/Customers/view.ctp:56 Template/OrderItems/view.ctp:36
+msgid "Quantity"
+msgstr ""
+
+#: Template/Customers/view.ctp:57 Template/OrderItems/view.ctp:40
+#: Template/Products/view.ctp:56 Template/Stores/view.ctp:51
+msgid "Price"
+msgstr ""
+
+#: Template/Customers/view.ctp:58 Template/OrderItems/view.ctp:44
+msgid "Date"
+msgstr ""
+
+#: Template/Files/add.ctp:10 Template/Files/edit.ctp:16
+#: Template/Files/view.ctp:12
+msgid "List Files"
+msgstr ""
+
+#: Template/Files/add.ctp:16
+msgid "Add File"
+msgstr ""
+
+#: Template/Files/edit.ctp:22 Template/Files/view.ctp:10
+msgid "Edit File"
+msgstr ""
+
+#: Template/Files/index.ctp:10 Template/Files/view.ctp:13
+msgid "New File"
+msgstr ""
+
+#: Template/Files/index.ctp:14
+msgid "Files"
+msgstr ""
+
+#: Template/Files/view.ctp:11
+msgid "Delete File"
+msgstr ""
+
+#: Template/Files/view.ctp:24
+msgid "Path"
+msgstr ""
+
+#: Template/Files/view.ctp:40
+msgid "Status"
+msgstr ""
+
+#: Template/Files/view.ctp:41 Template/Products/view.ctp:69
+msgid "Yes"
+msgstr ""
+
+#: Template/Files/view.ctp:41 Template/Products/view.ctp:69
+msgid "No"
+msgstr ""
+
+#: Template/Layout/default.ctp:40
+msgid "Main menu"
+msgstr ""
+
+#: Template/Layout/default.ctp:51
+msgid "logout"
+msgstr ""
+
+#: Template/Layout/default.ctp:53
+msgid "login"
+msgstr ""
+
+#: Template/Layout/error.ctp:35 Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/OrderItems/add.ctp:19 Template/OrderItems/edit.ctp:19
+#: Template/OrderItems/index.ctp:13 Template/OrderItems/view.ctp:16
+#: Template/Pages/home.ctp:5 Template/Products/add.ctp:10
+#: Template/Products/edit.ctp:17 Template/Products/view.ctp:13
+#: Template/Stores/add.ctp:13 Template/Stores/edit.ctp:20
+#: Template/Stores/index.ctp:12 Template/Stores/view.ctp:16
+msgid "List Products"
+msgstr ""
+
+#: Template/OrderItems/add.ctp:20 Template/OrderItems/edit.ctp:20
+#: Template/OrderItems/index.ctp:14 Template/OrderItems/view.ctp:17
+#: Template/Pages/home.ctp:11 Template/Products/index.ctp:23
+#: Template/Products/view.ctp:25 Template/Stores/add.ctp:14
+#: Template/Stores/edit.ctp:21 Template/Stores/index.ctp:13
+#: Template/Stores/view.ctp:17
+msgid "New Product"
+msgstr ""
+
+#: Template/OrderItems/add.ctp:26
+msgid "Add Order Item"
+msgstr ""
+
+#: Template/OrderItems/edit.ctp:26 Template/OrderItems/view.ctp:10
+msgid "Edit Order Item"
+msgstr ""
+
+#: Template/OrderItems/index.ctp:18
+msgid "Order Items"
+msgstr ""
+
+#: Template/OrderItems/view.ctp:11
+msgid "Delete Order Item"
+msgstr ""
+
+#: Template/OrderItems/view.ctp:24
+msgid "Customer"
+msgstr ""
+
+#: Template/OrderItems/view.ctp:28
+msgid "Product"
+msgstr ""
+
+#: Template/Pages/home.ctp:7 Template/Products/add.ctp:13
+#: Template/Products/edit.ctp:20 Template/Products/index.ctp:21
+#: Template/Products/view.ctp:28 Template/Stores/add.ctp:10
+#: Template/Stores/edit.ctp:17 Template/Stores/view.ctp:12
+#: Template/Users/add.ctp:13 Template/Users/edit.ctp:19
+#: Template/Users/index.ctp:13 Template/Users/view.ctp:16
+msgid "List Stores"
+msgstr ""
+
+#: Template/Pages/home.ctp:10 Template/Products/add.ctp:14
+#: Template/Products/edit.ctp:21 Template/Products/index.ctp:25
+#: Template/Products/view.ctp:29 Template/Stores/index.ctp:10
+#: Template/Stores/view.ctp:13 Template/Users/add.ctp:14
+#: Template/Users/edit.ctp:20 Template/Users/index.ctp:12
+#: Template/Users/view.ctp:11
+msgid "New Store"
+msgstr ""
+
+#: Template/Pages/home.ctp:14 Template/Users/login.ctp:7
+msgid "New Customer Account"
+msgstr ""
+
+#: Template/ProductTypes/add.ctp:10 Template/ProductTypes/edit.ctp:16
+#: Template/ProductTypes/view.ctp:12 Template/Products/add.ctp:11
+#: Template/Products/edit.ctp:18 Template/Products/index.ctp:22
+#: Template/Products/view.ctp:14;26
+msgid "List Product Types"
+msgstr ""
+
+#: Template/ProductTypes/add.ctp:16
+msgid "Add Product Type"
+msgstr ""
+
+#: Template/ProductTypes/edit.ctp:22 Template/ProductTypes/view.ctp:10
+msgid "Edit Product Type"
+msgstr ""
+
+#: Template/ProductTypes/index.ctp:10 Template/ProductTypes/view.ctp:13
+#: Template/Products/add.ctp:12 Template/Products/edit.ctp:19
+#: Template/Products/index.ctp:24 Template/Products/view.ctp:27
+msgid "New Product Type"
+msgstr ""
+
+#: Template/ProductTypes/index.ctp:14
+msgid "Product Types"
+msgstr ""
+
+#: Template/ProductTypes/view.ctp:11
+msgid "Delete Product Type"
+msgstr ""
+
+#: Template/Products/add.ctp:22
+msgid "Add Product"
+msgstr ""
+
+#: Template/Products/edit.ctp:29 Template/Products/view.ctp:23
+msgid "Edit Product"
+msgstr ""
+
+#: Template/Products/index.ctp:14
+msgid "Order a Product"
+msgstr ""
+
+#: Template/Products/index.ctp:15;20 Template/Products/view.ctp:30
+msgid "List of Order"
+msgstr ""
+
+#: Template/Products/index.ctp:30
+msgid "Products"
+msgstr ""
+
+#: Template/Products/index.ctp:65
+msgid "Order"
+msgstr ""
+
+#: Template/Products/view.ctp:18
+msgid "Order this Item"
+msgstr ""
+
+#: Template/Products/view.ctp:24
+msgid "Delete Product"
+msgstr ""
+
+#: Template/Products/view.ctp:44;81 Template/Stores/view.ctp:53
+msgid "Image"
+msgstr ""
+
+#: Template/Products/view.ctp:48
+msgid "Product Type"
+msgstr ""
+
+#: Template/Products/view.ctp:52
+msgid "Store"
+msgstr ""
+
+#: Template/Products/view.ctp:68
+msgid "Deleted"
+msgstr ""
+
+#: Template/Products/view.ctp:73 Template/Stores/view.ctp:52
+msgid "Description"
+msgstr ""
+
+#: Template/Products/view.ctp:77
+msgid "Related Files"
+msgstr ""
+
+#: Template/Products/view.ctp:98
+msgid "Related Items"
+msgstr ""
+
+#: Template/Products/view.ctp:101
+msgid "image"
+msgstr ""
+
+#: Template/Products/view.ctp:102
+msgid "name"
+msgstr ""
+
+#: Template/Products/view.ctp:103
+msgid "price"
+msgstr ""
+
+#: Template/Products/view.ctp:104
+msgid "productType_id"
+msgstr ""
+
+#: Template/Stores/add.ctp:20
+msgid "Add Store"
+msgstr ""
+
+#: Template/Stores/edit.ctp:27 Template/Stores/view.ctp:10
+msgid "Edit Store"
+msgstr ""
+
+#: Template/Stores/index.ctp:17
+msgid "Stores"
+msgstr ""
+
+#: Template/Stores/view.ctp:11
+msgid "Delete Store"
+msgstr ""
+
+#: Template/Stores/view.ctp:32
+msgid "email"
+msgstr ""
+
+#: Template/Stores/view.ctp:46
+msgid "Related Products"
+msgstr ""
+
+#: Template/Stores/view.ctp:54
+msgid "ProductType Id"
+msgstr ""
+
+#: Template/Users/add.ctp:20 Template/Users/add_customer.ctp:10
+#: Template/Users/add_store.ctp:10
+msgid "Add User"
+msgstr ""
+
+#: Template/Users/edit.ctp:26 Template/Users/view.ctp:12
+msgid "Edit User"
+msgstr ""
+
+#: Template/Users/index.ctp:17
+msgid "Users"
+msgstr ""
+
+#: Template/Users/view.ctp:13
+msgid "Delete User"
+msgstr ""
+
+#: Template/Users/view.ctp:23
+msgid "Email"
+msgstr ""
+
+#: Template/Users/view.ctp:39
+msgid "Type"
+msgstr ""
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr ""
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+
+#: Controller/Component/AuthComponent.php:500
+msgid "You are not authorized to access that location."
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:162
+#: Http/Middleware/CsrfProtectionMiddleware.php:191
+msgid "Missing CSRF token cookie"
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:166
+#: Http/Middleware/CsrfProtectionMiddleware.php:195
+msgid "CSRF token mismatch."
+msgstr ""
+
+#: Error/ExceptionRenderer.php:262
+msgid "Not Found"
+msgstr ""
+
+#: Error/ExceptionRenderer.php:264
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: Http/Response.php:2603
+msgid "The requested file contains `..` and will not be read."
+msgstr ""
+
+#: Http/Response.php:2624
+msgid "The requested file was not found"
+msgstr ""
+
+#: I18n/Number.php:90
+msgid "{0,number,#,###.##} KB"
+msgstr ""
+
+#: I18n/Number.php:92
+msgid "{0,number,#,###.##} MB"
+msgstr ""
+
+#: I18n/Number.php:94
+msgid "{0,number,#,###.##} GB"
+msgstr ""
+
+#: I18n/Number.php:96
+msgid "{0,number,#,###.##} TB"
+msgstr ""
+
+#: I18n/Number.php:88
+msgid "{0,number,integer} Byte"
+msgid_plural "{0,number,integer} Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} from now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} after"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} before"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:114
+msgid "just now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:151
+msgid "about a second ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:152
+msgid "about a minute ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:153
+msgid "about an hour ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:154;332
+msgid "about a day ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:155;333
+msgid "about a week ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:156;334
+msgid "about a month ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:157;335
+msgid "about a year ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:168
+msgid "in about a second"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:169
+msgid "in about a minute"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:170
+msgid "in about an hour"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:171;346
+msgid "in about a day"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:172;347
+msgid "in about a week"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:173;348
+msgid "in about a month"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:174;349
+msgid "in about a year"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:304
+msgid "today"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:370
+msgid "%s ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:371
+msgid "on %s"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:47;126;316
+msgid "{0} year"
+msgid_plural "{0} years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:51;129;319
+msgid "{0} month"
+msgid_plural "{0} months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:57;132;322
+msgid "{0} week"
+msgid_plural "{0} weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:59;135;325
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:64;138
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:68;141
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:72;144
+msgid "{0} second"
+msgid_plural "{0} seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ORM/RulesChecker.php:57
+msgid "This value is already in use"
+msgstr ""
+
+#: ORM/RulesChecker.php:104
+msgid "This value does not exist"
+msgstr ""
+
+#: ORM/RulesChecker.php:128
+msgid "The count does not match {0}{1}"
+msgstr ""
+
+#: Utility/Text.php:917
+msgid "and"
+msgstr ""
+
+#: Validation/Validator.php:111
+msgid "This field is required"
+msgstr ""
+
+#: Validation/Validator.php:112
+msgid "This field cannot be left empty"
+msgstr ""
+
+#: Validation/Validator.php:2054
+msgid "The provided value is invalid"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1099
+msgid "Edit {0}"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1101
+msgid "New {0}"
+msgstr ""
+
+#: View/Helper/HtmlHelper.php:815
+msgid "Home"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:540
+msgid "January"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:541
+msgid "February"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:542
+msgid "March"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:543
+msgid "April"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:544
+msgid "May"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:545
+msgid "June"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:546
+msgid "July"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:547
+msgid "August"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:548
+msgid "September"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:549
+msgid "October"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:550
+msgid "November"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:551
+msgid "December"
+msgstr ""

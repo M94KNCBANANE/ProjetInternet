@@ -17,7 +17,8 @@ class CustomersControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.customers',
-        'app.customer_orders'
+        'app.users',
+        'app.order_items'
     ];
 
     /**

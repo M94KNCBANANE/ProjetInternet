@@ -20,6 +20,10 @@ class StoresController extends AppController
      */
     public function index()
     {
+        
+        $this->paginate = [
+            'contain' => ['Users']
+        ];
         $stores = $this->paginate($this->Stores);
 
         $this->set(compact('stores'));
@@ -35,7 +39,7 @@ class StoresController extends AppController
     public function view($id = null)
     {
         $store = $this->Stores->get($id, [
-            'contain' => ['CustomerOrders']
+            'contain' => ['Users', 'Products']
         ]);
 
         $this->set('store', $store);
@@ -58,7 +62,8 @@ class StoresController extends AppController
             }
             $this->Flash->error(__('The store could not be saved. Please, try again.'));
         }
-        $this->set(compact('store'));
+        $users = $this->Stores->Users->find('list', ['limit' => 200]);
+        $this->set(compact('store', 'users'));
     }
 
     /**
@@ -82,7 +87,8 @@ class StoresController extends AppController
             }
             $this->Flash->error(__('The store could not be saved. Please, try again.'));
         }
-        $this->set(compact('store'));
+        $users = $this->Stores->Users->find('list', ['limit' => 200]);
+        $this->set(compact('store', 'users'));
     }
 
     /**

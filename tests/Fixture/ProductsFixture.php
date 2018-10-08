@@ -21,14 +21,20 @@ class ProductsFixture extends TestFixture
         'name' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'price' => ['type' => 'float', 'length' => 4, 'precision' => 2, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => ''],
         'description' => ['type' => 'text', 'length' => null, 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'comment' => '', 'precision' => null],
-        'id_store' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'image' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'productType_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'store_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'deleted' => ['type' => 'boolean', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
+        'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
+        'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         '_indexes' => [
-            'product' => ['type' => 'index', 'columns' => ['id_store'], 'length' => []],
+            'product' => ['type' => 'index', 'columns' => ['store_id'], 'length' => []],
+            'productType_id' => ['type' => 'index', 'columns' => ['productType_id'], 'length' => []],
         ],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
-            'products_ibfk_1' => ['type' => 'foreign', 'columns' => ['id_store'], 'references' => ['Stores', 'id'], 'update' => 'cascade', 'delete' => 'cascade', 'length' => []],
+            'products_ibfk_1' => ['type' => 'foreign', 'columns' => ['store_id'], 'references' => ['Stores', 'id'], 'update' => 'cascade', 'delete' => 'cascade', 'length' => []],
+            'products_ibfk_2' => ['type' => 'foreign', 'columns' => ['productType_id'], 'references' => ['Product_Types', 'id'], 'update' => 'cascade', 'delete' => 'noAction', 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -50,8 +56,12 @@ class ProductsFixture extends TestFixture
                 'name' => 'Lorem ipsum dolor sit amet',
                 'price' => 1,
                 'description' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
-                'id_store' => 1,
-                'deleted' => 1
+                'image' => 'Lorem ipsum dolor sit amet',
+                'productType_id' => 1,
+                'store_id' => 1,
+                'deleted' => 1,
+                'created' => '2018-09-29 11:40:05',
+                'modified' => '2018-09-29 11:40:05'
             ],
         ];
         parent::init();

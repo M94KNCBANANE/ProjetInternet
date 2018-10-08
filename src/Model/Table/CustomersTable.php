@@ -9,7 +9,8 @@ use Cake\Validation\Validator;
 /**
  * Customers Model
  *
- * @property \App\Model\Table\CustomerOrdersTable|\Cake\ORM\Association\HasMany $CustomerOrders
+ * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
+ * @property \App\Model\Table\OrderItemsTable|\Cake\ORM\Association\HasMany $OrderItems
  *
  * @method \App\Model\Entity\Customer get($primaryKey, $options = [])
  * @method \App\Model\Entity\Customer newEntity($data = null, array $options = [])
@@ -19,6 +20,8 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\Customer patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \App\Model\Entity\Customer[] patchEntities($entities, array $data, array $options = [])
  * @method \App\Model\Entity\Customer findOrCreate($search, callable $callback = null, $options = [])
+ *
+ * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class CustomersTable extends Table
 {
@@ -37,7 +40,13 @@ class CustomersTable extends Table
         $this->setDisplayField('name');
         $this->setPrimaryKey('id');
 
-        $this->hasMany('CustomerOrders', [
+        $this->addBehavior('Timestamp');
+
+        $this->belongsTo('Users', [
+            'foreignKey' => 'user_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->hasMany('OrderItems', [
             'foreignKey' => 'customer_id'
         ]);
     }
@@ -57,24 +66,12 @@ class CustomersTable extends Table
         $validator
             ->scalar('name')
             ->maxLength('name', 255)
-            ->requirePresence('name', 'create')
             ->notEmpty('name');
 
         $validator
             ->scalar('phone')
-            ->maxLength('phone', 11)
-            ->requirePresence('phone', 'create')
+            ->maxLength('phone', 12)
             ->notEmpty('phone');
-
-        $validator
-            ->email('email')
-            ->requirePresence('email', 'create')
-            ->notEmpty('email');
-
-        $validator
-            ->integer('id_user')
-            ->requirePresence('id_user', 'create')
-            ->notEmpty('id_user');
 
         return $validator;
     }
@@ -88,7 +85,7 @@ class CustomersTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->isUnique(['email']));
+        $rules->add($rules->existsIn(['user_id'], 'Users'));
 
         return $rules;
     }

@@ -7,7 +7,10 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('New Customer'), ['action' => 'addCustomer']) ?> </li>
+        <li><?= $this->Html->link(__('List Customers'), ['controller' => 'Customers', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Store representative'), ['controller' => 'Stores', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Stores '), ['action' => 'addStore']) ?></li>
     </ul>
 </nav>
 <div class="users index large-9 medium-8 columns content">
@@ -15,33 +18,42 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
+                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('email') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('password') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('type') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('created') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($users as $user): ?>
             <tr>
+            <?php if($user['type'] != 3){ ?>
+                <td><?= $this->Number->format($user->id) ?></td>
                 <td><?= h($user->email) ?></td>
                 <td><?= h($user->password) ?></td>
-                <?php switch($user->type){
-				case 1 : $type = "Customer";
+                <?php	switch($user->type){
+				case 1: $type='Customer';
 				break;
-				case 2 : $type = "Store";
+				case 2: $type='Representative';
 				break;
-				case 3 : $type = "Administrator";
+				case 3: $type= 'Admin';
 				break;
-				default : $type = "Not initialised";
-				}?>
-				<td><?= h($type) ?></td>
+				default: $type= 'Not defined';
+				break;
+				} ?>
+                <td><?= h($type) ?></td>
+				<td><?= h($user->created) ?></td>
+                <td><?= h($user->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $user->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $user->id]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $user->id], ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]) ?>
                 </td>
             </tr>
+            <?php }?>
             <?php endforeach; ?>
         </tbody>
     </table>

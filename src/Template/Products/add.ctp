@@ -8,6 +8,10 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('List Products'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Product Types'), ['controller' => 'ProductTypes', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Product Type'), ['controller' => 'ProductTypes', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Stores'), ['controller' => 'Stores', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Store'), ['controller' => 'Stores', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Order Items'), ['controller' => 'OrderItems', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Order Item'), ['controller' => 'OrderItems', 'action' => 'add']) ?></li>
     </ul>
@@ -16,11 +20,13 @@
     <?= $this->Form->create($product) ?>
     <fieldset>
         <legend><?= __('Add Product') ?></legend>
-        <?php
+        <?php     
+            echo $this->Form->control('files._ids', ['options' => $files]);
             echo $this->Form->control('name');
             echo $this->Form->control('price');
             echo $this->Form->control('description');
-            echo $this->Form->control('id_store');
+            echo $this->Form->control('productType_id', ['options' => $productTypes]);
+            echo $this->Form->control('store_id', ['options' => $stores]);
             echo $this->Form->control('deleted');
         ?>
     </fieldset>

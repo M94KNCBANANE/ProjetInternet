@@ -21,11 +21,26 @@ class OrderItemsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['CustomerOrders', 'Products']
+            'contain' => ['Customers', 'Products']
         ];
         $orderItems = $this->paginate($this->OrderItems);
 
         $this->set(compact('orderItems'));
+    }
+
+
+    public function isAuthorized($user) {
+       
+        $action = $this->request->params['action'];
+		
+		if (isset($user['type']) && $user['type'] == 1) {
+            if (in_array($action, ['view', 'add','index'])) {
+                return true;
+            }
+        
+        }
+        $valeur = parent::isAuthorized($user);
+        return $valeur;
     }
 
     /**
@@ -38,7 +53,7 @@ class OrderItemsController extends AppController
     public function view($id = null)
     {
         $orderItem = $this->OrderItems->get($id, [
-            'contain' => ['CustomerOrders', 'Products']
+            'contain' => ['Customers', 'Products']
         ]);
 
         $this->set('orderItem', $orderItem);
@@ -47,10 +62,12 @@ class OrderItemsController extends AppController
     /**
      * Add method
      *
+     * @param string|null $id Order Item id.
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
-    public function add()
+    public function add($id = null)
     {
+        $loguser = $this->request->session()->read('Auth.User');
         $orderItem = $this->OrderItems->newEntity();
         if ($this->request->is('post')) {
             $orderItem = $this->OrderItems->patchEntity($orderItem, $this->request->getData());
@@ -61,9 +78,14 @@ class OrderItemsController extends AppController
             }
             $this->Flash->error(__('The order item could not be saved. Please, try again.'));
         }
-        $customerOrders = $this->OrderItems->CustomerOrders->find('list', ['limit' => 200]);
+        $customers = $this->OrderItems->Customers->find('list', ['limit' => 200]);
         $products = $this->OrderItems->Products->find('list', ['limit' => 200]);
-        $this->set(compact('orderItem', 'customerOrders', 'products'));
+        /*
+        *$product = $this->findById($id, $products);
+        *$customer = $this->findById($loguser['id'], $customers);
+        *die();
+        */
+        $this->set(compact('orderItem', 'customers', 'products'));
     }
 
     /**
@@ -87,9 +109,9 @@ class OrderItemsController extends AppController
             }
             $this->Flash->error(__('The order item could not be saved. Please, try again.'));
         }
-        $customerOrders = $this->OrderItems->CustomerOrders->find('list', ['limit' => 200]);
+        $customers = $this->OrderItems->Customers->find('list', ['limit' => 200]);
         $products = $this->OrderItems->Products->find('list', ['limit' => 200]);
-        $this->set(compact('orderItem', 'customerOrders', 'products'));
+        $this->set(compact('orderItem', 'customers', 'products'));
     }
 
     /**
@@ -110,5 +132,16 @@ class OrderItemsController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    private function findById($id, $table){
+       $found ='';
+       debug($table);
+        foreach($table as $item){
+            debug($item);
+            if($item['id'] == $id){
+                $found = $item;
+            }
+        }
     }
 }
