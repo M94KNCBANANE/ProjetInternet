@@ -9,8 +9,8 @@
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New Customer'), ['action' => 'addCustomer']) ?> </li>
         <li><?= $this->Html->link(__('List Customers'), ['controller' => 'Customers', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Store representative'), ['controller' => 'Stores', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Stores '), ['action' => 'addStore']) ?></li>
+        <li><?= $this->Html->link(__('New Store representative'), ['controller' => 'Users', 'action' => 'addStores']) ?></li>
+        <li><?= $this->Html->link(__('List Stores '), ['controller' => 'Stores','action' => 'index']) ?></li>
     </ul>
 </nav>
 <div class="users index large-9 medium-8 columns content">

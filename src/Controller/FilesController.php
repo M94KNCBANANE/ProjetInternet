@@ -52,11 +52,13 @@ class FilesController extends AppController {
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
-    public function add() {
+      public function add() {
         $file = $this->Files->newEntity();
         if ($this->request->is('post')) {
             if (!empty($this->request->data['name']['name'])) {
                 $fileName = $this->request->data['name']['name'];
+				debug($uploadPath);
+				die();
                 $uploadPath = 'Files/';
                 $uploadFile = $uploadPath . $fileName;
                 if (move_uploaded_file($this->request->data['name']['tmp_name'], 'img/' . $uploadFile)) {

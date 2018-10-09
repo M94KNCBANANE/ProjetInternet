@@ -58,7 +58,7 @@ class FilesTable extends Table
             ->integer('id')
             ->allowEmpty('id', 'create');
 
-        $validator
+/*        $validator
             ->scalar('name')
             ->maxLength('name', 255)
             ->requirePresence('name', 'create')
@@ -69,7 +69,7 @@ class FilesTable extends Table
             ->maxLength('path', 255)
             ->requirePresence('path', 'create')
             ->notEmpty('path');
-
+*/
         $validator
             ->boolean('status')
             ->requirePresence('status', 'create')
