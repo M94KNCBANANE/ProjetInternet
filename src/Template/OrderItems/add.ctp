@@ -25,10 +25,14 @@ $loguser =  $this->request->getSession()->read('Auth.User');
     <fieldset>
         <legend><?= __('Add Order Item') ?></legend>
         <?php
+        if($loguser['type'] == 1){
+            echo $this->Form->hidden('customer_id', ['value' => $customers['id']]);
+        }else{
             echo $this->Form->control('customer_id', ['options' => $customers]);
-            echo $this->Form->control('product_id', ['options' => $products]);
+        }
+            echo $this->Form->control('product_id', ['options' => $products, 'default' => $productid]);
             echo $this->Form->control('quantity');
-            echo $this->Form->control('price');
+            echo $this->Form->hidden('price');
             echo $this->Form->control('date');
         ?>
     </fieldset>

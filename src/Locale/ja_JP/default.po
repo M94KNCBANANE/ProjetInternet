@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-10-08 17:53+0000\n"
-"PO-Revision-Date: 2018-10-09 13:44-0400\n"
+"POT-Creation-Date: 2018-10-11 03:25+0000\n"
+"PO-Revision-Date: 2018-10-10 23:26-0400\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,83 +31,75 @@ msgstr "顧客は削除されました。"
 msgid "The customer could not be deleted. Please, try again."
 msgstr "顧客を削除できませんでした。もう一度やり直してください。"
 
-#: Controller/FilesController.php:67
+#: Controller/FilesController.php:69
 msgid "File has been uploaded and inserted successfully."
 msgstr "ファイルがアップロードされ、正常に挿入されました。"
 
-#: Controller/FilesController.php:69
+#: Controller/FilesController.php:72
 msgid "Unable to upload file, please try again."
 msgstr "ファイルをアップロードできません。もう一度お試しください。"
 
-#: Controller/FilesController.php:72
+#: Controller/FilesController.php:75
 msgid "Unable to save file, please try again."
 msgstr "ファイルを保存できませんでした。もう一度お試しください。"
 
-#: Controller/FilesController.php:75
+#: Controller/FilesController.php:78
 msgid "Please choose a file to upload."
 msgstr "アップロードするファイルを選択してください。"
 
-#: Controller/FilesController.php:95
-msgid "The file has been saved."
-msgstr "ファイルが保存されました。"
-
-#: Controller/FilesController.php:99
-msgid "The file could not be saved. Please, try again."
-msgstr "ファイルを保存できませんでした。もう一度やり直してください。"
-
-#: Controller/FilesController.php:115
+#: Controller/FilesController.php:103
 msgid "The file has been deleted."
 msgstr "ファイルが削除されました。"
 
-#: Controller/FilesController.php:117
+#: Controller/FilesController.php:105
 msgid "The file could not be deleted. Please, try again."
 msgstr "ファイルを削除できませんでした。もう一度やり直してください。"
 
-#: Controller/OrderItemsController.php:75;106
+#: Controller/OrderItemsController.php:76;108
 msgid "The order item has been saved."
 msgstr "注文アイテムが保存されました。"
 
-#: Controller/OrderItemsController.php:79;110
+#: Controller/OrderItemsController.php:80;112
 msgid "The order item could not be saved. Please, try again."
 msgstr "注文アイテムを保存できませんでした。もう一度やり直してください。"
 
-#: Controller/OrderItemsController.php:129
+#: Controller/OrderItemsController.php:131
 msgid "The order item has been deleted."
 msgstr "注文アイテムが削除されました。"
 
-#: Controller/OrderItemsController.php:131
+#: Controller/OrderItemsController.php:133
 msgid "The order item could not be deleted. Please, try again."
 msgstr "注文アイテムを削除できませんでした。もう一度やり直してください。"
 
-#: Controller/ProductTypesController.php:55;79
+#: Controller/ProductTypesController.php:74;98
 msgid "The product type has been saved."
 msgstr "商品タイプが保存されました。"
 
-#: Controller/ProductTypesController.php:59;83
+#: Controller/ProductTypesController.php:78;102
 msgid "The product type could not be saved. Please, try again."
 msgstr "商品タイプを保存できませんでした。もう一度やり直してください。"
 
-#: Controller/ProductTypesController.php:100
+#: Controller/ProductTypesController.php:119
 msgid "The product type has been deleted."
 msgstr "商品タイプが削除されました。"
 
-#: Controller/ProductTypesController.php:102
+#: Controller/ProductTypesController.php:121
 msgid "The product type could not be deleted. Please, try again."
 msgstr "商品タイプを削除できませんでした。もう一度やり直してください。"
 
-#: Controller/ProductsController.php:83;110
+#: Controller/ProductsController.php:82;114
 msgid "The product has been saved."
 msgstr "製品が保存されました。"
 
-#: Controller/ProductsController.php:87;114
+#: Controller/ProductsController.php:86;118
 msgid "The product could not be saved. Please, try again."
 msgstr "製品を保存できませんでした。もう一度やり直してください。"
 
-#: Controller/ProductsController.php:134
+#: Controller/ProductsController.php:138
 msgid "The product has been deleted."
 msgstr "製品が削除されました。"
 
-#: Controller/ProductsController.php:136
+#: Controller/ProductsController.php:140
 msgid "The product could not be deleted. Please, try again."
 msgstr "製品を削除できませんでした。もう一度やり直してください。"
 
@@ -127,70 +119,77 @@ msgstr "ストアは削除されました。"
 msgid "The store could not be deleted. Please, try again."
 msgstr "ストアを削除できませんでした。もう一度やり直してください。"
 
-#: Controller/UsersController.php:105
+#: Controller/UsersController.php:121
 msgid "The user has been saved."
 msgstr "ユーザーは保存されました。"
 
-#: Controller/UsersController.php:109
+#: Controller/UsersController.php:125;161
 msgid "The user could not be saved. Please, try again."
 msgstr "ユーザーを保存できませんでした。もう一度やり直してください。"
 
-#: Controller/UsersController.php:126
+#: Controller/UsersController.php:142
 msgid "The user has been deleted."
 msgstr "ユーザーは削除されました。"
 
-#: Controller/UsersController.php:128
+#: Controller/UsersController.php:144
 msgid "The user could not be deleted. Please, try again."
 msgstr "ユーザーは削除できませんでした。もう一度やり直してください。"
 
-#: Controller/UsersController.php:159;170
+#: Controller/UsersController.php:157
+msgid "The user has been confirmed."
+msgstr "ユーザーが確認されました。"
+
+#: Controller/UsersController.php:190;201
 msgid "The email exists already."
 msgstr "電子メールは既に存在します。"
 
-#: Controller/UsersController.php:184;198
-msgid "Your account is activated, please login"
-msgstr "あなたのアカウントは有効になっています。ログインしてください"
+#: Controller/UsersController.php:218
+msgid "Your account as been created."
+msgstr "あなたのアカウントは作成されました。"
 
-#: Controller/UsersController.php:187;201;220
+#: Controller/UsersController.php:221;238;257;280
 msgid "The account could not be saved. Please, try again."
 msgstr "アカウントを保存できませんでした。もう一度やり直してください。"
 
-#: Controller/UsersController.php:216
+#: Controller/UsersController.php:235
+msgid "Your account as been created"
+msgstr "作成されたアカウント"
+
+#: Controller/UsersController.php:253;276
 msgid "The account has been saved."
 msgstr "アカウントは保存されました。"
 
 #: Template/Customers/add.ctp:9 Template/Customers/edit.ctp:9
 #: Template/Customers/index.ctp:9;28 Template/Customers/view.ctp:9;61
-#: Template/Files/add.ctp:9 Template/Files/edit.ctp:9
-#: Template/Files/index.ctp:9;24 Template/Files/view.ctp:9
-#: Template/OrderItems/add.ctp:15 Template/OrderItems/edit.ctp:9
-#: Template/OrderItems/index.ctp:9;30 Template/OrderItems/view.ctp:9
-#: Template/ProductTypes/add.ctp:9 Template/ProductTypes/edit.ctp:9
-#: Template/ProductTypes/index.ctp:9;20 Template/ProductTypes/view.ctp:9
-#: Template/Products/add.ctp:9 Template/Products/edit.ctp:10
-#: Template/Products/index.ctp:10;42 Template/Products/view.ctp:11;105
-#: Template/Stores/add.ctp:9 Template/Stores/edit.ctp:10
-#: Template/Stores/index.ctp:9;25 Template/Stores/view.ctp:9;55
-#: Template/Users/add.ctp:9 Template/Users/edit.ctp:9
-#: Template/Users/index.ctp:9;27 Template/Users/view.ctp:9
+#: Template/Files/add.ctp:9 Template/Files/index.ctp:9;27
+#: Template/Files/view.ctp:9 Template/OrderItems/add.ctp:15
+#: Template/OrderItems/edit.ctp:10 Template/OrderItems/index.ctp:12;39
+#: Template/OrderItems/view.ctp:10 Template/ProductTypes/add.ctp:9
+#: Template/ProductTypes/edit.ctp:9 Template/ProductTypes/index.ctp:9;24
+#: Template/ProductTypes/view.ctp:10;43 Template/Products/add.ctp:10
+#: Template/Products/edit.ctp:10 Template/Products/index.ctp:10;51
+#: Template/Products/view.ctp:11;96 Template/Stores/add.ctp:9
+#: Template/Stores/edit.ctp:10 Template/Stores/index.ctp:9;25
+#: Template/Stores/view.ctp:9;55 Template/Users/add.ctp:9
+#: Template/Users/edit.ctp:10 Template/Users/index.ctp:9;26
+#: Template/Users/view.ctp:10
 msgid "Actions"
 msgstr "行動"
 
 #: Template/Customers/add.ctp:10 Template/Customers/edit.ctp:16
 #: Template/Customers/view.ctp:12 Template/OrderItems/add.ctp:17
-#: Template/OrderItems/edit.ctp:17 Template/OrderItems/index.ctp:11
-#: Template/OrderItems/view.ctp:14 Template/Pages/home.ctp:8
-#: Template/Users/add.ctp:11 Template/Users/edit.ctp:17
-#: Template/Users/index.ctp:11 Template/Users/view.ctp:15
+#: Template/OrderItems/index.ctp:20 Template/OrderItems/view.ctp:22
+#: Template/Users/add.ctp:11 Template/Users/edit.ctp:20
+#: Template/Users/index.ctp:11 Template/Users/view.ctp:18
 msgid "List Customers"
 msgstr "顧客リスト"
 
 #: Template/Customers/add.ctp:11 Template/Customers/edit.ctp:17
 #: Template/Customers/index.ctp:11 Template/Customers/view.ctp:14
-#: Template/Pages/home.ctp:9 Template/Stores/add.ctp:11
-#: Template/Stores/edit.ctp:18 Template/Stores/index.ctp:11
-#: Template/Stores/view.ctp:14 Template/Users/add.ctp:10
-#: Template/Users/edit.ctp:16 Template/Users/view.ctp:14
+#: Template/Stores/add.ctp:11 Template/Stores/edit.ctp:18
+#: Template/Stores/index.ctp:11 Template/Stores/view.ctp:14
+#: Template/Users/add.ctp:10 Template/Users/edit.ctp:19
+#: Template/Users/view.ctp:17
 msgid "List Users"
 msgstr "ユーザーを一覧表示する"
 
@@ -203,16 +202,17 @@ msgstr "新しいユーザー"
 
 #: Template/Customers/add.ctp:13 Template/Customers/edit.ctp:19
 #: Template/Customers/index.ctp:13 Template/Customers/view.ctp:16
-#: Template/OrderItems/add.ctp:16 Template/OrderItems/edit.ctp:16
-#: Template/OrderItems/view.ctp:12 Template/Products/add.ctp:15
+#: Template/OrderItems/add.ctp:16 Template/OrderItems/edit.ctp:13;24
+#: Template/OrderItems/view.ctp:13;19 Template/Products/add.ctp:26
 #: Template/Products/edit.ctp:22
 msgid "List Order Items"
 msgstr "注文アイテムを一覧表示する"
 
 #: Template/Customers/add.ctp:14 Template/Customers/edit.ctp:20
 #: Template/Customers/index.ctp:14 Template/Customers/view.ctp:17
-#: Template/OrderItems/index.ctp:10 Template/OrderItems/view.ctp:13
-#: Template/Products/add.ctp:16 Template/Products/edit.ctp:23
+#: Template/OrderItems/edit.ctp:14;25 Template/OrderItems/index.ctp:14;19
+#: Template/OrderItems/view.ctp:14;21 Template/Products/add.ctp:27
+#: Template/Products/edit.ctp:23
 msgid "New Order Item"
 msgstr "新規注文アイテム"
 
@@ -221,39 +221,38 @@ msgid "Add Customer"
 msgstr "顧客を追加"
 
 #: Template/Customers/add.ctp:27 Template/Customers/edit.ctp:33
-#: Template/Files/add.ctp:23 Template/Files/edit.ctp:29
-#: Template/OrderItems/add.ctp:35 Template/OrderItems/edit.ctp:35
-#: Template/ProductTypes/add.ctp:21 Template/ProductTypes/edit.ctp:27
-#: Template/Products/add.ctp:33 Template/Products/edit.ctp:41
-#: Template/Stores/add.ctp:27 Template/Stores/edit.ctp:36
-#: Template/Users/add.ctp:28 Template/Users/add_customer.ctp:19
-#: Template/Users/add_store.ctp:19 Template/Users/edit.ctp:33
-#: View/Helper/FormHelper.php:1988
+#: Template/Files/add.ctp:24 Template/OrderItems/add.ctp:39
+#: Template/OrderItems/edit.ctp:55 Template/ProductTypes/add.ctp:21
+#: Template/ProductTypes/edit.ctp:27 Template/Products/add.ctp:51
+#: Template/Products/edit.ctp:42 Template/Stores/add.ctp:27
+#: Template/Stores/edit.ctp:36 Template/Users/add.ctp:28
+#: Template/Users/add_customer.ctp:19 Template/Users/add_store.ctp:19
+#: Template/Users/edit.ctp:44 Template/Users/edit_customer.ctp:19
+#: Template/Users/edit_store.ctp:19 View/Helper/FormHelper.php:1988
 msgid "Submit"
 msgstr "提出する"
 
 #: Template/Customers/edit.ctp:11 Template/Customers/index.ctp:43
-#: Template/Customers/view.ctp:76 Template/Files/edit.ctp:11
-#: Template/Files/index.ctp:39 Template/OrderItems/edit.ctp:11
-#: Template/OrderItems/index.ctp:47 Template/ProductTypes/edit.ctp:11
-#: Template/ProductTypes/index.ctp:31 Template/Products/edit.ctp:12
-#: Template/Products/index.ctp:69 Template/Stores/edit.ctp:12
-#: Template/Stores/index.ctp:38 Template/Stores/view.ctp:68
-#: Template/Users/edit.ctp:11 Template/Users/index.ctp:53
+#: Template/Customers/view.ctp:76 Template/Files/index.ctp:48
+#: Template/OrderItems/edit.ctp:19 Template/OrderItems/index.ctp:56
+#: Template/ProductTypes/edit.ctp:11 Template/ProductTypes/index.ctp:35
+#: Template/Products/edit.ctp:12 Template/Products/index.ctp:79
+#: Template/Stores/edit.ctp:12 Template/Stores/index.ctp:38
+#: Template/Stores/view.ctp:68 Template/Users/edit.ctp:14
+#: Template/Users/index.ctp:51
 msgid "Delete"
 msgstr "削除"
 
 #: Template/Customers/edit.ctp:13 Template/Customers/index.ctp:43
-#: Template/Customers/view.ctp:11;76 Template/Files/edit.ctp:13
-#: Template/Files/index.ctp:39 Template/Files/view.ctp:11
-#: Template/OrderItems/edit.ctp:13 Template/OrderItems/index.ctp:47
-#: Template/OrderItems/view.ctp:11 Template/ProductTypes/edit.ctp:13
-#: Template/ProductTypes/index.ctp:31 Template/ProductTypes/view.ctp:11
-#: Template/Products/edit.ctp:14 Template/Products/index.ctp:69
-#: Template/Products/view.ctp:24 Template/Stores/edit.ctp:14
-#: Template/Stores/index.ctp:38 Template/Stores/view.ctp:11;68
-#: Template/Users/edit.ctp:13 Template/Users/index.ctp:53
-#: Template/Users/view.ctp:13
+#: Template/Customers/view.ctp:11;76 Template/Files/index.ctp:48
+#: Template/Files/view.ctp:10 Template/OrderItems/edit.ctp:21
+#: Template/OrderItems/index.ctp:56 Template/OrderItems/view.ctp:20
+#: Template/ProductTypes/edit.ctp:13 Template/ProductTypes/index.ctp:35
+#: Template/ProductTypes/view.ctp:23 Template/Products/edit.ctp:14
+#: Template/Products/index.ctp:79 Template/Products/view.ctp:24
+#: Template/Stores/edit.ctp:14 Template/Stores/index.ctp:38
+#: Template/Stores/view.ctp:11;68 Template/Users/edit.ctp:16
+#: Template/Users/index.ctp:51 Template/Users/view.ctp:16
 msgid "Are you sure you want to delete # {0}?"
 msgstr "＃ {0}を削除してもよろしいですか？"
 
@@ -262,10 +261,9 @@ msgid "Edit Customer"
 msgstr "顧客を編集する"
 
 #: Template/Customers/index.ctp:10 Template/Customers/view.ctp:13
-#: Template/OrderItems/add.ctp:18 Template/OrderItems/edit.ctp:18
-#: Template/OrderItems/index.ctp:12 Template/OrderItems/view.ctp:15
-#: Template/Users/add.ctp:12 Template/Users/edit.ctp:18
-#: Template/Users/index.ctp:10 Template/Users/view.ctp:10
+#: Template/OrderItems/add.ctp:18 Template/OrderItems/view.ctp:23
+#: Template/Users/add.ctp:12 Template/Users/edit.ctp:21
+#: Template/Users/index.ctp:10 Template/Users/view.ctp:13
 msgid "New Customer"
 msgstr "新規顧客"
 
@@ -274,54 +272,53 @@ msgid "Customers"
 msgstr "顧客"
 
 #: Template/Customers/index.ctp:41 Template/Customers/view.ctp:74
-#: Template/Files/index.ctp:37 Template/OrderItems/index.ctp:45
-#: Template/ProductTypes/index.ctp:29 Template/Products/index.ctp:61
-#: Template/Products/view.ctp:117 Template/Stores/index.ctp:36
-#: Template/Stores/view.ctp:66 Template/Users/index.ctp:51
-#: View/Helper/PaginatorHelper.php:1212
+#: Template/Files/index.ctp:47 Template/OrderItems/index.ctp:54
+#: Template/ProductTypes/index.ctp:33 Template/ProductTypes/view.ctp:54
+#: Template/Products/index.ctp:69 Template/Products/view.ctp:107
+#: Template/Stores/index.ctp:36 Template/Stores/view.ctp:66
+#: Template/Users/index.ctp:49 View/Helper/PaginatorHelper.php:1212
 msgid "View"
 msgstr "ビュー"
 
 #: Template/Customers/index.ctp:42 Template/Customers/view.ctp:75
-#: Template/Files/index.ctp:38 Template/OrderItems/index.ctp:46
-#: Template/ProductTypes/index.ctp:30 Template/Products/index.ctp:68
-#: Template/Stores/index.ctp:37 Template/Stores/view.ctp:67
-#: Template/Users/index.ctp:52
+#: Template/OrderItems/index.ctp:55 Template/ProductTypes/index.ctp:34
+#: Template/Products/index.ctp:75;78 Template/Stores/index.ctp:37
+#: Template/Stores/view.ctp:67 Template/Users/index.ctp:50
 msgid "Edit"
 msgstr "編集"
 
-#: Template/Customers/index.ctp:51 Template/Files/index.ctp:47
-#: Template/OrderItems/index.ctp:55 Template/ProductTypes/index.ctp:39
-#: Template/Products/index.ctp:79 Template/Stores/index.ctp:46
-#: Template/Users/index.ctp:62
+#: Template/Customers/index.ctp:51 Template/Files/index.ctp:56
+#: Template/OrderItems/index.ctp:65 Template/ProductTypes/index.ctp:43
+#: Template/Products/index.ctp:89 Template/Stores/index.ctp:46
+#: Template/Users/index.ctp:60
 msgid "first"
 msgstr "最初"
 
-#: Template/Customers/index.ctp:52 Template/Files/index.ctp:48
-#: Template/OrderItems/index.ctp:56 Template/ProductTypes/index.ctp:40
-#: Template/Products/index.ctp:80 Template/Stores/index.ctp:47
-#: Template/Users/index.ctp:63
+#: Template/Customers/index.ctp:52 Template/Files/index.ctp:57
+#: Template/OrderItems/index.ctp:66 Template/ProductTypes/index.ctp:44
+#: Template/Products/index.ctp:90 Template/Stores/index.ctp:47
+#: Template/Users/index.ctp:61
 msgid "previous"
 msgstr "前"
 
-#: Template/Customers/index.ctp:54 Template/Files/index.ctp:50
-#: Template/OrderItems/index.ctp:58 Template/ProductTypes/index.ctp:42
-#: Template/Products/index.ctp:82 Template/Stores/index.ctp:49
-#: Template/Users/index.ctp:65
+#: Template/Customers/index.ctp:54 Template/Files/index.ctp:59
+#: Template/OrderItems/index.ctp:68 Template/ProductTypes/index.ctp:46
+#: Template/Products/index.ctp:92 Template/Stores/index.ctp:49
+#: Template/Users/index.ctp:63
 msgid "next"
 msgstr "次"
 
-#: Template/Customers/index.ctp:55 Template/Files/index.ctp:51
-#: Template/OrderItems/index.ctp:59 Template/ProductTypes/index.ctp:43
-#: Template/Products/index.ctp:83 Template/Stores/index.ctp:50
-#: Template/Users/index.ctp:66
+#: Template/Customers/index.ctp:55 Template/Files/index.ctp:60
+#: Template/OrderItems/index.ctp:69 Template/ProductTypes/index.ctp:47
+#: Template/Products/index.ctp:93 Template/Stores/index.ctp:50
+#: Template/Users/index.ctp:64
 msgid "last"
 msgstr "最終"
 
-#: Template/Customers/index.ctp:57 Template/Files/index.ctp:53
-#: Template/OrderItems/index.ctp:61 Template/ProductTypes/index.ctp:45
-#: Template/Products/index.ctp:85 Template/Stores/index.ctp:52
-#: Template/Users/index.ctp:68
+#: Template/Customers/index.ctp:57 Template/Files/index.ctp:62
+#: Template/OrderItems/index.ctp:71 Template/ProductTypes/index.ctp:49
+#: Template/Products/index.ctp:95 Template/Stores/index.ctp:52
+#: Template/Users/index.ctp:66
 msgid ""
 "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
 "total"
@@ -331,14 +328,14 @@ msgstr "{{count}}件のうち{{現在}}件のレコードを表示している{{
 msgid "Delete Customer"
 msgstr "顧客を削除する"
 
-#: Template/Customers/view.ctp:24 Template/Files/view.ctp:20
-#: Template/ProductTypes/view.ctp:20 Template/Products/view.ctp:40
-#: Template/Stores/view.ctp:24;50 Template/Users/view.ctp:53
+#: Template/Customers/view.ctp:24 Template/Files/view.ctp:21
+#: Template/ProductTypes/view.ctp:32 Template/Products/view.ctp:40
+#: Template/Stores/view.ctp:24;50 Template/Users/view.ctp:64;78
 msgid "Name"
 msgstr "名"
 
 #: Template/Customers/view.ctp:28 Template/Stores/view.ctp:28
-#: Template/Users/view.ctp:57;69
+#: Template/Users/view.ctp:68;82
 msgid "Phone"
 msgstr "電話"
 
@@ -346,20 +343,19 @@ msgstr "電話"
 msgid "User"
 msgstr "ユーザー"
 
-#: Template/Customers/view.ctp:36;53 Template/Files/view.ctp:28
-#: Template/OrderItems/view.ctp:32 Template/ProductTypes/view.ctp:24
+#: Template/Customers/view.ctp:36;53 Template/OrderItems/view.ctp:41
 msgid "Id"
 msgstr "イド"
 
-#: Template/Customers/view.ctp:40;59 Template/Files/view.ctp:32
-#: Template/OrderItems/view.ctp:48 Template/Products/view.ctp:60
-#: Template/Stores/view.ctp:37 Template/Users/view.ctp:43
+#: Template/Customers/view.ctp:40;59 Template/Files/view.ctp:29
+#: Template/OrderItems/view.ctp:57 Template/Products/view.ctp:73
+#: Template/Stores/view.ctp:37 Template/Users/view.ctp:53
 msgid "Created"
 msgstr "作成した"
 
-#: Template/Customers/view.ctp:44;60 Template/Files/view.ctp:36
-#: Template/OrderItems/view.ctp:52 Template/Products/view.ctp:64
-#: Template/Stores/view.ctp:41 Template/Users/view.ctp:47
+#: Template/Customers/view.ctp:44;60 Template/Files/view.ctp:33
+#: Template/OrderItems/view.ctp:61 Template/Products/view.ctp:77
+#: Template/Stores/view.ctp:41 Template/Users/view.ctp:57
 msgid "Modified"
 msgstr "変更された"
 
@@ -375,57 +371,84 @@ msgstr "顧客ID"
 msgid "Product Id"
 msgstr "製品番号"
 
-#: Template/Customers/view.ctp:56 Template/OrderItems/view.ctp:36
+#: Template/Customers/view.ctp:56 Template/OrderItems/view.ctp:45
 msgid "Quantity"
 msgstr "量"
 
-#: Template/Customers/view.ctp:57 Template/OrderItems/view.ctp:40
-#: Template/Products/view.ctp:56 Template/Stores/view.ctp:51
+#: Template/Customers/view.ctp:57 Template/OrderItems/view.ctp:49
+#: Template/Products/view.ctp:69 Template/Stores/view.ctp:51
 msgid "Price"
 msgstr "価格"
 
-#: Template/Customers/view.ctp:58 Template/OrderItems/view.ctp:44
+#: Template/Customers/view.ctp:58 Template/OrderItems/view.ctp:53
 msgid "Date"
 msgstr "日付"
 
-#: Template/Files/add.ctp:10 Template/Files/edit.ctp:16
-#: Template/Files/view.ctp:12
+#: Template/Emails/index.ctp:1
+msgid "An email to confirm your account has been sent."
+msgstr "あなたのアカウントを確認するための電子メールが送信されました。"
+
+#: Template/Files/add.ctp:10 Template/Files/view.ctp:11
+#: Template/ProductTypes/index.ctp:13 Template/Products/add.ctp:17;29
+#: Template/Products/index.ctp:20;35
 msgid "List Files"
 msgstr "リストファイル"
 
-#: Template/Files/add.ctp:16
+#: Template/Files/add.ctp:12 Template/Files/index.ctp:11
+#: Template/Files/view.ctp:13 Template/OrderItems/add.ctp:19
+#: Template/OrderItems/edit.ctp:12;26 Template/OrderItems/index.ctp:15;21
+#: Template/OrderItems/view.ctp:15;24 Template/ProductTypes/index.ctp:12
+#: Template/ProductTypes/view.ctp:12 Template/Products/add.ctp:13;21
+#: Template/Products/edit.ctp:17 Template/Products/view.ctp:13
+#: Template/Stores/add.ctp:13 Template/Stores/edit.ctp:20
+#: Template/Stores/index.ctp:12 Template/Stores/view.ctp:16
+#: Template/Users/edit.ctp:25
+msgid "List Products"
+msgstr "リスト製品"
+
+#: Template/Files/add.ctp:18
 msgid "Add File"
 msgstr "ファイルを追加"
 
-#: Template/Files/edit.ctp:22 Template/Files/view.ctp:10
-msgid "Edit File"
-msgstr "ファイルの編集"
-
-#: Template/Files/index.ctp:10 Template/Files/view.ctp:13
+#: Template/Files/index.ctp:10 Template/Files/view.ctp:12
+#: Template/Products/add.ctp:16;28 Template/Products/index.ctp:23;34
 msgid "New File"
 msgstr "新しいファイル"
 
-#: Template/Files/index.ctp:14
+#: Template/Files/index.ctp:12 Template/Files/view.ctp:14
+#: Template/OrderItems/add.ctp:20 Template/OrderItems/edit.ctp:27
+#: Template/OrderItems/index.ctp:22 Template/OrderItems/view.ctp:25
+#: Template/Products/index.ctp:21;28 Template/Products/view.ctp:25
+#: Template/Stores/add.ctp:14 Template/Stores/edit.ctp:21
+#: Template/Stores/index.ctp:13 Template/Stores/view.ctp:17
+msgid "New Product"
+msgstr "新製品"
+
+#: Template/Files/index.ctp:17
 msgid "Files"
 msgstr "ファイル"
 
-#: Template/Files/view.ctp:11
+#: Template/Files/index.ctp:22
+msgid "Preview"
+msgstr "プレビュー"
+
+#: Template/Files/view.ctp:10
 msgid "Delete File"
 msgstr "ファイルを削除する"
 
-#: Template/Files/view.ctp:24
+#: Template/Files/view.ctp:25
 msgid "Path"
 msgstr "パス"
 
-#: Template/Files/view.ctp:40
+#: Template/Files/view.ctp:37
 msgid "Status"
 msgstr "状態"
 
-#: Template/Files/view.ctp:41 Template/Products/view.ctp:69
+#: Template/Files/view.ctp:38 Template/Products/view.ctp:82
 msgid "Yes"
 msgstr "はい"
 
-#: Template/Files/view.ctp:41 Template/Products/view.ctp:69
+#: Template/Files/view.ctp:38 Template/Products/view.ctp:82
 msgid "No"
 msgstr "いいえ"
 
@@ -433,11 +456,15 @@ msgstr "いいえ"
 msgid "Main menu"
 msgstr "メインメニュー"
 
-#: Template/Layout/default.ctp:51
+#: Template/Layout/default.ctp:48
+msgid "A propos"
+msgstr "提案"
+
+#: Template/Layout/default.ctp:67
 msgid "logout"
 msgstr "ログアウト"
 
-#: Template/Layout/default.ctp:53
+#: Template/Layout/default.ctp:69
 msgid "login"
 msgstr "ログイン"
 
@@ -450,100 +477,97 @@ msgstr "エラー"
 msgid "Back"
 msgstr "バック"
 
-#: Template/OrderItems/add.ctp:19 Template/OrderItems/edit.ctp:19
-#: Template/OrderItems/index.ctp:13 Template/OrderItems/view.ctp:16
-#: Template/Pages/home.ctp:5 Template/Products/add.ctp:10
-#: Template/Products/edit.ctp:17 Template/Products/view.ctp:13
-#: Template/Stores/add.ctp:13 Template/Stores/edit.ctp:20
-#: Template/Stores/index.ctp:12 Template/Stores/view.ctp:16
-msgid "List Products"
-msgstr "リスト製品"
-
-#: Template/OrderItems/add.ctp:20 Template/OrderItems/edit.ctp:20
-#: Template/OrderItems/index.ctp:14 Template/OrderItems/view.ctp:17
-#: Template/Pages/home.ctp:11 Template/Products/index.ctp:23
-#: Template/Products/view.ctp:25 Template/Stores/add.ctp:14
-#: Template/Stores/edit.ctp:21 Template/Stores/index.ctp:13
-#: Template/Stores/view.ctp:17
-msgid "New Product"
-msgstr "新製品"
-
 #: Template/OrderItems/add.ctp:26
 msgid "Add Order Item"
 msgstr "オーダーアイテムの追加"
 
-#: Template/OrderItems/edit.ctp:26 Template/OrderItems/view.ctp:10
-msgid "Edit Order Item"
-msgstr "注文アイテムの編集"
+#: Template/OrderItems/edit.ctp:28 Template/ProductTypes/add.ctp:10
+#: Template/ProductTypes/edit.ctp:16 Template/ProductTypes/view.ctp:11
+#: Template/Products/add.ctp:14;22 Template/Products/edit.ctp:18
+#: Template/Products/index.ctp:19;33 Template/Products/view.ctp:14;26
+msgid "List Product Types"
+msgstr "製品タイプのリスト"
 
-#: Template/OrderItems/index.ctp:18
-msgid "Order Items"
-msgstr "注文アイテム"
+#: Template/OrderItems/edit.ctp:29 Template/ProductTypes/index.ctp:10
+#: Template/ProductTypes/view.ctp:14;21 Template/Products/add.ctp:15;23
+#: Template/Products/edit.ctp:19 Template/Products/index.ctp:22;32
+#: Template/Products/view.ctp:27
+msgid "New Product Type"
+msgstr "新製品タイプ"
 
-#: Template/OrderItems/view.ctp:11
-msgid "Delete Order Item"
-msgstr "注文アイテムの削除"
-
-#: Template/OrderItems/view.ctp:24
-msgid "Customer"
-msgstr "顧客"
-
-#: Template/OrderItems/view.ctp:28
-msgid "Product"
-msgstr "製品"
-
-#: Template/Pages/home.ctp:7 Template/Products/add.ctp:13
-#: Template/Products/edit.ctp:20 Template/Products/index.ctp:21
-#: Template/Products/view.ctp:28 Template/Stores/add.ctp:10
-#: Template/Stores/edit.ctp:17 Template/Stores/view.ctp:12
-#: Template/Users/add.ctp:13 Template/Users/edit.ctp:19
-#: Template/Users/index.ctp:13 Template/Users/view.ctp:16
+#: Template/OrderItems/edit.ctp:30 Template/ProductTypes/view.ctp:20
+#: Template/Products/add.ctp:24 Template/Products/edit.ctp:20
+#: Template/Products/index.ctp:31 Template/Products/view.ctp:28
+#: Template/Stores/add.ctp:10 Template/Stores/edit.ctp:17
+#: Template/Stores/view.ctp:12 Template/Users/add.ctp:13
+#: Template/Users/edit.ctp:22 Template/Users/view.ctp:19
 msgid "List Stores"
 msgstr "リストストア"
 
-#: Template/Pages/home.ctp:10 Template/Products/add.ctp:14
-#: Template/Products/edit.ctp:21 Template/Products/index.ctp:25
+#: Template/OrderItems/edit.ctp:31 Template/Products/add.ctp:25
+#: Template/Products/edit.ctp:21 Template/Products/index.ctp:30
 #: Template/Products/view.ctp:29 Template/Stores/index.ctp:10
-#: Template/Stores/view.ctp:13 Template/Users/add.ctp:14
-#: Template/Users/edit.ctp:20 Template/Users/index.ctp:12
-#: Template/Users/view.ctp:11
+#: Template/Stores/view.ctp:13 Template/Users/view.ctp:14
 msgid "New Store"
 msgstr "新しいストア"
 
-#: Template/Pages/home.ctp:14 Template/Users/login.ctp:7
-msgid "New Customer Account"
-msgstr "新規顧客アカウント"
+#: Template/OrderItems/edit.ctp:39 Template/OrderItems/view.ctp:12;18
+msgid "Edit Order Item"
+msgstr "注文アイテムの編集"
 
-#: Template/ProductTypes/add.ctp:10 Template/ProductTypes/edit.ctp:16
-#: Template/ProductTypes/view.ctp:12 Template/Products/add.ctp:11
-#: Template/Products/edit.ctp:18 Template/Products/index.ctp:22
-#: Template/Products/view.ctp:14;26
-msgid "List Product Types"
-msgstr "製品タイプのリスト"
+#: Template/OrderItems/index.ctp:28
+msgid "Order Items"
+msgstr "注文アイテム"
+
+#: Template/OrderItems/view.ctp:20
+msgid "Delete Order Item"
+msgstr "注文アイテムの削除"
+
+#: Template/OrderItems/view.ctp:33 Template/Users/index.ctp:36
+msgid "Customer"
+msgstr "顧客"
+
+#: Template/OrderItems/view.ctp:37
+msgid "Product"
+msgstr "製品"
 
 #: Template/ProductTypes/add.ctp:16
 msgid "Add Product Type"
 msgstr "商品タイプを追加"
 
-#: Template/ProductTypes/edit.ctp:22 Template/ProductTypes/view.ctp:10
+#: Template/ProductTypes/edit.ctp:22 Template/ProductTypes/view.ctp:17;22
 msgid "Edit Product Type"
 msgstr "商品タイプの編集"
 
-#: Template/ProductTypes/index.ctp:10 Template/ProductTypes/view.ctp:13
-#: Template/Products/add.ctp:12 Template/Products/edit.ctp:19
-#: Template/Products/index.ctp:24 Template/Products/view.ctp:27
-msgid "New Product Type"
-msgstr "新製品タイプ"
+#: Template/ProductTypes/index.ctp:11
+msgid "New Products"
+msgstr "新製品"
 
-#: Template/ProductTypes/index.ctp:14
+#: Template/ProductTypes/index.ctp:18
 msgid "Product Types"
 msgstr "製品タイプ"
 
-#: Template/ProductTypes/view.ctp:11
+#: Template/ProductTypes/view.ctp:23
 msgid "Delete Product Type"
 msgstr "製品タイプの削除"
 
-#: Template/Products/add.ctp:22
+#: Template/ProductTypes/view.ctp:37 Template/Products/view.ctp:90
+msgid "Related Items"
+msgstr "関連商品"
+
+#: Template/ProductTypes/view.ctp:40 Template/Products/view.ctp:93
+msgid "name"
+msgstr "名"
+
+#: Template/ProductTypes/view.ctp:41 Template/Products/view.ctp:94
+msgid "price"
+msgstr "価格"
+
+#: Template/ProductTypes/view.ctp:42 Template/Products/view.ctp:95
+msgid "productType_id"
+msgstr "productType_id"
+
+#: Template/Products/add.ctp:36
 msgid "Add Product"
 msgstr "製品を追加"
 
@@ -555,15 +579,15 @@ msgstr "製品の編集"
 msgid "Order a Product"
 msgstr "製品を注文する"
 
-#: Template/Products/index.ctp:15;20 Template/Products/view.ctp:30
+#: Template/Products/index.ctp:15;29 Template/Products/view.ctp:30
 msgid "List of Order"
 msgstr "注文リスト"
 
-#: Template/Products/index.ctp:30
+#: Template/Products/index.ctp:40
 msgid "Products"
 msgstr "製品"
 
-#: Template/Products/index.ctp:65
+#: Template/Products/index.ctp:72
 msgid "Order"
 msgstr "注文"
 
@@ -575,49 +599,25 @@ msgstr "この商品を注文する"
 msgid "Delete Product"
 msgstr "製品を削除する"
 
-#: Template/Products/view.ctp:44;81 Template/Stores/view.ctp:53
+#: Template/Products/view.ctp:45 Template/Stores/view.ctp:53
 msgid "Image"
 msgstr "画像"
 
-#: Template/Products/view.ctp:48
+#: Template/Products/view.ctp:61
 msgid "Product Type"
 msgstr "製品の種類"
 
-#: Template/Products/view.ctp:52
+#: Template/Products/view.ctp:65
 msgid "Store"
 msgstr "格納"
 
-#: Template/Products/view.ctp:68
+#: Template/Products/view.ctp:81
 msgid "Deleted"
 msgstr "削除済み"
 
-#: Template/Products/view.ctp:73 Template/Stores/view.ctp:52
+#: Template/Products/view.ctp:86 Template/Stores/view.ctp:52
 msgid "Description"
 msgstr "説明"
-
-#: Template/Products/view.ctp:77
-msgid "Related Files"
-msgstr "関連ファイル"
-
-#: Template/Products/view.ctp:98
-msgid "Related Items"
-msgstr "関連商品"
-
-#: Template/Products/view.ctp:101
-msgid "image"
-msgstr "画像"
-
-#: Template/Products/view.ctp:102
-msgid "name"
-msgstr "名"
-
-#: Template/Products/view.ctp:103
-msgid "price"
-msgstr "価格"
-
-#: Template/Products/view.ctp:104
-msgid "productType_id"
-msgstr "productType_id"
 
 #: Template/Stores/add.ctp:20
 msgid "Add Store"
@@ -647,30 +647,68 @@ msgstr "関連製品"
 msgid "ProductType Id"
 msgstr "商品タイプID"
 
+#: Template/Users/add.ctp:14 Template/Users/edit.ctp:23
+#: Template/Users/index.ctp:12
+msgid "New Store representative"
+msgstr "新店舗代理店"
+
 #: Template/Users/add.ctp:20 Template/Users/add_customer.ctp:10
 #: Template/Users/add_store.ctp:10
 msgid "Add User"
 msgstr "ユーザーを追加する"
 
-#: Template/Users/edit.ctp:26 Template/Users/view.ctp:12
+#: Template/Users/edit.ctp:32 Template/Users/edit_customer.ctp:10
+#: Template/Users/edit_store.ctp:10 Template/Users/view.ctp:15;21;23
 msgid "Edit User"
 msgstr "ユーザーの編集"
+
+#: Template/Users/index.ctp:13
+msgid "List Stores "
+msgstr "リストストア"
 
 #: Template/Users/index.ctp:17
 msgid "Users"
 msgstr "ユーザー"
 
-#: Template/Users/view.ctp:13
+#: Template/Users/index.ctp:38
+msgid "Representative"
+msgstr "代表"
+
+#: Template/Users/index.ctp:40
+msgid "Admin"
+msgstr "管理者"
+
+#: Template/Users/index.ctp:42
+msgid "Not Confirmed"
+msgstr "確認されていません"
+
+#: Template/Users/login.ctp:7
+msgid "New Customer Account"
+msgstr "新規顧客アカウント"
+
+#: Template/Users/view.ctp:16
 msgid "Delete User"
 msgstr "ユーザーを削除"
 
-#: Template/Users/view.ctp:23
+#: Template/Users/view.ctp:25
+msgid "List Product"
+msgstr "リスト製品"
+
+#: Template/Users/view.ctp:33
 msgid "Email"
 msgstr "Eメール"
 
-#: Template/Users/view.ctp:39
+#: Template/Users/view.ctp:49
 msgid "Type"
 msgstr "タイプ"
+
+#: Template/Users/view.ctp:61
+msgid "Customer Information"
+msgstr "顧客情報"
+
+#: Template/Users/view.ctp:75
+msgid "Store information"
+msgstr "店舗情報"
 
 #: Template/Error/error400.ctp:37
 msgid "The requested address {0} was not found on this server."

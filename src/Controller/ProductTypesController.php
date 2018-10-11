@@ -18,6 +18,20 @@ class ProductTypesController extends AppController
      *
      * @return \Cake\Http\Response|void
      */
+
+    public function isAuthorized($user) {
+       
+        $action = $this->request->params['action'];
+		
+		if (isset($user['type']) && $user['type']%3 == 1) {
+            if (in_array($action, ['view','index'])) {
+                return true;
+            }
+        }
+        $valeur = parent::isAuthorized($user);
+        return $valeur;
+    }
+
     public function index()
     {
         $productTypes = $this->paginate($this->ProductTypes);
@@ -38,7 +52,12 @@ class ProductTypesController extends AppController
             'contain' => []
         ]);
 
-        $this->set('productType', $productType);
+        //$products = $this->redirect(['controller' => 'Products', 'action' => 'getProducts']);
+       // debug($this->Products);
+       // die();
+
+
+        $this->set(compact('productType'));
     }
 
     /**

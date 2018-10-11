@@ -40,6 +40,7 @@ class OrderItem extends Entity
         'created' => true,
         'modified' => true,
         'customer' => true,
-        'product' => true
+        'product' => true,
+        'products' => true
     ];
 }

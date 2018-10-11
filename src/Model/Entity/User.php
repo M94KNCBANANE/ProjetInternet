@@ -46,7 +46,8 @@ class User extends Entity
         'created' => true,
         'modified' => true,
         'customers' => true,
-        'stores' => true
+        'stores' => true,
+        'uuid' => true
     ];
 
     /**

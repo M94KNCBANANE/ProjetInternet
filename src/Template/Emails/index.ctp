@@ -1,0 +1,1 @@
+<?php echo __('An email to confirm your account has been sent.'); ?>

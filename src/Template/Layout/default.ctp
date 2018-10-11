@@ -37,16 +37,28 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <nav class="top-bar expanded" data-topbar role="navigation">
         <ul class="title-area large-3 medium-4 columns">
             <li class="name">
-                <h1><?= $this->Html->link(__('Main menu'), ['controller' => 'Pages', 'action' => 'display']) ?></h1>
+                <h1><?= $this->Html->link(__('Main menu'), ['controller' => 'Products', 'action' => 'index']) ?></h1>
             </li>
 			
         </ul>
         <div class="top-bar-section">
             <ul class="right">
-			<li><?php
+            <li>
+                <?php
+                echo $this->Html->link(__('A propos'), ['controller' => 'Users',  'action' => 'apropos']);
+			?></li>
+            <li><?php
 			$loguser = $this->request->getSession()->read('Auth.User');
 			if($loguser){
                 $user = $loguser['email'];
+                $type = $loguser['type'];
+                $emailaddress = $loguser['email'];
+                $uuidparam = $loguser['uuid'];
+                 if ($type > 3){
+                    echo $this->Html->link('Please validate your account. Click to resend confirmation email.', ['controller' => 'emails', 'action' => 'index', '?'=>['email'=>$emailaddress, 'uuid'=>$uuidparam]]);
+                    echo '</li>';
+                    echo '<li>';
+                }
                 echo $this->Html->link($user, ['controller' => 'Users', 'action' => 'view', $loguser['id']]); 
 				?>
                 </li>
@@ -67,8 +79,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 					<li>
 					<?= $this->Html->link('Japanese', ['action' => 'changeLang', 'ja_JP'], ['escape' => false]) ?>
 					</li>
-                <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
-                <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
             </ul>
         </div>
     </nav>

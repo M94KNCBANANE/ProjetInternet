@@ -33,6 +33,6 @@ class File extends Entity
         'created' => true,
         'modified' => true,
         'status' => true,
-        'articles' => true
+        'products' => true
     ];
 }

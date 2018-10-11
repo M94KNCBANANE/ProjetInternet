@@ -8,6 +8,9 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New File'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Products'), ['controller' => 'Products', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Product'), ['controller' => 'Products', 'action' => 'add']) ?></li>
+   
     </ul>
 </nav>
 <div class="files index large-9 medium-8 columns content">
@@ -15,8 +18,8 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
+                <th scope="col"><?= __('Preview') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('path') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
@@ -27,15 +30,21 @@
         <tbody>
             <?php foreach ($files as $file): ?>
             <tr>
-                <td><?= $this->Number->format($file->id) ?></td>
                 <td><?= h($file->name) ?></td>
+               <td> <?php
+                    echo $this->Html->image($file->path . $file->name, [
+                        "alt" => $file->name,
+                        "width" => "50px",
+                        "height" => "50px",
+                        'url' => ['action' => 'view', $file->id]
+                    ]);
+                    ?></td>
                 <td><?= h($file->path) ?></td>
                 <td><?= h($file->created) ?></td>
                 <td><?= h($file->modified) ?></td>
                 <td><?= h($file->status) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $file->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $file->id]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $file->id], ['confirm' => __('Are you sure you want to delete # {0}?', $file->id)]) ?>
                 </td>
             </tr>

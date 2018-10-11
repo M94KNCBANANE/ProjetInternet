@@ -14,11 +14,13 @@ use App\Controller\AppController;
 class FilesController extends AppController {
 
     public function isAuthorized($user) {
+        $valeur = parent::isAuthorized($user);
         $action = $this->request->getParam('action');
         // The edit and delete actions are allowed to logged in users for comments.
         if (in_array($action, ['add', 'edit', 'delete'])) {
             return true;
         }
+        return $valeur;
     }
 
     /**
@@ -57,8 +59,6 @@ class FilesController extends AppController {
         if ($this->request->is('post')) {
             if (!empty($this->request->data['name']['name'])) {
                 $fileName = $this->request->data['name']['name'];
-				debug($uploadPath);
-				die();
                 $uploadPath = 'Files/';
                 $uploadFile = $uploadPath . $fileName;
                 if (move_uploaded_file($this->request->data['name']['tmp_name'], 'img/' . $uploadFile)) {
@@ -67,6 +67,7 @@ class FilesController extends AppController {
                     $file->path = $uploadPath;
                     if ($this->Files->save($file)) {
                         $this->Flash->success(__('File has been uploaded and inserted successfully.'));
+                        return $this->redirect(['action' => 'index']);
                     } else {
                         $this->Flash->error(__('Unable to upload file, please try again.'));
                     }
@@ -87,21 +88,6 @@ class FilesController extends AppController {
      * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function edit($id = null) {
-        $file = $this->Files->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $file = $this->Files->patchEntity($file, $this->request->getData());
-            if ($this->Files->save($file)) {
-                $this->Flash->success(__('The file has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
-            }
-            $this->Flash->error(__('The file could not be saved. Please, try again.'));
-        }
-        $this->set(compact('file'));
-    }
 
     /**
      * Delete method

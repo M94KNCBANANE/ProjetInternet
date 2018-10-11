@@ -2,6 +2,8 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Mailer\Email;
+use Cake\Utility\Text;
 
 /**
  * Users Controller
@@ -17,6 +19,11 @@ class UsersController extends AppController
 
 public function isAuthorized($user) {
         $action = $this->request->getParam('action');
+
+        if (in_array($action, ['confirm'])) {
+            return true;
+        }
+
         if (isset($user['type']) && $user['type'] == 3) {
             return true;
         }
@@ -28,6 +35,8 @@ public function isAuthorized($user) {
         if ($userToView->id === $user['id'] && in_array($action, ['view', 'editCustomer', 'editStore', 'edit'])) {
             return true;
         }
+        $value = parent::isAuthorized($user);
+        return $value;
     }
 
 
@@ -47,7 +56,7 @@ public function isAuthorized($user) {
 	{
     parent::initialize();
     // Add the 'add' action to the allowed actions list.
-    $this->Auth->allow(['logout', 'add']);
+    $this->Auth->allow(['logout','confirm']);
 	}
 	public function logout()
 	{
@@ -60,7 +69,14 @@ public function isAuthorized($user) {
 		if ($this->request->is('post')) {
 			$user = $this->Auth->identify();
 			if ($user) {
-				$this->Auth->setUser($user);
+                $this->Auth->setUser($user);
+                if ($user['type'] === 4){
+                    $this->Flash->success('Please activate your account. Restrictions: Can\'t edit account or order anything on this website.');
+                }else if($user['type'] === 5){
+                    $this->Flash->success('Please activate your account. Restrictions: Can\'t add or edit anything on this website.');
+                } else {
+                    $this->Flash->success('You are now logged in.');
+                }
 				return $this->redirect($this->Auth->redirectUrl());
 			}
 			$this->Flash->error('Your username or password is incorrect.');
@@ -130,6 +146,21 @@ public function isAuthorized($user) {
 
         return $this->redirect(['action' => 'index']);
     }
+
+    public function confirm()
+    {
+        $uuidparam = $this->request->getQuery('uuid');
+        $user = $this->Users->findByUuid($uuidparam)->first();
+        $user = $this->Users->patchEntity($user, $this->request->getData());
+        $user->type %= 3;
+            if ($this->Users->save($user)) {
+                $this->Flash->success(__('The user has been confirmed.'));
+                $this->Auth->setUser($user);
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+        $this -> autoRender = false;
+    }
 	
 	public function addCustomer() {
         $user = $this->Users->newEntity();
@@ -178,11 +209,14 @@ public function isAuthorized($user) {
 
 	public function saveUserCustomer($user, $customer) {
         $user->email = strtolower($user->email);
+        $uuid = Text::uuid();
+            $user->uuid = $uuid;
         if ($this->Users->save($user)) {
             $customer->user_id = $user->id;
+            $emailaddress = $user->get('email');
             if ($this->Users->Customers->save($customer)) {
-                $this->Flash->success(__('Your account is activated, please login'));
-                return $this->redirect(['controller' => 'Users', 'action' => 'login']);
+                $this->Flash->success(__('Your account as been created.'));
+                return $this->redirect(['controller' => 'emails', 'action' => 'index', '?'=>['email'=>$emailaddress, 'uuid'=>$uuid]]);
             } else {
 					$this->Flash->error(__('The account could not be saved. Please, try again.'));
 				}
@@ -192,12 +226,15 @@ public function isAuthorized($user) {
 
 	public function saveUserStore($user, $store) {
         $user->email = strtolower($user->email);
+        $uuid = Text::uuid();
+            $user->uuid = $uuid;
         if ($this->Users->save($user)) {
             $store->user_id = $user->id;
+            $emailaddress = $user->get('email');
             if ($this->Users->Stores->save($store)) {
-                $this->Flash->success(__('Your account is activated, please login'));
-                return $this->redirect(['controller' => 'Users', 'action' => 'login']);
-            } else {
+                $this->Flash->success(__('Your account as been created'));
+                return $this->redirect(['controller' => 'emails', 'action' => 'index', '?'=>['email'=>$emailaddress, 'uuid'=>$uuid]]);
+             } else {
 					$this->Flash->error(__('The account could not be saved. Please, try again.'));
 				}
         }
@@ -210,9 +247,9 @@ public function isAuthorized($user) {
         $customer = $user['customers'][0];
         if ($this->request->is(['patch', 'post', 'put'])) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
-            $customert = $this->Users->Customers->patchEntity($customer, $this->request->getData());
+            $customer = $this->Users->Customers->patchEntity($customer, $this->request->getData());
             if ($this->Users->save($user)) {
-                if ($this->Users->customers->save($customer)) {
+                if ($this->Users->Customers->save($customer)) {
                     $this->Flash->success(__('The account has been saved.'));
                     return $this->redirect(['action' => 'view', $id]);
                 }
@@ -225,6 +262,30 @@ public function isAuthorized($user) {
         
         $this->set(compact('user'));
     }
+
+    public function editStore($id = null) {
+        $user = $this->Users->get($id, [
+            'contain' => ['Stores']
+        ]);
+        $store = $user['stores'][0];
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $user = $this->Users->patchEntity($user, $this->request->getData());
+            $store = $this->Users->Stores->patchEntity($store, $this->request->getData());
+            if ($this->Users->save($user)) {
+                if ($this->Users->Stores->save($store)) {
+                    $this->Flash->success(__('The account has been saved.'));
+                    return $this->redirect(['action' => 'view', $id]);
+                }
+            } else {
+                $this->Flash->error(__('The account could not be saved. Please, try again.'));
+            }
+        }
+        $user['name'] = $store->name;
+        $user['phone'] = $store->phone;
+        
+        $this->set(compact('user'));
+    }
+
 }
 	
 	

@@ -45,7 +45,6 @@ class ProductsController extends AppController
             'contain' => ['ProductTypes', 'Stores']
         ];
         $products = $this->paginate($this->Products);
-
         $this->set(compact('products'));
     }
 
@@ -86,8 +85,13 @@ class ProductsController extends AppController
             }
             $this->Flash->error(__('The product could not be saved. Please, try again.'));
         }
-        $productTypes = $this->Products->ProductTypes->find('list', ['limit' => 200]);
+        $loguser = $this->request->session()->read('Auth.User');
+        if($loguser['type'] == 2){
+        $stores = $this->Products->Stores->findByUser_id($loguser['id'])->first();
+        }else{
         $stores = $this->Products->Stores->find('list', ['limit' => 200]);
+        }
+        $productTypes = $this->Products->ProductTypes->find('list', ['limit' => 200]);
         $files = $this->Products->files->find('list', ['limit' => 200]);
         $this->set(compact('product', 'productTypes', 'stores', 'files'));
     }
@@ -137,5 +141,14 @@ class ProductsController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function getProducts(){
+
+        $this->paginate = [
+            'contain' => ['ProductTypes', 'Stores']
+        ];
+        $products = $this->paginate($this->Products);
+        return $products;
     }
 }

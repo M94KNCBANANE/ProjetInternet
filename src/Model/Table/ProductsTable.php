@@ -37,7 +37,7 @@ class ProductsTable extends Table
     {
         parent::initialize($config);
 
-        $this->addBehavior('Translate', ['fields' => ['name']]);
+        
 
         $this->setTable('products');
         $this->setDisplayField('name');
@@ -91,12 +91,6 @@ class ProductsTable extends Table
             ->scalar('description')
             ->requirePresence('description', 'create')
             ->notEmpty('description');
-
-        $validator
-            ->scalar('image')
-            ->maxLength('image', 255)
-            ->requirePresence('image', 'create')
-            ->notEmpty('image');
 
         $validator
             ->boolean('deleted')

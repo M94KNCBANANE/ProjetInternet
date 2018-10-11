@@ -34,7 +34,7 @@ class OrderItemsController extends AppController
         $action = $this->request->params['action'];
 		
 		if (isset($user['type']) && $user['type'] == 1) {
-            if (in_array($action, ['view', 'add','index'])) {
+            if (in_array($action, ['view', 'add','index', 'edit'])) {
                 return true;
             }
         
@@ -71,6 +71,7 @@ class OrderItemsController extends AppController
         $orderItem = $this->OrderItems->newEntity();
         if ($this->request->is('post')) {
             $orderItem = $this->OrderItems->patchEntity($orderItem, $this->request->getData());
+            $orderItem->price = $this->OrderItems->Products->findById($orderItem->product_id)->first()->get('price');
             if ($this->OrderItems->save($orderItem)) {
                 $this->Flash->success(__('The order item has been saved.'));
 
@@ -80,12 +81,13 @@ class OrderItemsController extends AppController
         }
         $customers = $this->OrderItems->Customers->find('list', ['limit' => 200]);
         $products = $this->OrderItems->Products->find('list', ['limit' => 200]);
-        /*
-        *$product = $this->findById($id, $products);
-        *$customer = $this->findById($loguser['id'], $customers);
-        *die();
-        */
-        $this->set(compact('orderItem', 'customers', 'products'));
+        $productid = $this->request->getParam('pass.0');
+
+        if($loguser['type'] == 1){
+        $customers = $this->OrderItems->Customers->findByUser_id($loguser['id'])->first();
+        }
+
+        $this->set(compact('orderItem', 'customers', 'products', 'productid'));
     }
 
     /**
@@ -136,9 +138,7 @@ class OrderItemsController extends AppController
 
     private function findById($id, $table){
        $found ='';
-       debug($table);
         foreach($table as $item){
-            debug($item);
             if($item['id'] == $id){
                 $found = $item;
             }

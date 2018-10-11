@@ -210,6 +210,7 @@ return [
             'tls' => null,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
+        
     ],
 
     /**
@@ -246,7 +247,7 @@ return [
     'Datasources' => [
         'default' => [
             'className' => 'Cake\Database\Connection',
-            'driver' => 'Cake\Database\Driver\Mysql',
+            'driver' => 'Cake\Database\Driver\Sqlite',
             'persistent' => false,
             'host' => 'localhost',
             /*
@@ -256,8 +257,8 @@ return [
              */
             //'port' => 'non_standard_port_number',
             'username' => 'root',
-            'password' => 'mysql',
-            'database' => 'ClientProduit',
+            'password' => '',
+            'database' => ROOT . DS . 'sqlite' . DS . 'default.sqlite',
             /*
              * You do not need to set this flag to use full utf-8 encoding (internal default since CakePHP 3.6).
              */
@@ -383,4 +384,35 @@ return [
     'Session' => [
         'defaults' => 'php',
     ],
+
+        //Emails
+        'EmailTransport' => [
+            'default' => [
+                'className' => 'Mail',
+                // The following keys are used in SMTP transports
+                'host' => 'localhost',
+                'port' => 25,
+                'timeout' => 30,
+                'username' => 'user',
+                'password' => 'secret',
+                'client' => null,
+                'tls' => null,
+                'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
+            ],
+            'gmail' => [
+                'host' => 'ssl://smtp.gmail.com',
+                'port' => 465,
+                'username' => 'frederik.sylvain6@gmail.com',
+                'password' => 'motdepasse1',
+                'className' => 'Smtp'
+            ]
+        ],
+        'Email' => [
+            'default' => [
+                'transport' => 'gmail',
+                'from' => 'werner.burat@gmail.com',
+                //'charset' => 'utf-8',
+                //'headerCharset' => 'utf-8',
+            ],
+        ],
 ];

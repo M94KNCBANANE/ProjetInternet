@@ -41,8 +41,21 @@ $loguser =  $this->request->session()->read('Auth.User');
             <td><?= h($product->name) ?></td>
         </tr>
         <tr>
+        <tr>
             <th scope="row"><?= __('Image') ?></th>
-            <td><?= h($product->image) ?></td>
+            <td>
+                <?php foreach ($product->files as $files): ?>
+                            <?php
+                            echo $this->Html->image($files->path . $files->name, [
+                                
+                                "alt" => $files->name,
+                                "width" => "150px",
+                                "height" => "150px",
+                            ]);
+                            ?>
+                <?php endforeach; ?>
+
+            </td>
         </tr>
         <tr>
             <th scope="row"><?= __('Product Type') ?></th>
@@ -54,7 +67,7 @@ $loguser =  $this->request->session()->read('Auth.User');
         </tr>
         <tr>
             <th scope="row"><?= __('Price') ?></th>
-            <td><?= $this->Number->format($product->price) ?></td>
+            <td><?= $this->Number->currency($product->price, "USD") ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>
@@ -72,33 +85,11 @@ $loguser =  $this->request->session()->read('Auth.User');
     <div class="row">
         <h4><?= __('Description') ?></h4>
         <?= $this->Text->autoParagraph(h($product->description)); ?>
-    </div>
-    <div class="related">
-        <h4><?= __('Related Files') ?></h4>
-        <?php if (!empty($author->files)): ?>
-            <table cellpadding="0" cellspacing="0">
-                <tr>
-                    <th scope="col"><?= __('Image') ?></th>
-               </tr>
-                <?php foreach ($author->files as $files): ?>
-                    <tr>
-                        <td>
-                            <?php
-                            echo $this->Html->image($files->path . $files->name, [
-                                "alt" => $files->name,
-                            ]);
-                            ?>
-                        </td>
-                    </tr>
-            <?php endforeach; ?>
-            </table>
-		<?php endif; ?>
-    </div>    
+    </div>   
     <div class="related">
         <h4><?= __('Related Items') ?></h4>
         <table cellpadding="0" cellspacing="0">
             <tr>
-                <th scope="col"><?= __('image') ?></th>
                 <th scope="col"><?= __('name') ?></th>
                 <th scope="col"><?= __('price') ?></th>
                 <th scope="col"><?= __('productType_id') ?></th>
@@ -107,10 +98,9 @@ $loguser =  $this->request->session()->read('Auth.User');
 
             <?php foreach ($products as $item): ?>
             <tr>
-                <?php if($item['store_id'] == $product['store_id'] && $item['id'] != $product['id'] && $product->deleted != null){ ?>
-                <td><?= h($item->image) ?></td>
+                <?php if($item['store_id'] == $product['store_id'] && $item['id'] != $product['id'] && $item->deleted == null){ ?>
                 <td><?= h($item->name) ?></td>
-                <td><?= $this->Number->format($item->price) ?>$</td>
+                <td><?= $this->Number->currency($item->price, "USD") ?>$</td>
                 
                 <td><?= $item->has('product_type') ? $this->Html->link($item->product_type->name, ['controller' => 'ProductTypes', 'action' => 'view', $item->product_type->id]) : '' ?></td>
                 <td class="actions">

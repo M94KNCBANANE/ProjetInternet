@@ -20,7 +20,6 @@
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('email') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('password') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('type') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
@@ -30,18 +29,17 @@
         <tbody>
             <?php foreach ($users as $user): ?>
             <tr>
-            <?php if($user['type'] != 3){ ?>
+            <?php //if($user['type'] != 3){ ?>
                 <td><?= $this->Number->format($user->id) ?></td>
                 <td><?= h($user->email) ?></td>
-                <td><?= h($user->password) ?></td>
                 <?php	switch($user->type){
-				case 1: $type='Customer';
+				case 1: $type=__('Customer');
 				break;
-				case 2: $type='Representative';
+				case 2: $type=__('Representative');
 				break;
-				case 3: $type= 'Admin';
+				case 3: $type= __('Admin');
 				break;
-				default: $type= 'Not defined';
+				default: $type= __('Not Confirmed');
 				break;
 				} ?>
                 <td><?= h($type) ?></td>
@@ -53,7 +51,7 @@
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $user->id], ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]) ?>
                 </td>
             </tr>
-            <?php }?>
+            <?php //}?>
             <?php endforeach; ?>
         </tbody>
     </table>

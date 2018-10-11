@@ -41,8 +41,10 @@ class FilesTable extends Table
 
         $this->addBehavior('Timestamp');
 
-        $this->hasMany('ProductsFiles', [
-            'foreignKey' => 'file_id'
+        $this->belongsToMany('Products', [
+            'foreignKey' => 'file_id',
+            'targetForeignKey' => 'product_id',
+            'joinTable' => 'products_files'
         ]);
     }
 

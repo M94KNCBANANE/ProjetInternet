@@ -67,7 +67,7 @@ class AppController extends Controller
 
     // Allow the display action so our pages controller
     // continues to work. Also enable the read only actions.
-    $this->Auth->allow(['display', 'addCustomer', 'changelang' ]);
+    $this->Auth->allow(['display', 'addCustomer', 'changelang', 'aPropos']);
 }
 	
 	public function isAuthorized($user) {
@@ -92,5 +92,10 @@ class AppController extends Controller
         $this->request->session()->write('Config.language', $lang);
         return $this->redirect($this->request->referer());
     }
+
+    public function aPropos(){
+        
+    }
+
 }
 

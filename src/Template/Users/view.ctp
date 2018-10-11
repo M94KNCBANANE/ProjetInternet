@@ -17,9 +17,13 @@ $loguser =  $this->request->session()->read('Auth.User');
         <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('List Customers'), ['controller' => 'Customers', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('List Stores'), ['controller' => 'Stores', 'action' => 'index']) ?> </li>
-        <?php }else{ ?>
+        <?php }else if($loguser['type'] == 1){ ?>
         <li><?= $this->Html->link(__('Edit User'), ['action' => 'editCustomer', $loguser['id']]) ?> </li>
-        <?php }?>
+        <?php }else if($loguser['type'] == 2){ ?>
+            <li><?= $this->Html->link(__('Edit User'), ['action' => 'editStore', $loguser['id']]) ?> </li>
+        <?php }else{?>
+            <li><?= $this->Html->link(__('List Product'), ['controller' => 'Products', 'action' => 'index']) ?> </li>
+        <?php } ?>
     </ul>
 </nav>
 <div class="users view large-9 medium-8 columns content">
@@ -54,6 +58,7 @@ $loguser =  $this->request->session()->read('Auth.User');
             <td><?= h($user->modified) ?></td>
         </tr>
         <?php if (!empty($user->customers)): ?>
+        <tr> <th> <h3> <?= __('Customer Information') ?></h3> </th> </tr>
         <?php foreach ($user->customers as $customers): ?>    
         <tr>
         <th scope="col"><?= __('Name') ?></th>
@@ -67,9 +72,11 @@ $loguser =  $this->request->session()->read('Auth.User');
         <?php endif; ?>    
         
         <?php if (!empty($user->stores)): ?>
+        <tr> <th> <h3> <?= __('Store information') ?> </h3> </th> </tr>
         <?php foreach ($user->stores as $stores): ?>
         <tr>
-        <th scope="col"><h3><?= $this->Html->link($stores->name, ['controller' => 'Stores', 'action' => 'view', $stores->id]) ?></h3></th>
+        <th scope="col"><?= __('Name') ?></th>
+        <td><?= h($stores->name) ?></td>
         </tr>   
         <tr>
         <th scope="col"><?= __('Phone') ?></th>
