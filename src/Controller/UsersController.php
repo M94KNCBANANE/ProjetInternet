@@ -30,7 +30,7 @@ public function isAuthorized($user) {
         $id = $this->request->getParam('pass.0');
         if (!$id) {
             return false;
-        }
+        }     
 		$userToView = $this->Users->findById($id)->first();
         if ($userToView->id === $user['id'] && in_array($action, ['view', 'editCustomer', 'editStore', 'edit'])) {
             return true;
@@ -71,11 +71,11 @@ public function isAuthorized($user) {
 			if ($user) {
                 $this->Auth->setUser($user);
                 if ($user['type'] === 4){
-                    $this->Flash->success('Please activate your account. Restrictions: Can\'t edit account or order anything on this website.');
+                    $this->Flash->success('Please activate your account. Restrictions: Can\'t edit account or order anything before activation');
                 }else if($user['type'] === 5){
-                    $this->Flash->success('Please activate your account. Restrictions: Can\'t add or edit anything on this website.');
+                    $this->Flash->success('Please activate your account. Restrictions: Can add or but can\'t edit any entry before activation');
                 } else {
-                    $this->Flash->success('You are now logged in.');
+                    return $this->redirect(['controller' => 'Products', 'action' => 'index']);
                 }
 				return $this->redirect($this->Auth->redirectUrl());
 			}

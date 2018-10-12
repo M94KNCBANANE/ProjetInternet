@@ -3,7 +3,7 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Product $product
  */
-
+$loguser = $this->request->session()->read('Auth.User');
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
@@ -33,7 +33,6 @@
             echo $this->Form->control('files._ids', ['options' => $files]);
             echo $this->Form->control('price');
             echo $this->Form->control('description');
-            echo $this->Form->control('image');
             echo $this->Form->control('productType_id', ['options' => $productTypes]);
             echo $this->Form->control('store_id', ['options' => $stores]);
             echo $this->Form->control('deleted');

@@ -12,8 +12,8 @@
             echo $this->Form->control('email');
             echo $this->Form->control('password');
             echo $this->Form->hidden('type',  ['value' => '1']);
-			echo $this->Form->control('name');
-            echo $this->Form->control('phone');
+		    echo $this->Form->control('name', ['required'=> true]);
+            echo $this->Form->control('phone', ['required'=> true]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

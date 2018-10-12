@@ -13,6 +13,18 @@ use App\Controller\AppController;
 class StoresController extends AppController
 {
 
+    public function isAuthorized($user) {
+        $action = $this->request->getParam('action');
+           if($user['type']%3 == 1 ){
+            if(in_array($action, ['index', 'view'])){
+                return true;
+            }
+            }
+       $valeur = parent::isAuthorized($user);
+        return $valeur;
+    }
+
+
     /**
      * Index method
      *

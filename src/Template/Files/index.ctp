@@ -3,6 +3,7 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\File[]|\Cake\Collection\CollectionInterface $files
  */
+$loguser = $this->request->session()->read('Auth.User');
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
@@ -10,7 +11,7 @@
         <li><?= $this->Html->link(__('New File'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Products'), ['controller' => 'Products', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Product'), ['controller' => 'Products', 'action' => 'add']) ?></li>
-   
+    
     </ul>
 </nav>
 <div class="files index large-9 medium-8 columns content">
@@ -23,7 +24,6 @@
                 <th scope="col"><?= $this->Paginator->sort('path') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('status') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -42,10 +42,11 @@
                 <td><?= h($file->path) ?></td>
                 <td><?= h($file->created) ?></td>
                 <td><?= h($file->modified) ?></td>
-                <td><?= h($file->status) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $file->id]) ?>
+                    <?php if($loguser['type'] == 3) : ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $file->id], ['confirm' => __('Are you sure you want to delete # {0}?', $file->id)]) ?>
+                    <?php endif; ?>
                 </td>
             </tr>
             <?php endforeach; ?>

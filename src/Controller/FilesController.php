@@ -17,8 +17,10 @@ class FilesController extends AppController {
         $valeur = parent::isAuthorized($user);
         $action = $this->request->getParam('action');
         // The edit and delete actions are allowed to logged in users for comments.
-        if (in_array($action, ['add', 'edit', 'delete'])) {
-            return true;
+        if($user['type']%3 == 2){
+            if (in_array($action, ['add', 'view', 'index'])) {
+                return true;
+            }
         }
         return $valeur;
     }

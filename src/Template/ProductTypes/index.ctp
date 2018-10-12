@@ -3,6 +3,7 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\ProductType[]|\Cake\Collection\CollectionInterface $productTypes
  */
+$loguser = $this->request->session()->read('Auth.User');
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
@@ -19,7 +20,6 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
@@ -27,12 +27,14 @@
         <tbody>
             <?php foreach ($productTypes as $productType): ?>
             <tr>
-                <td><?= $this->Number->format($productType->id) ?></td>
                 <td><?= h($productType->name) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $productType->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $productType->id]) ?>
+                    <?php if($loguser['type'] == 2 || $loguser['type'] == 3){ ?>
+                 <?= $this->Html->link(__('Edit'), ['action' => 'edit', $productType->id]) ?>
+                 <?php if($loguser['type'] == 3){ ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $productType->id], ['confirm' => __('Are you sure you want to delete # {0}?', $productType->id)]) ?>
+                    <?php  } }  ?>
                 </td>
             </tr>
             <?php endforeach; ?>

@@ -9,7 +9,7 @@ $loguser = $this->request->session()->read('Auth.User');
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
 
-        <?php if($loguser['type'] == 2 ):  ?>
+        <?php if($loguser['type']%3 == 2 ):  ?>
         <li><?= $this->Html->link(__('List Products'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Product Types'), ['controller' => 'ProductTypes', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Product Type'), ['controller' => 'ProductTypes', 'action' => 'add']) ?></li>
@@ -40,12 +40,12 @@ $loguser = $this->request->session()->read('Auth.User');
             echo $this->Form->control('price');
             echo $this->Form->control('description');
             echo $this->Form->control('productType_id', ['options' => $productTypes]);
-            if($loguser['type'] == 2){
+            if($loguser['type']%3 == 2){
                 echo $this->Form->hidden('store_id', ['value' => $stores['id']]);
             }else{
             echo $this->Form->control('store_id', ['options' => $stores]);
             }
-            echo $this->Form->control('deleted');
+            echo $this->Form->hidden('deleted', ['value'=> false]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

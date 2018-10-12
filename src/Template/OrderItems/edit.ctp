@@ -39,7 +39,7 @@ $loguser = $this->request->session()->read('Auth.User');
         <legend><?= __('Edit Order Item') ?></legend>
         <?php
         if($loguser['type'] == 1){
-            echo $this->Form->control('product_id', ['options' => $products]);
+            echo $this->Form->control('product_id', ['options' => $nouveau]);
             echo $this->Form->control('quantity');
             echo $this->Form->control('date');
         }else{

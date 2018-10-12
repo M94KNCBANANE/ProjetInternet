@@ -30,7 +30,7 @@ $loguser =  $this->request->getSession()->read('Auth.User');
         }else{
             echo $this->Form->control('customer_id', ['options' => $customers]);
         }
-            echo $this->Form->control('product_id', ['options' => $products, 'default' => $productid]);
+            echo $this->Form->control('product_id', ['options' => $nouveau, 'default' => $productid]);
             echo $this->Form->control('quantity');
             echo $this->Form->hidden('price');
             echo $this->Form->control('date');

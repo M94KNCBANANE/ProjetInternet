@@ -11,13 +11,25 @@ $loguser =  $this->request->session()->read('Auth.User');
         <li class="heading"><?= __('Actions') ?></li>
         
         <li><?= $this->Html->link(__('List Products'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('List Product Types'), ['controller' => 'ProductTypes', 'action' => 'index']) ?> </li>
-        
         <?php 
-        if($loguser['type'] == 1){ ?>
+        if($loguser['type'] == 1){ 
+            if($product['deleted'] == false) {?>
                  <li><?= $this->Html->link(__('Order this Item'), ['controller' => 'OrderItems', 'action' => 'add']) ?> </li>
-        <?php } ?>
+        <?php } }?>
 
+        <?php 
+        if($loguser['type']%3 == 2){ 
+        if($loguser['type'] == 2){ ?>
+        <li><?= $this->Html->link(__('Edit Product'), ['action' => 'edit', $product->id]) ?> </li>
+        <?php } ?>
+        
+        <li><?= $this->Html->link(__('New Product'), ['action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Product Types'), ['controller' => 'ProductTypes', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Product Type'), ['controller' => 'ProductTypes', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
+        
+        <?php } ?>
         <?php 
         if($loguser['type'] == 3){ ?>
         <li><?= $this->Html->link(__('Edit Product'), ['action' => 'edit', $product->id]) ?> </li>
@@ -28,7 +40,9 @@ $loguser =  $this->request->session()->read('Auth.User');
         <li><?= $this->Html->link(__('List Stores'), ['controller' => 'Stores', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Store'), ['controller' => 'Stores', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List of Order'), ['controller' => 'OrderItems', 'action' => 'index']) ?> </li>
-    
+        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
+        
 
         <?php } ?>
     </ul>
@@ -100,7 +114,7 @@ $loguser =  $this->request->session()->read('Auth.User');
             <tr>
                 <?php if($item['store_id'] == $product['store_id'] && $item['id'] != $product['id'] && $item->deleted == null){ ?>
                 <td><?= h($item->name) ?></td>
-                <td><?= $this->Number->currency($item->price, "USD") ?>$</td>
+                <td><?= $this->Number->currency($item->price, "USD") ?></td>
                 
                 <td><?= $item->has('product_type') ? $this->Html->link($item->product_type->name, ['controller' => 'ProductTypes', 'action' => 'view', $item->product_type->id]) : '' ?></td>
                 <td class="actions">

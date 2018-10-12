@@ -27,19 +27,15 @@ $loguser = $this->request->session()->read('Auth.User');
     </ul>
 </nav>
 <div class="orderItems view large-9 medium-8 columns content">
-    <h3><?= h($orderItem->id) ?></h3>
+    <h3><? __("Product Order") ?></h3>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Customer') ?></th>
-            <td><?= $orderItem->has('customer') ? $this->Html->link($orderItem->customer->name, ['controller' => 'Customers', 'action' => 'view', $orderItem->customer->id]) : '' ?></td>
+            <td><?= $orderItem->has('customer') ? $this->Html->link($orderItem->customer->name, ['controller' => 'Users', 'action' => 'view', $orderItem->customer->user_id]) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Product') ?></th>
             <td><?= $orderItem->has('product') ? $this->Html->link($orderItem->product->name, ['controller' => 'Products', 'action' => 'view', $orderItem->product->id]) : '' ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($orderItem->id) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Quantity') ?></th>
@@ -47,7 +43,7 @@ $loguser = $this->request->session()->read('Auth.User');
         </tr>
         <tr>
             <th scope="row"><?= __('Price') ?></th>
-            <td><?= $this->Number->format($orderItem->price) ?></td>
+            <td><?= $this->Number->currency($orderItem->price, 'USD') ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Date') ?></th>

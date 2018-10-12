@@ -29,13 +29,13 @@ $loguser = $this->request->session()->read('Auth.User');
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
+            <?php if($loguser['type'] == 3):  ?>
                 <th scope="col"><?= $this->Paginator->sort('customer_id') ?></th>
+            <?php endif; ?>
                 <th scope="col"><?= $this->Paginator->sort('product_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('quantity') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('price') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('date') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('created') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -43,17 +43,19 @@ $loguser = $this->request->session()->read('Auth.User');
             <?php foreach ($orderItems as $orderItem): ?>
             <tr>
             <?php if($orderItem->customer['user_id']==$loguser['id'] || $loguser['type'] == 3){ ?>
+                <?php if($loguser['type'] == 3){ ?>            
                 <td><?= $orderItem->has('customer') ? $this->Html->link($orderItem->customer->name, ['controller' => 'Customers', 'action' => 'view', $orderItem->customer->id]) : '' ?></td>
+                <?php } ?>
                 <td><?= $orderItem->has('product') ? $this->Html->link($orderItem->product->name, ['controller' => 'Products', 'action' => 'view', $orderItem->product->id]) : '' ?></td>
                 <td><?= $this->Number->format($orderItem->quantity) ?></td>
                 <td><?= $this->Number->currency($orderItem->price, 'USD') ?></td>
                 <td><?= h($orderItem->date) ?></td>
-                <td><?= h($orderItem->created) ?></td>
-                <td><?= h($orderItem->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $orderItem->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $orderItem->id]) ?>
+                    <?php if($loguser['type'] == 3){ ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $orderItem->id], ['confirm' => __('Are you sure you want to delete # {0}?', $orderItem->id)]) ?>
+                    <?php } ?>
                 </td>
             <?php } ?>
             </tr>

@@ -9,7 +9,7 @@
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New Customer'), ['action' => 'addCustomer']) ?> </li>
         <li><?= $this->Html->link(__('List Customers'), ['controller' => 'Customers', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Store representative'), ['controller' => 'Users', 'action' => 'addStores']) ?></li>
+        <li><?= $this->Html->link(__('New Store Representative'), ['controller' => 'Users', 'action' => 'addStore']) ?></li>
         <li><?= $this->Html->link(__('List Stores '), ['controller' => 'Stores','action' => 'index']) ?></li>
     </ul>
 </nav>

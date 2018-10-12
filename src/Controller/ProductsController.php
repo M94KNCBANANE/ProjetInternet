@@ -27,11 +27,16 @@ class ProductsController extends AppController
     public function isAuthorized($user) {
         $action = $this->request->getParam('action');
          if(isset($user['type'])){
-           if($user['type'] == 2 ){
-            if(in_array($action, ['add','edit'])){
+           if($user['type']%3 == 2 ){
+            if(in_array($action, ['add'])){
                 return true;
             }
             }
+            if($user['type'] == 2 ){
+                if(in_array($action, ['edit'])){
+                    return true;
+                }
+                }
         }
        $valeur = parent::isAuthorized($user);
         return $valeur;
@@ -44,8 +49,12 @@ class ProductsController extends AppController
         $this->paginate = [
             'contain' => ['ProductTypes', 'Stores']
         ];
+        $loguser = $this->request->session()->read('Auth.User');
         $products = $this->paginate($this->Products);
-        $this->set(compact('products'));
+        if($loguser['type']%3 == 2){
+            $store = $this->Products->Stores->findByUser_id($loguser['id'])->first();
+        }
+        $this->set(compact('products','store'));
     }
 
     /**
@@ -86,7 +95,7 @@ class ProductsController extends AppController
             $this->Flash->error(__('The product could not be saved. Please, try again.'));
         }
         $loguser = $this->request->session()->read('Auth.User');
-        if($loguser['type'] == 2){
+        if($loguser['type']%3 == 2){
         $stores = $this->Products->Stores->findByUser_id($loguser['id'])->first();
         }else{
         $stores = $this->Products->Stores->find('list', ['limit' => 200]);
@@ -118,7 +127,12 @@ class ProductsController extends AppController
             $this->Flash->error(__('The product could not be saved. Please, try again.'));
         }
         $productTypes = $this->Products->ProductTypes->find('list', ['limit' => 200]);
-        $stores = $this->Products->Stores->find('list', ['limit' => 200]);
+        $loguser = $this->request->session()->read('Auth.User');
+        if($loguser['type']%3 == 2){
+            $stores = $this->Products->Stores->findByUser_id($loguser['id'])->first();
+        }else{
+            $stores = $this->Products->Stores->find('list', ['limit' => 200]);
+        }
         $files = $this->Products->files->find('list', ['limit' => 200]);
         $this->set(compact('product', 'productTypes', 'stores','files'));
     }
@@ -132,14 +146,31 @@ class ProductsController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
+        
         $product = $this->Products->get($id);
-        if ($this->Products->delete($product)) {
-            $this->Flash->success(__('The product has been deleted.'));
-        } else {
-            $this->Flash->error(__('The product could not be deleted. Please, try again.'));
-        }
+        $product['deleted'] = true;
 
+        if ($this->Products->save($product)) {
+            $this->Flash->success(__('The product has been deleted.'));
+
+            return $this->redirect(['action' => 'index']);
+        }
+        $this->Flash->error(__('The product could not be deleted. Please, try again.'));
+        return $this->redirect(['action' => 'index']);
+    }
+
+    public function restore($id = null)
+    {
+        
+        $product = $this->Products->get($id);
+        $product['deleted'] = false;
+
+        if ($this->Products->save($product)) {
+            $this->Flash->success(__('The product has been restored.'));
+
+            return $this->redirect(['action' => 'index']);
+        }
+        $this->Flash->error(__('The product could not be restored. Please, try again.'));
         return $this->redirect(['action' => 'index']);
     }
 

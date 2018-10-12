@@ -3,14 +3,24 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Store[]|\Cake\Collection\CollectionInterface $stores
  */
+$loguser =  $this->request->session()->read('Auth.User');
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Store'), ['controller' => 'Users', 'action' => 'addStore']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
+        <?php if($loguser['type'] == 3){ ?>
+        <li><?= $this->Html->link(__('New Store Representative'), ['controller' => 'Users', 'action' => 'addStore']) ?></li>
+        <li><?= $this->Html->link(__('List Stores'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Products'), ['controller' => 'Products', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Product'), ['controller' => 'Products', 'action' => 'add']) ?></li>
+        
+        <?php } 
+        if($loguser['type']%3 == 1) {?>
+        <li><?= $this->Html->link(__('List Products'), ['controller' => 'Products', 'action' => 'index']) ?></li>
+        <?php } 
+        if($loguser['type'] == 1){ ?>
+        <li><?= $this->Html->link(__('List Order'), ['controller' => 'OrderItems', 'action' => 'index']) ?> </li>
+        <?php }?>
     </ul>
 </nav>
 <div class="stores index large-9 medium-8 columns content">
@@ -33,9 +43,12 @@
                 <td><?= h($store->created) ?></td>
                 <td><?= $store->has('user') ? $this->Html->link($store->user->email, ['controller' => 'Users', 'action' => 'view', $store->user->id]) : '' ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $store->id]) ?>
+                
+                <?= $this->Html->link(__('View'), ['action' => 'view', $store->id]) ?>
+                <?php if($loguser['type'] == 3) {?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $store->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $store->id], ['confirm' => __('Are you sure you want to delete # {0}?', $store->id)]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Users', 'action' => 'delete', $store->user_id], ['confirm' => __('Are you sure you want to delete # {0}?', $store->user->email)]) ?>
+                 <?php } ?>
                 </td>
             </tr>
             <?php endforeach; ?>

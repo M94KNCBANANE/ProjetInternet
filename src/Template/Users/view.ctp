@@ -36,12 +36,12 @@ $loguser =  $this->request->session()->read('Auth.User');
         </tr>
         <tr>
 		<?php 
-		switch($user->type){
+		switch($user->type%3){
 			case 1: $type='Customer';
 			break;
 			case 2: $type='Representative';
 			break;
-			case 3: $type= 'Admin';
+			case 0: $type= 'Admin';
             break;
 			default: $type= 'Not defined';
 			break;

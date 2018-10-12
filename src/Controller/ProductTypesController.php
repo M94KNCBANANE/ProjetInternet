@@ -23,10 +23,15 @@ class ProductTypesController extends AppController
        
         $action = $this->request->params['action'];
 		
-		if (isset($user['type']) && $user['type']%3 == 1) {
-            if (in_array($action, ['view','index'])) {
+		if (isset($user['type']) && $user['type']%3 == 2) {
+            if (in_array($action, ['view','index','add'])) {
                 return true;
             }
+            if($user['type'] == 2){
+            if (in_array($action, ['edit'])) {
+                return true;
+            }
+        }                        
         }
         $valeur = parent::isAuthorized($user);
         return $valeur;
