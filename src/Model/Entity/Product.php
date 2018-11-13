@@ -40,6 +40,7 @@ class Product extends Entity
         'price' => true,
         'description' => true,
         'productType_id' => true,
+        'city_id' => true,
         'store_id' => true,
         'deleted' => true,
         'created' => true,
@@ -47,6 +48,7 @@ class Product extends Entity
         'product_type' => true,
         'store' => true,
         'order_items' => true,
+        'city' => true,
         'files' => true
     ];
 

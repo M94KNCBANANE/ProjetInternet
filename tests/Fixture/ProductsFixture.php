@@ -17,28 +17,21 @@ class ProductsFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
-        'name' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
-        'price' => ['type' => 'float', 'length' => 4, 'precision' => 2, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => ''],
-        'description' => ['type' => 'text', 'length' => null, 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'comment' => '', 'precision' => null],
-        'image' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
-        'productType_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
-        'store_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
-        'deleted' => ['type' => 'boolean', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
-        'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
-        'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
-        '_indexes' => [
-            'product' => ['type' => 'index', 'columns' => ['store_id'], 'length' => []],
-            'productType_id' => ['type' => 'index', 'columns' => ['productType_id'], 'length' => []],
-        ],
+        'id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => false, 'default' => null, 'autoIncrement' => true, 'precision' => null, 'comment' => null],
+        'name' => ['type' => 'string', 'length' => null, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'fixed' => null, 'collate' => null],
+        'price' => ['type' => 'float', 'length' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null],
+        'description' => ['type' => 'text', 'length' => null, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'collate' => null],
+        'productType_id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'autoIncrement' => null],
+        'store_id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'autoIncrement' => null],
+        'deleted' => ['type' => 'boolean', 'length' => null, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null],
+        'created' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null],
+        'modified' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null],
+        'city_id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'autoIncrement' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
-            'products_ibfk_1' => ['type' => 'foreign', 'columns' => ['store_id'], 'references' => ['Stores', 'id'], 'update' => 'cascade', 'delete' => 'cascade', 'length' => []],
-            'products_ibfk_2' => ['type' => 'foreign', 'columns' => ['productType_id'], 'references' => ['Product_Types', 'id'], 'update' => 'cascade', 'delete' => 'noAction', 'length' => []],
-        ],
-        '_options' => [
-            'engine' => 'InnoDB',
-            'collation' => 'latin1_swedish_ci'
+            'store_id_fk' => ['type' => 'foreign', 'columns' => ['store_id'], 'references' => ['Stores', 'id'], 'update' => 'cascade', 'delete' => 'cascade', 'length' => []],
+            'productType_id_fk' => ['type' => 'foreign', 'columns' => ['productType_id'], 'references' => ['Product_Types', 'id'], 'update' => 'cascade', 'delete' => 'noAction', 'length' => []],
+            'city_id_fk' => ['type' => 'foreign', 'columns' => ['city_id'], 'references' => ['City', 'id'], 'update' => 'cascade', 'delete' => 'setNull', 'length' => []],
         ],
     ];
     // @codingStandardsIgnoreEnd
@@ -53,15 +46,39 @@ class ProductsFixture extends TestFixture
         $this->records = [
             [
                 'id' => 1,
-                'name' => 'Lorem ipsum dolor sit amet',
+                'name' => 'TestNameOne',
                 'price' => 1,
                 'description' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
-                'image' => 'Lorem ipsum dolor sit amet',
                 'productType_id' => 1,
                 'store_id' => 1,
+                'deleted' => 0,
+                'created' => '2018-11-07 17:40:56',
+                'modified' => '2018-11-07 17:40:56',
+                'city_id' => 1
+            ],
+            [
+                'id' => 2,
+                'name' => 'NameTest',
+                'price' => 2.0,
+                'description' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+                'productType_id' => 2,
+                'store_id' => 2,
                 'deleted' => 1,
-                'created' => '2018-09-29 11:40:05',
-                'modified' => '2018-09-29 11:40:05'
+                'created' => '2018-11-07 17:40:56',
+                'modified' => '2018-11-07 17:40:56',
+                'city_id' => 2
+            ],
+            [
+                'id' => 3,
+                'name' => 'Test3',
+                'price' => 43,
+                'description' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+                'productType_id' => 1,
+                'store_id' => 1,
+                'deleted' => 0,
+                'created' => '2018-11-07 17:40:56',
+                'modified' => '2018-11-07 17:40:56',
+                'city_id' => 1
             ],
         ];
         parent::init();

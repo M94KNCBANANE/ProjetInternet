@@ -32,6 +32,16 @@ class OrderItemsControllerTest extends IntegrationTestCase
     }
 
     /**
+     * Test isAuthorized method
+     *
+     * @return void
+     */
+    public function testIsAuthorized()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
      * Test view method
      *
      * @return void

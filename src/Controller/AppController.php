@@ -28,6 +28,22 @@ use Cake\I18n\I18n;
  */
 class AppController extends Controller
 {
+
+    use \Crud\Controller\ControllerTrait;
+
+    public $components = [
+        'RequestHandler',
+        'Crud.Crud' => [
+            'actions' => [
+                'Crud.Index',
+                'Crud.View',
+                'Crud.Add',
+                'Crud.Edit',
+                'Crud.Delete'
+            ],
+            
+        ]
+    ];
     /**
      * Initialization hook method.
      *
@@ -67,10 +83,11 @@ class AppController extends Controller
 
     // Allow the display action so our pages controller
     // continues to work. Also enable the read only actions.
-    $this->Auth->allow(['display', 'addCustomer', 'changelang', 'aPropos']);
+    $this->Auth->allow(['display', 'addCustomer', 'changelang', 'aPropos', 'productTypesAction']);
 }
 	
 	public function isAuthorized($user) {
+
         $action = $this->request->params['action'];
         
 		if (isset($user['type']) && $user['type'] == 3) {
@@ -81,13 +98,19 @@ class AppController extends Controller
             if(in_array($action, ['add','edit','view','index'])){
                 return true;
             }
-            }else{
+        }else if($user['type'] %= 2 ){
+            if(in_array($action, ['add','view','index'])){
+                return true;
+            }else if(in_array($action, ['edit']) && $user['type'] == 2){
+                return true;
+            }
+        }else{
             return false;
         }
     
     }
 
-    public function changeLang($lang = 'en_US') {
+    public function changeLang($lang = 'en_CA') {
         I18n::setLocale($lang);
         $this->request->session()->write('Config.language', $lang);
         return $this->redirect($this->request->referer());

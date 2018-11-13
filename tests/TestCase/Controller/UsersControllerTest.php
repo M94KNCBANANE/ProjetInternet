@@ -22,6 +22,16 @@ class UsersControllerTest extends IntegrationTestCase
     ];
 
     /**
+     * Test isAuthorized method
+     *
+     * @return void
+     */
+    public function testIsAuthorized()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
      * Test index method
      *
      * @return void
@@ -32,21 +42,41 @@ class UsersControllerTest extends IntegrationTestCase
     }
 
     /**
-     * Test view method
+     * Test initialize method
      *
      * @return void
      */
-    public function testView()
+    public function testInitialize()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
 
     /**
-     * Test add method
+     * Test logout method
      *
      * @return void
      */
-    public function testAdd()
+    public function testLogout()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test login method
+     *
+     * @return void
+     */
+    public function testLogin()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test view method
+     *
+     * @return void
+     */
+    public function testView()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
@@ -67,6 +97,96 @@ class UsersControllerTest extends IntegrationTestCase
      * @return void
      */
     public function testDelete()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test confirm method
+     *
+     * @return void
+     */
+    public function testConfirm()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test addCustomer method
+     *
+     * @return void
+     */
+    public function testAddCustomer()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test addStore method
+     *
+     * @return void
+     */
+    public function testAddStore()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test verifyAndSaveCustomer method
+     *
+     * @return void
+     */
+    public function testVerifyAndSaveCustomer()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test verifyAndSaveStore method
+     *
+     * @return void
+     */
+    public function testVerifyAndSaveStore()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test saveUserCustomer method
+     *
+     * @return void
+     */
+    public function testSaveUserCustomer()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test saveUserStore method
+     *
+     * @return void
+     */
+    public function testSaveUserStore()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test editCustomer method
+     *
+     * @return void
+     */
+    public function testEditCustomer()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test editStore method
+     *
+     * @return void
+     */
+    public function testEditStore()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

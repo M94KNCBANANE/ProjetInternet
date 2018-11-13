@@ -23,6 +23,12 @@ use Cake\Routing\RouteBuilder;
 use Cake\Routing\Router;
 use Cake\Routing\Route\DashedRoute;
 
+Router::mapResources(['Products']);
+Router::extensions(['json', 'xml','pdf']);
+Router::prefix('Admin', function ($routes) { $routes->fallbacks('InflectedRoute'); });
+
+
+
 /**
  * The default class to use for all routes
  *
@@ -46,6 +52,11 @@ use Cake\Routing\Route\DashedRoute;
  */
 Router::defaultRouteClass(DashedRoute::class);
 
+    Router::prefix('api' , function($routes) {
+        $routes->extensions(['json', 'xml']);
+        $routes->resources('ProductTypes');
+    });
+
 Router::scope('/', function (RouteBuilder $routes) {
     /**
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
@@ -58,6 +69,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      * ...and connect the rest of 'Pages' controller's URLs.
      */
     $routes->connect('/pages/*', ['controller' => 'users', 'login' => 'index']);
+
 
     /**
      * Connect catchall routes for all controllers.

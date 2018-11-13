@@ -14,6 +14,14 @@
  */
 
 $cakeDescription = 'CakePHP: the rapid development php framework';
+echo $this->Html->css(["https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css",
+"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css",
+"ProductTypes/basic.css"]);
+echo $this->Html->script([
+            "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+            "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
+			"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        ]);
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,8 +40,17 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
+
+    <?php
+        echo $this->Html->script([
+            'https://code.jquery.com/jquery-1.12.4.js',
+            'https://code.jquery.com/ui/1.12.1/jquery-ui.js'
+                ], ['block' => 'scriptLibraries']
+        );
+        ?>
 </head>
 <body>
+
     <nav class="top-bar expanded" data-topbar role="navigation">
         <ul class="title-area large-3 medium-4 columns">
             <li class="name">
@@ -41,46 +58,71 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             </li>
 			
         </ul>
-        <div class="top-bar-section">
-            <ul class="right">
-            <li>
+       
+   
+        <?php 
+        $loguser = $this->request->getSession()->read('Auth.User');
+        if($loguser){
+            $user = $loguser['email'];
+            $type = $loguser['type'];
+            $emailaddress = $loguser['email'];
+            $uuidparam = $loguser['uuid'];
+             if ($type > 3){
+                echo $this->Html->link('Please validate your account. Click to resend confirmation email.', ['controller' => 'emails', 'action' => 'index', '?'=>['email'=>$emailaddress, 'uuid'=>$uuidparam]]);
+                
+            }
+            ?>  
+             <div class="right">
+        <div class="dropleft">
+  <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Menu Item
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+            
                 <?php
-                echo $this->Html->link(__('A propos'), ['controller' => 'Users',  'action' => 'apropos']);
-			?></li>
-            <li><?php
-			$loguser = $this->request->getSession()->read('Auth.User');
-			if($loguser){
-                $user = $loguser['email'];
-                $type = $loguser['type'];
-                $emailaddress = $loguser['email'];
-                $uuidparam = $loguser['uuid'];
-                 if ($type > 3){
-                    echo $this->Html->link('Please validate your account. Click to resend confirmation email.', ['controller' => 'emails', 'action' => 'index', '?'=>['email'=>$emailaddress, 'uuid'=>$uuidparam]]);
-                    echo '</li>';
-                    echo '<li>';
+echo $this->Html->link($user, ['controller' => 'Users', 'action' => 'view', $loguser['id']], array('class' => 'dropdown-item'));
+
+                echo $this->Html->link(__('A propos'), ['controller' => 'Users',  'action' => 'apropos'], array('class' => 'dropdown-item'));
+			
+               
+               
+                if($type == 3){
+                   echo $this->Html->link('Section Admin', [
+                        'prefix' => 'admin',
+                        'controller' => 'Products',
+                        'action' => 'index'
+                    ], array('class' => 'dropdown-item'));
                 }
-                echo $this->Html->link($user, ['controller' => 'Users', 'action' => 'view', $loguser['id']]); 
-				?>
-                </li>
-                <li>
-                <?php
-                echo $this->Html->link(__('logout'), ['controller' => 'Users', 'action' => 'logout']);
+             
+                echo $this->Html->link(__('logout'), ['controller' => 'Users', 'action' => 'logout'], array('class' => 'dropdown-item'));
 			} else {
-				echo $this->Html->link(__('login'), ['controller' => 'Users', 'action' => 'login']);
+                ?>
+                <div class="right">
+                     <div class="dropleft">
+  <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Menu Item
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+<?php
+				echo $this->Html->link(__('login'), ['controller' => 'Users', 'action' => 'login'], array('class' => 'dropdown-item'));
 			
 			}
-			?></li>
-             <li>
-                        <?= $this->Html->link('Français', [ 'action' => 'changeLang', 'fr_CA'], ['escape' => false]) ?>
-                    </li>
-                    <li>
-                        <?= $this->Html->link('English', ['action' => 'changeLang', 'en_US'], ['escape' => false]) ?>
-                    </li>
-					<li>
-					<?= $this->Html->link('Japanese', ['action' => 'changeLang', 'ja_JP'], ['escape' => false]) ?>
-					</li>
-            </ul>
+			
+             ?>
+             <div class="dropdown-divider"></div>
+             <?php 
+
+            echo $this->Html->link('Français', [ 'action' => 'changeLang', 'fr_CA'], array('class' => 'dropdown-item'));
+            echo $this->Html->link('English', ['action' => 'changeLang', 'en_US'],  array('class' => 'dropdown-item')); 
+    		echo $this->Html->link('Japanese', ['action' => 'changeLang', 'ja_JP'], array('class' => 'dropdown-item')); ?>
+					
+            </div>
         </div>
+    </div>
+            
+            
+        
     </nav>
     <?= $this->Flash->render() ?>
     <div class="container clearfix">
@@ -88,5 +130,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </div>
     <footer>
     </footer>
-</body>
+    <?= $this->fetch('scriptLibraries') ?>
+        <?= $this->fetch('script'); ?>
+        <?= $this->fetch('scriptBottom') ?>   
+    </body>
 </html>

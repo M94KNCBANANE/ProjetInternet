@@ -17,9 +17,18 @@ class FilesControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.files',
-        'app.articles',
-        'app.articles_files'
+        'app.products'
     ];
+
+    /**
+     * Test isAuthorized method
+     *
+     * @return void
+     */
+    public function testIsAuthorized()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
 
     /**
      * Test index method
@@ -47,16 +56,6 @@ class FilesControllerTest extends IntegrationTestCase
      * @return void
      */
     public function testAdd()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test edit method
-     *
-     * @return void
-     */
-    public function testEdit()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

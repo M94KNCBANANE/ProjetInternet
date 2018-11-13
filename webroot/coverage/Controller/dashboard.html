@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for C:\Program Files (x86)\Ampps\www\ProjectFrederik\src/Controller</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../.css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../.css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../.css/style.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+  <script src="../.js/html5shiv.min.js"></script>
+  <script src="../.js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">C:\Program Files (x86)\Ampps\www\ProjectFrederik\src</a></li>
+        <li><a href="index.html">Controller</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Admin/AppController.php.html#29">App\Controller\Admin\AppController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Admin/ProductsController.php.html#13">App\Controller\Admin\ProductsController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CityController.php.html#13">App\Controller\CityController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CountryController.php.html#13">App\Controller\CountryController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CustomersController.php.html#13">App\Controller\CustomersController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EmailsController.php.html#5">App\Controller\EmailsController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FilesController.php.html#14">App\Controller\FilesController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderItemsController.php.html#13">App\Controller\OrderItemsController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PagesController.php.html#29">App\Controller\PagesController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#15">App\Controller\UsersController</a></td><td class="text-right">2%</td></tr>
+       <tr><td><a href="ProductsController.php.html#13">App\Controller\ProductsController</a></td><td class="text-right">43%</td></tr>
+       <tr><td><a href="AppController.php.html#29">App\Controller\AppController</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="StoresController.php.html#13">App\Controller\StoresController</a></td><td class="text-right">82%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="UsersController.php.html#15">App\Controller\UsersController</a></td><td class="text-right">1942</td></tr>
+       <tr><td><a href="OrderItemsController.php.html#13">App\Controller\OrderItemsController</a></td><td class="text-right">702</td></tr>
+       <tr><td><a href="Admin/ProductsController.php.html#13">App\Controller\Admin\ProductsController</a></td><td class="text-right">342</td></tr>
+       <tr><td><a href="ProductsController.php.html#13">App\Controller\ProductsController</a></td><td class="text-right">178</td></tr>
+       <tr><td><a href="FilesController.php.html#14">App\Controller\FilesController</a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="CustomersController.php.html#13">App\Controller\CustomersController</a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="CityController.php.html#13">App\Controller\CityController</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="CountryController.php.html#13">App\Controller\CountryController</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="PagesController.php.html#29">App\Controller\PagesController</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="StoresController.php.html#13">App\Controller\StoresController</a></td><td class="text-right">13</td></tr>
+       <tr><td><a href="AppController.php.html#29">App\Controller\AppController</a></td><td class="text-right">12</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Admin/AppController.php.html#56"><abbr title="App\Controller\Admin\AppController::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#20"><abbr title="App\Controller\UsersController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FilesController.php.html#59"><abbr title="App\Controller\FilesController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Admin/AppController.php.html#67"><abbr title="App\Controller\Admin\AppController::changeLang">changeLang</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderItemsController.php.html#21"><abbr title="App\Controller\OrderItemsController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderItemsController.php.html#32"><abbr title="App\Controller\OrderItemsController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderItemsController.php.html#53"><abbr title="App\Controller\OrderItemsController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderItemsController.php.html#68"><abbr title="App\Controller\OrderItemsController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderItemsController.php.html#122"><abbr title="App\Controller\OrderItemsController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OrderItemsController.php.html#175"><abbr title="App\Controller\OrderItemsController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PagesController.php.html#41"><abbr title="App\Controller\PagesController::display">display</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProductsController.php.html#139"><abbr title="App\Controller\ProductsController::autocomplete">autocomplete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProductsController.php.html#143"><abbr title="App\Controller\ProductsController::findTypes">findTypes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProductsController.php.html#235"><abbr title="App\Controller\ProductsController::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProductsController.php.html#250"><abbr title="App\Controller\ProductsController::getProducts">getProducts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#48"><abbr title="App\Controller\UsersController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FilesController.php.html#33"><abbr title="App\Controller\FilesController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#61"><abbr title="App\Controller\UsersController::logout">logout</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#67"><abbr title="App\Controller\UsersController::login">login</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#92"><abbr title="App\Controller\UsersController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#113"><abbr title="App\Controller\UsersController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#137"><abbr title="App\Controller\UsersController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#150"><abbr title="App\Controller\UsersController::confirm">confirm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#165"><abbr title="App\Controller\UsersController::addCustomer">addCustomer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#176"><abbr title="App\Controller\UsersController::addStore">addStore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#188"><abbr title="App\Controller\UsersController::verifyAndSaveCustomer">verifyAndSaveCustomer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#199"><abbr title="App\Controller\UsersController::verifyAndSaveStore">verifyAndSaveStore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#210"><abbr title="App\Controller\UsersController::saveUserCustomer">saveUserCustomer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#227"><abbr title="App\Controller\UsersController::saveUserStore">saveUserStore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#243"><abbr title="App\Controller\UsersController::editCustomer">editCustomer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FilesController.php.html#46"><abbr title="App\Controller\FilesController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FilesController.php.html#101"><abbr title="App\Controller\FilesController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FilesController.php.html#16"><abbr title="App\Controller\FilesController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Admin/ProductsController.php.html#174"><abbr title="App\Controller\Admin\ProductsController::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CityController.php.html#36"><abbr title="App\Controller\CityController::getByCountry">getByCountry</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CityController.php.html#26"><abbr title="App\Controller\CityController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CityController.php.html#16"><abbr title="App\Controller\CityController::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AppController.php.html#113"><abbr title="App\Controller\AppController::aPropos">aPropos</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AppController.php.html#107"><abbr title="App\Controller\AppController::changeLang">changeLang</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Admin/ProductsController.php.html#189"><abbr title="App\Controller\Admin\ProductsController::getProducts">getProducts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Admin/ProductsController.php.html#159"><abbr title="App\Controller\Admin\ProductsController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CityController.php.html#64"><abbr title="App\Controller\CityController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Admin/ProductsController.php.html#115"><abbr title="App\Controller\Admin\ProductsController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Admin/ProductsController.php.html#67"><abbr title="App\Controller\Admin\ProductsController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Admin/ProductsController.php.html#49"><abbr title="App\Controller\Admin\ProductsController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Admin/ProductsController.php.html#27"><abbr title="App\Controller\Admin\ProductsController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Admin/ProductsController.php.html#22"><abbr title="App\Controller\Admin\ProductsController::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Admin/AppController.php.html#73"><abbr title="App\Controller\Admin\AppController::aPropos">aPropos</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EmailsController.php.html#14"><abbr title="App\Controller\EmailsController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CityController.php.html#50"><abbr title="App\Controller\CityController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersController.php.html#266"><abbr title="App\Controller\UsersController::editStore">editStore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CustomersController.php.html#21"><abbr title="App\Controller\CustomersController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EmailsController.php.html#7"><abbr title="App\Controller\EmailsController::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CustomersController.php.html#108"><abbr title="App\Controller\CustomersController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CustomersController.php.html#81"><abbr title="App\Controller\CustomersController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CityController.php.html#87"><abbr title="App\Controller\CityController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CountryController.php.html#21"><abbr title="App\Controller\CountryController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CustomersController.php.html#54"><abbr title="App\Controller\CustomersController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CustomersController.php.html#38"><abbr title="App\Controller\CustomersController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CountryController.php.html#35"><abbr title="App\Controller\CountryController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CountryController.php.html#49"><abbr title="App\Controller\CountryController::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CountryController.php.html#71"><abbr title="App\Controller\CountryController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProductsController.php.html#167"><abbr title="App\Controller\ProductsController::edit">edit</abbr></a></td><td class="text-right">6%</td></tr>
+       <tr><td><a href="ProductsController.php.html#68"><abbr title="App\Controller\ProductsController::view">view</abbr></a></td><td class="text-right">22%</td></tr>
+       <tr><td><a href="AppController.php.html#89"><abbr title="App\Controller\AppController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="ProductsController.php.html#27"><abbr title="App\Controller\ProductsController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="StoresController.php.html#88"><abbr title="App\Controller\StoresController::edit">edit</abbr></a></td><td class="text-right">63%</td></tr>
+       <tr><td><a href="ProductsController.php.html#220"><abbr title="App\Controller\ProductsController::delete">delete</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="StoresController.php.html#113"><abbr title="App\Controller\StoresController::delete">delete</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="StoresController.php.html#16"><abbr title="App\Controller\StoresController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="ProductsController.php.html#46"><abbr title="App\Controller\ProductsController::index">index</abbr></a></td><td class="text-right">85%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="OrderItemsController.php.html#68"><abbr title="App\Controller\OrderItemsController::add">add</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="PagesController.php.html#41"><abbr title="App\Controller\PagesController::display">display</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="OrderItemsController.php.html#122"><abbr title="App\Controller\OrderItemsController::edit">edit</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="UsersController.php.html#20"><abbr title="App\Controller\UsersController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="FilesController.php.html#59"><abbr title="App\Controller\FilesController::add">add</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Admin/ProductsController.php.html#67"><abbr title="App\Controller\Admin\ProductsController::add">add</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="UsersController.php.html#67"><abbr title="App\Controller\UsersController::login">login</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="ProductsController.php.html#167"><abbr title="App\Controller\ProductsController::edit">edit</abbr></a></td><td class="text-right">25</td></tr>
+       <tr><td><a href="OrderItemsController.php.html#32"><abbr title="App\Controller\OrderItemsController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="UsersController.php.html#266"><abbr title="App\Controller\UsersController::editStore">editStore</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="UsersController.php.html#243"><abbr title="App\Controller\UsersController::editCustomer">editCustomer</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="CustomersController.php.html#54"><abbr title="App\Controller\CustomersController::add">add</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Admin/ProductsController.php.html#115"><abbr title="App\Controller\Admin\ProductsController::edit">edit</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="ProductsController.php.html#143"><abbr title="App\Controller\ProductsController::findTypes">findTypes</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="UsersController.php.html#113"><abbr title="App\Controller\UsersController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="FilesController.php.html#16"><abbr title="App\Controller\FilesController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CountryController.php.html#71"><abbr title="App\Controller\CountryController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CountryController.php.html#49"><abbr title="App\Controller\CountryController::add">add</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CityController.php.html#87"><abbr title="App\Controller\CityController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CityController.php.html#64"><abbr title="App\Controller\CityController::add">add</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="UsersController.php.html#210"><abbr title="App\Controller\UsersController::saveUserCustomer">saveUserCustomer</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="UsersController.php.html#227"><abbr title="App\Controller\UsersController::saveUserStore">saveUserStore</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CustomersController.php.html#81"><abbr title="App\Controller\CustomersController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ProductsController.php.html#27"><abbr title="App\Controller\ProductsController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="AppController.php.html#89"><abbr title="App\Controller\AppController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="Admin/ProductsController.php.html#27"><abbr title="App\Controller\Admin\ProductsController::index">index</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="UsersController.php.html#150"><abbr title="App\Controller\UsersController::confirm">confirm</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Admin/ProductsController.php.html#159"><abbr title="App\Controller\Admin\ProductsController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Admin/ProductsController.php.html#174"><abbr title="App\Controller\Admin\ProductsController::restore">restore</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="UsersController.php.html#199"><abbr title="App\Controller\UsersController::verifyAndSaveStore">verifyAndSaveStore</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="UsersController.php.html#188"><abbr title="App\Controller\UsersController::verifyAndSaveCustomer">verifyAndSaveCustomer</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="UsersController.php.html#176"><abbr title="App\Controller\UsersController::addStore">addStore</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="UsersController.php.html#165"><abbr title="App\Controller\UsersController::addCustomer">addCustomer</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="UsersController.php.html#137"><abbr title="App\Controller\UsersController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CustomersController.php.html#108"><abbr title="App\Controller\CustomersController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="FilesController.php.html#101"><abbr title="App\Controller\FilesController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="OrderItemsController.php.html#175"><abbr title="App\Controller\OrderItemsController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ProductsController.php.html#235"><abbr title="App\Controller\ProductsController::restore">restore</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="StoresController.php.html#88"><abbr title="App\Controller\StoresController::edit">edit</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="StoresController.php.html#16"><abbr title="App\Controller\StoresController::isAuthorized">isAuthorized</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="ProductsController.php.html#220"><abbr title="App\Controller\ProductsController::delete">delete</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="StoresController.php.html#113"><abbr title="App\Controller\StoresController::delete">delete</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="ProductsController.php.html#46"><abbr title="App\Controller\ProductsController::index">index</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 5.3.2</a> using <a href="https://secure.php.net/" target="_top">PHP 7.1.8</a> with <a href="https://xdebug.org/">Xdebug 2.5.5</a> and <a href="https://phpunit.de/">PHPUnit 6.5.13</a> at Sun Nov 11 11:48:57 UTC 2018.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../.js/jquery.min.js" type="text/javascript"></script>
+  <script src="../.js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../.js/holder.min.js" type="text/javascript"></script>
+  <script src="../.js/d3.min.js" type="text/javascript"></script>
+  <script src="../.js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([9,1,0,0,0,1,0,1,0,1,0,4], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([62,1,0,1,0,0,0,3,1,3,2,9], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,3,"<a href=\"Admin\/AppController.php.html#29\">App\\Controller\\Admin\\AppController<\/a>"],[0,18,"<a href=\"Admin\/ProductsController.php.html#13\">App\\Controller\\Admin\\ProductsController<\/a>"],[100,0,"<a href=\"Api\/AppController.php.html#5\">App\\Controller\\Api\\AppController<\/a>"],[100,0,"<a href=\"Api\/ProductTypesController.php.html#4\">App\\Controller\\Api\\ProductTypesController<\/a>"],[66.666666666666657,9,"<a href=\"AppController.php.html#29\">App\\Controller\\AppController<\/a>"],[0,10,"<a href=\"CityController.php.html#13\">App\\Controller\\CityController<\/a>"],[0,8,"<a href=\"CountryController.php.html#13\">App\\Controller\\CountryController<\/a>"],[0,11,"<a href=\"CustomersController.php.html#13\">App\\Controller\\CustomersController<\/a>"],[0,2,"<a href=\"EmailsController.php.html#5\">App\\Controller\\EmailsController<\/a>"],[100,4,"<a href=\"ErrorController.php.html#24\">App\\Controller\\ErrorController<\/a>"],[0,12,"<a href=\"FilesController.php.html#14\">App\\Controller\\FilesController<\/a>"],[0,26,"<a href=\"OrderItemsController.php.html#13\">App\\Controller\\OrderItemsController<\/a>"],[0,8,"<a href=\"PagesController.php.html#29\">App\\Controller\\PagesController<\/a>"],[100,0,"<a href=\"ProductTypesController.php.html#13\">App\\Controller\\ProductTypesController<\/a>"],[43.801652892561982,29,"<a href=\"ProductsController.php.html#13\">App\\Controller\\ProductsController<\/a>"],[82.926829268292678,13,"<a href=\"StoresController.php.html#13\">App\\Controller\\StoresController<\/a>"],[2.1428571428571428,45,"<a href=\"UsersController.php.html#15\">App\\Controller\\UsersController<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Admin\/AppController.php.html#56\">App\\Controller\\Admin\\AppController::initialize<\/a>"],[0,1,"<a href=\"Admin\/AppController.php.html#67\">App\\Controller\\Admin\\AppController::changeLang<\/a>"],[0,1,"<a href=\"Admin\/AppController.php.html#73\">App\\Controller\\Admin\\AppController::aPropos<\/a>"],[0,1,"<a href=\"Admin\/ProductsController.php.html#22\">App\\Controller\\Admin\\ProductsController::initialize<\/a>"],[0,2,"<a href=\"Admin\/ProductsController.php.html#27\">App\\Controller\\Admin\\ProductsController::index<\/a>"],[0,1,"<a href=\"Admin\/ProductsController.php.html#49\">App\\Controller\\Admin\\ProductsController::view<\/a>"],[0,5,"<a href=\"Admin\/ProductsController.php.html#67\">App\\Controller\\Admin\\ProductsController::add<\/a>"],[0,4,"<a href=\"Admin\/ProductsController.php.html#115\">App\\Controller\\Admin\\ProductsController::edit<\/a>"],[0,2,"<a href=\"Admin\/ProductsController.php.html#159\">App\\Controller\\Admin\\ProductsController::delete<\/a>"],[0,2,"<a href=\"Admin\/ProductsController.php.html#174\">App\\Controller\\Admin\\ProductsController::restore<\/a>"],[0,1,"<a href=\"Admin\/ProductsController.php.html#189\">App\\Controller\\Admin\\ProductsController::getProducts<\/a>"],[100,1,"<a href=\"AppController.php.html#56\">App\\Controller\\AppController::initialize<\/a>"],[60,6,"<a href=\"AppController.php.html#89\">App\\Controller\\AppController::isAuthorized<\/a>"],[0,1,"<a href=\"AppController.php.html#107\">App\\Controller\\AppController::changeLang<\/a>"],[0,1,"<a href=\"AppController.php.html#113\">App\\Controller\\AppController::aPropos<\/a>"],[0,1,"<a href=\"CityController.php.html#16\">App\\Controller\\CityController::initialize<\/a>"],[0,1,"<a href=\"CityController.php.html#26\">App\\Controller\\CityController::index<\/a>"],[0,1,"<a href=\"CityController.php.html#36\">App\\Controller\\CityController::getByCountry<\/a>"],[0,1,"<a href=\"CityController.php.html#50\">App\\Controller\\CityController::view<\/a>"],[0,3,"<a href=\"CityController.php.html#64\">App\\Controller\\CityController::add<\/a>"],[0,3,"<a href=\"CityController.php.html#87\">App\\Controller\\CityController::edit<\/a>"],[0,1,"<a href=\"CountryController.php.html#21\">App\\Controller\\CountryController::index<\/a>"],[0,1,"<a href=\"CountryController.php.html#35\">App\\Controller\\CountryController::view<\/a>"],[0,3,"<a href=\"CountryController.php.html#49\">App\\Controller\\CountryController::add<\/a>"],[0,3,"<a href=\"CountryController.php.html#71\">App\\Controller\\CountryController::edit<\/a>"],[0,1,"<a href=\"CustomersController.php.html#21\">App\\Controller\\CustomersController::index<\/a>"],[0,1,"<a href=\"CustomersController.php.html#38\">App\\Controller\\CustomersController::view<\/a>"],[0,4,"<a href=\"CustomersController.php.html#54\">App\\Controller\\CustomersController::add<\/a>"],[0,3,"<a href=\"CustomersController.php.html#81\">App\\Controller\\CustomersController::edit<\/a>"],[0,2,"<a href=\"CustomersController.php.html#108\">App\\Controller\\CustomersController::delete<\/a>"],[0,1,"<a href=\"EmailsController.php.html#7\">App\\Controller\\EmailsController::initialize<\/a>"],[0,1,"<a href=\"EmailsController.php.html#14\">App\\Controller\\EmailsController::index<\/a>"],[100,1,"<a href=\"ErrorController.php.html#31\">App\\Controller\\ErrorController::initialize<\/a>"],[100,1,"<a href=\"ErrorController.php.html#44\">App\\Controller\\ErrorController::beforeFilter<\/a>"],[100,1,"<a href=\"ErrorController.php.html#54\">App\\Controller\\ErrorController::beforeRender<\/a>"],[100,1,"<a href=\"ErrorController.php.html#67\">App\\Controller\\ErrorController::afterFilter<\/a>"],[0,3,"<a href=\"FilesController.php.html#16\">App\\Controller\\FilesController::isAuthorized<\/a>"],[0,1,"<a href=\"FilesController.php.html#33\">App\\Controller\\FilesController::index<\/a>"],[0,1,"<a href=\"FilesController.php.html#46\">App\\Controller\\FilesController::view<\/a>"],[0,5,"<a href=\"FilesController.php.html#59\">App\\Controller\\FilesController::add<\/a>"],[0,2,"<a href=\"FilesController.php.html#101\">App\\Controller\\FilesController::delete<\/a>"],[0,1,"<a href=\"OrderItemsController.php.html#21\">App\\Controller\\OrderItemsController::index<\/a>"],[0,4,"<a href=\"OrderItemsController.php.html#32\">App\\Controller\\OrderItemsController::isAuthorized<\/a>"],[0,1,"<a href=\"OrderItemsController.php.html#53\">App\\Controller\\OrderItemsController::view<\/a>"],[0,10,"<a href=\"OrderItemsController.php.html#68\">App\\Controller\\OrderItemsController::add<\/a>"],[0,8,"<a href=\"OrderItemsController.php.html#122\">App\\Controller\\OrderItemsController::edit<\/a>"],[0,2,"<a href=\"OrderItemsController.php.html#175\">App\\Controller\\OrderItemsController::delete<\/a>"],[0,8,"<a href=\"PagesController.php.html#41\">App\\Controller\\PagesController::display<\/a>"],[100,1,"<a href=\"ProductsController.php.html#22\">App\\Controller\\ProductsController::initialize<\/a>"],[60,6,"<a href=\"ProductsController.php.html#27\">App\\Controller\\ProductsController::isAuthorized<\/a>"],[85.714285714285708,2,"<a href=\"ProductsController.php.html#46\">App\\Controller\\ProductsController::index<\/a>"],[22.222222222222221,1,"<a href=\"ProductsController.php.html#68\">App\\Controller\\ProductsController::view<\/a>"],[93.548387096774192,5,"<a href=\"ProductsController.php.html#93\">App\\Controller\\ProductsController::add<\/a>"],[0,1,"<a href=\"ProductsController.php.html#139\">App\\Controller\\ProductsController::autocomplete<\/a>"],[0,3,"<a href=\"ProductsController.php.html#143\">App\\Controller\\ProductsController::findTypes<\/a>"],[6.0606060606060606,5,"<a href=\"ProductsController.php.html#167\">App\\Controller\\ProductsController::edit<\/a>"],[71.428571428571431,2,"<a href=\"ProductsController.php.html#220\">App\\Controller\\ProductsController::delete<\/a>"],[0,2,"<a href=\"ProductsController.php.html#235\">App\\Controller\\ProductsController::restore<\/a>"],[0,1,"<a href=\"ProductsController.php.html#250\">App\\Controller\\ProductsController::getProducts<\/a>"],[83.333333333333343,3,"<a href=\"StoresController.php.html#16\">App\\Controller\\StoresController::isAuthorized<\/a>"],[100,1,"<a href=\"StoresController.php.html#33\">App\\Controller\\StoresController::index<\/a>"],[100,1,"<a href=\"StoresController.php.html#51\">App\\Controller\\StoresController::view<\/a>"],[90,3,"<a href=\"StoresController.php.html#65\">App\\Controller\\StoresController::add<\/a>"],[63.636363636363633,3,"<a href=\"StoresController.php.html#88\">App\\Controller\\StoresController::edit<\/a>"],[83.333333333333343,2,"<a href=\"StoresController.php.html#113\">App\\Controller\\StoresController::delete<\/a>"],[0,7,"<a href=\"UsersController.php.html#20\">App\\Controller\\UsersController::isAuthorized<\/a>"],[0,1,"<a href=\"UsersController.php.html#48\">App\\Controller\\UsersController::index<\/a>"],[100,1,"<a href=\"UsersController.php.html#55\">App\\Controller\\UsersController::initialize<\/a>"],[0,1,"<a href=\"UsersController.php.html#61\">App\\Controller\\UsersController::logout<\/a>"],[0,5,"<a href=\"UsersController.php.html#67\">App\\Controller\\UsersController::login<\/a>"],[0,1,"<a href=\"UsersController.php.html#92\">App\\Controller\\UsersController::view<\/a>"],[0,3,"<a href=\"UsersController.php.html#113\">App\\Controller\\UsersController::edit<\/a>"],[0,2,"<a href=\"UsersController.php.html#137\">App\\Controller\\UsersController::delete<\/a>"],[0,2,"<a href=\"UsersController.php.html#150\">App\\Controller\\UsersController::confirm<\/a>"],[0,2,"<a href=\"UsersController.php.html#165\">App\\Controller\\UsersController::addCustomer<\/a>"],[0,2,"<a href=\"UsersController.php.html#176\">App\\Controller\\UsersController::addStore<\/a>"],[0,2,"<a href=\"UsersController.php.html#188\">App\\Controller\\UsersController::verifyAndSaveCustomer<\/a>"],[0,2,"<a href=\"UsersController.php.html#199\">App\\Controller\\UsersController::verifyAndSaveStore<\/a>"],[0,3,"<a href=\"UsersController.php.html#210\">App\\Controller\\UsersController::saveUserCustomer<\/a>"],[0,3,"<a href=\"UsersController.php.html#227\">App\\Controller\\UsersController::saveUserStore<\/a>"],[0,4,"<a href=\"UsersController.php.html#243\">App\\Controller\\UsersController::editCustomer<\/a>"],[0,4,"<a href=\"UsersController.php.html#266\">App\\Controller\\UsersController::editStore<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

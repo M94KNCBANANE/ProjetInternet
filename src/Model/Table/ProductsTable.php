@@ -49,6 +49,12 @@ class ProductsTable extends Table
             'foreignKey' => 'productType_id',
             'joinType' => 'INNER'
         ]);
+
+        $this->belongsTo('City', [
+            'foreignKey' => 'city_id',
+            'joinType' => 'INNER'
+        ]);
+
         $this->belongsTo('Stores', [
             'foreignKey' => 'store_id',
             'joinType' => 'INNER'
@@ -113,5 +119,12 @@ class ProductsTable extends Table
         $rules->add($rules->existsIn(['store_id'], 'Stores'));
 
         return $rules;
+    }
+
+    public function findDeleted (Query $query, array $options) {
+        $query->where([
+            $this->getAlias() . '.deleted' => 1
+        ]);
+        return $query;
     }
 }

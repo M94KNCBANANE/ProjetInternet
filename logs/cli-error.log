@@ -239,3 +239,1140 @@ Stack Trace:
 #26 {main}
 
 
+2018-11-07 17:25:17 Error: [Cake\Core\Exception\Exception] Unable to insert fixtures for "App\Test\TestCase\Controller\CityControllerTest" test case. SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 356
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Controller\CityControllerTest))
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\CityControllerTest))
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\CityControllerTest))
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\CityControllerTest))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#10 {main}
+
+
+2018-11-07 17:25:35 Error: [Cake\Core\Exception\Exception] Unable to insert fixtures for "App\Test\TestCase\Controller\CityControllerTest" test case. SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 356
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Controller\CityControllerTest))
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\CityControllerTest))
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\CityControllerTest))
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\CityControllerTest))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#10 {main}
+
+
+2018-11-07 17:26:23 Error: [Cake\Core\Exception\Exception] Unable to insert fixtures for "App\Test\TestCase\Controller\CityControllerTest" test case. SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 356
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Controller\CityControllerTest))
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\CityControllerTest))
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\CityControllerTest))
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\CityControllerTest))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#10 {main}
+
+
+2018-11-07 17:27:20 Error: [Cake\Core\Exception\Exception] Unable to insert fixtures for "App\Test\TestCase\Controller\CityControllerTest" test case. SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 356
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Controller\CityControllerTest))
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\CityControllerTest))
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\CityControllerTest))
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\CityControllerTest))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#10 {main}
+
+
+2018-11-07 17:27:30 Error: [Cake\Core\Exception\Exception] Unable to insert fixtures for "App\Test\TestCase\Controller\CityControllerTest" test case. SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 356
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Controller\CityControllerTest))
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\CityControllerTest))
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\CityControllerTest))
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\CityControllerTest))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#10 {main}
+
+
+2018-11-07 17:27:55 Error: [Cake\Core\Exception\Exception] Unable to insert fixtures for "App\Test\TestCase\Controller\CityControllerTest" test case. SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 356
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Controller\CityControllerTest))
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\CityControllerTest))
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\CityControllerTest))
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\CityControllerTest))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#10 {main}
+
+
+2018-11-07 17:33:17 Error: Fixture creation for "city" failed "SQLSTATE[HY000]: General error: 1 table "city" already exists"
+2018-11-07 17:33:17 Warning: Warning (512): Fixture creation for "city" failed "SQLSTATE[HY000]: General error: 1 table "city" already exists" in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-07 17:33:17 Error: Fixture creation for "country" failed "SQLSTATE[HY000]: General error: 1 table "country" already exists"
+2018-11-07 17:33:17 Warning: Warning (512): Fixture creation for "country" failed "SQLSTATE[HY000]: General error: 1 table "country" already exists" in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-07 17:33:17 Error: Fixture creation for "products" failed "SQLSTATE[HY000]: General error: 1 table "products" already exists"
+2018-11-07 17:33:17 Warning: Warning (512): Fixture creation for "products" failed "SQLSTATE[HY000]: General error: 1 table "products" already exists" in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-07 17:33:17 Error: [Cake\Core\Exception\Exception] Unable to insert fixture "App\Test\Fixture\CityFixture" in "App\Test\TestCase\Controller\CityControllerTest" test case: 
+SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: City.id in C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 345
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(378): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection), Array)
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Database\Connection.php(775): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Database\Connection.php(784): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(379): Cake\Database\Connection->disableConstraints(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(380): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(349): Cake\TestSuite\Fixture\FixtureManager->_runOperation(Array, Object(Closure))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Controller\CityControllerTest))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\CityControllerTest))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\CityControllerTest))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\CityControllerTest))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#18 {main}
+
+
+2018-11-07 17:35:29 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\ArticlesFixture" not found. Fixture "app.articles" was referenced in test case "App\Test\TestCase\Controller\FilesControllerTest". in C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 228
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(103): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Controller\FilesControllerTest))
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Controller\FilesControllerTest))
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\FilesControllerTest))
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\FilesControllerTest))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\FilesControllerTest))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#11 {main}
+
+
+2018-11-07 17:38:04 Error: [Cake\Database\Exception] Cannot describe product_types. It has 0 columns.
+Request URL: /
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('product_types', Array)
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('product_types')
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Query.php(271): Cake\ORM\Table->getSchema()
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Query.php(526): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ProductTypesTable))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Query.php(479): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\ProductsTable), Object(Cake\Database\TypeMap), Array)
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Query.php(840): Cake\ORM\Query->contain(Array)
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(2402): Cake\ORM\Query->applyOptions(Array)
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1353): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Datasource\Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(200): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\ProductsTable), Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(872): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ProductsTable), Array)
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(53): Cake\Controller\Controller->paginate(Object(App\Model\Table\ProductsTable))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ProductsController->index('home')
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(103): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/', 'GET')
+#30 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\PagesControllerTest.php(37): Cake\TestSuite\IntegrationTestCase->get('/')
+#31 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMultipleGet()
+#32 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#33 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#34 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#35 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#36 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#37 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#38 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#39 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#40 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#41 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#42 {main}
+
+
+2018-11-07 17:38:06 Error: Fixture creation for "stores" failed "SQLSTATE[HY000]: General error: 1 index id_user already exists"
+2018-11-07 17:38:06 Warning: Warning (512): Fixture creation for "stores" failed "SQLSTATE[HY000]: General error: 1 index id_user already exists" in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 313]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 259
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 311
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 378
+Cake\Database\Connection::Cake\Database\{closure}() - CORE\src\Database\Connection.php, line 775
+Cake\Core\Retry\CommandRetry::run() - CORE\src\Core\Retry\CommandRetry.php, line 68
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 784
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 379
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 726
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 331
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-07 17:38:20 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\ArticlesFixture" not found. Fixture "app.articles" was referenced in test case "App\Test\TestCase\Model\Table\FilesTableTest". in C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 228
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(103): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Model\Table\FilesTableTest))
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Model\Table\FilesTableTest))
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\FilesTableTest))
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\FilesTableTest))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\FilesTableTest))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#11 {main}
+
+
+2018-11-07 17:42:00 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\ArticlesFixture" not found. Fixture "app.articles" was referenced in test case "App\Test\TestCase\Model\Table\FilesTableTest". in C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 228
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(103): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Model\Table\FilesTableTest))
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Model\Table\FilesTableTest))
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\FilesTableTest))
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\FilesTableTest))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\FilesTableTest))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#11 {main}
+
+
+2018-11-07 21:49:15 Error: [Cake\Core\Exception\Exception] Unable to insert fixture "App\Test\Fixture\UsersFixture" in "App\Test\TestCase\Controller\CustomersControllerTest" test case: 
+SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: users.id in C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 345
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(378): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection), Array)
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Database\Connection.php(775): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Database\Connection.php(784): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(379): Cake\Database\Connection->disableConstraints(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(380): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(349): Cake\TestSuite\Fixture\FixtureManager->_runOperation(Array, Object(Closure))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Controller\CustomersControllerTest))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\CustomersControllerTest))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\CustomersControllerTest))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\CustomersControllerTest))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#18 {main}
+
+
+2018-11-07 21:55:05 Error: [ParseError] syntax error, unexpected ']', expecting ',' or ')' in C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Model\Table\ProductsTableTest.php on line 60
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Util\Fileloader.php(48): PHPUnit\Util\Fileloader::load('C:\\Program File...')
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Runner\StandardTestSuiteLoader.php(43): PHPUnit\Util\Fileloader::checkAndLoad('tests\\TestCase\\...')
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Runner\BaseTestRunner.php(130): PHPUnit\Runner\StandardTestSuiteLoader->load('tests\\TestCase\\...', 'tests\\TestCase\\...')
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Runner\BaseTestRunner.php(73): PHPUnit\Runner\BaseTestRunner->loadSuiteClass('tests\\TestCase\\...', '')
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(169): PHPUnit\Runner\BaseTestRunner->getTest('tests\\TestCase\\...', '', Array)
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#7 {main}
+
+
+2018-11-07 22:13:20 Error: [Cake\Core\Exception\Exception] Unable to insert fixture "App\Test\Fixture\UsersFixture" in "App\Test\TestCase\Model\Table\StoresTableTest" test case: 
+SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: users.id in C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 345
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(378): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection), Array)
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Database\Connection.php(775): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Database\Connection.php(784): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(379): Cake\Database\Connection->disableConstraints(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(380): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(349): Cake\TestSuite\Fixture\FixtureManager->_runOperation(Array, Object(Closure))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Model\Table\StoresTableTest))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\StoresTableTest))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\StoresTableTest))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\StoresTableTest))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#17 {main}
+
+
+2018-11-07 22:14:11 Error: [Cake\Core\Exception\Exception] Unable to insert fixture "App\Test\Fixture\UsersFixture" in "App\Test\TestCase\Model\Table\StoresTableTest" test case: 
+SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: users.id in C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 345
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(378): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection), Array)
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Database\Connection.php(775): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Database\Connection.php(784): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(379): Cake\Database\Connection->disableConstraints(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\TestSuite\Fixture\FixtureManager->Cake\TestSuite\Fixture\{closure}(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(380): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(349): Cake\TestSuite\Fixture\FixtureManager->_runOperation(Array, Object(Closure))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Model\Table\StoresTableTest))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\StoresTableTest))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\StoresTableTest))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\StoresTableTest))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#17 {main}
+
+
+2018-11-07 22:20:56 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\ProductFileFixture" not found. Fixture "app.product_file" was referenced in test case "App\Test\TestCase\Model\Table\ProductsTableTest". in C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 228
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(103): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Model\Table\ProductsTableTest))
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Model\Table\ProductsTableTest))
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\ProductsTableTest))
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\ProductsTableTest))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\ProductsTableTest))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#10 {main}
+
+
+2018-11-07 22:21:13 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\ProductFilesFixture" not found. Fixture "app.product_files" was referenced in test case "App\Test\TestCase\Model\Table\ProductsTableTest". in C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 228
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(103): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Model\Table\ProductsTableTest))
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Model\Table\ProductsTableTest))
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\ProductsTableTest))
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Model\Table\ProductsTableTest))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Model\Table\ProductsTableTest))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#10 {main}
+
+
+2018-11-07 22:42:08 Warning: Warning (2): Attempt to assign property of non-object in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Model\Table\ProductsTableTest.php, line 65]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+App\Test\TestCase\Model\Table\ProductsTableTest::testFindDeleted() - ROOT\tests\TestCase\Model\Table\ProductsTableTest.php, line 65
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-07 22:42:08 Warning: Warning (2): Attempt to assign property of non-object in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Model\Table\ProductsTableTest.php, line 66]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+App\Test\TestCase\Model\Table\ProductsTableTest::testFindDeleted() - ROOT\tests\TestCase\Model\Table\ProductsTableTest.php, line 66
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-07 23:26:51 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "products"
+Request URL: /products/view/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(70): Cake\ORM\Table->get(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ProductsController->view('1')
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(103): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/products/view/...', 'GET')
+#20 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\ProductsControllerTest.php(86): Cake\TestSuite\IntegrationTestCase->get('/products/view/...')
+#21 [internal function]: App\Test\TestCase\Controller\ProductsControllerTest->testView()
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ProductsControllerTest), Array)
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ProductsControllerTest))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#30 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#31 {main}
+
+
+2018-11-07 23:31:00 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "products"
+Request URL: /products/view/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(70): Cake\ORM\Table->get(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ProductsController->view('1')
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(103): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/products/view/...', 'GET')
+#20 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\ProductsControllerTest.php(86): Cake\TestSuite\IntegrationTestCase->get('/products/view/...')
+#21 [internal function]: App\Test\TestCase\Controller\ProductsControllerTest->testView()
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ProductsControllerTest), Array)
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ProductsControllerTest))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#30 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#31 {main}
+
+
+2018-11-07 23:31:19 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "products"
+Request URL: /products/view/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(70): Cake\ORM\Table->get(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ProductsController->view('1')
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(103): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/products/view/...', 'GET')
+#20 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\ProductsControllerTest.php(86): Cake\TestSuite\IntegrationTestCase->get('/products/view/...')
+#21 [internal function]: App\Test\TestCase\Controller\ProductsControllerTest->testView()
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ProductsControllerTest), Array)
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ProductsControllerTest))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#30 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#31 {main}
+
+
+2018-11-07 23:33:31 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "products"
+Request URL: /products/view/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(70): Cake\ORM\Table->get(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ProductsController->view('1')
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(103): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/products/view/...', 'GET')
+#20 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\ProductsControllerTest.php(86): Cake\TestSuite\IntegrationTestCase->get('/products/view/...')
+#21 [internal function]: App\Test\TestCase\Controller\ProductsControllerTest->testView()
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ProductsControllerTest), Array)
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ProductsControllerTest))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#30 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#31 {main}
+
+
+2018-11-07 23:34:05 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "products"
+Request URL: /products/view/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(70): Cake\ORM\Table->get(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ProductsController->view('1')
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(103): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/products/view/...', 'GET')
+#20 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\ProductsControllerTest.php(86): Cake\TestSuite\IntegrationTestCase->get('/products/view/...')
+#21 [internal function]: App\Test\TestCase\Controller\ProductsControllerTest->testView()
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ProductsControllerTest), Array)
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ProductsControllerTest))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#30 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#31 {main}
+
+
+2018-11-07 23:51:07 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "products"
+Request URL: /products/view/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(70): Cake\ORM\Table->get(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ProductsController->view('1')
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(103): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/products/view/...', 'GET')
+#20 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\ProductsControllerTest.php(86): Cake\TestSuite\IntegrationTestCase->get('/products/view/...')
+#21 [internal function]: App\Test\TestCase\Controller\ProductsControllerTest->testView()
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ProductsControllerTest), Array)
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ProductsControllerTest))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#30 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#31 {main}
+
+
+2018-11-07 23:52:31 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "products"
+Request URL: /products/view/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(70): Cake\ORM\Table->get(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ProductsController->view('1')
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(103): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/products/view/...', 'GET')
+#20 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\ProductsControllerTest.php(87): Cake\TestSuite\IntegrationTestCase->get('/products/view/...')
+#21 [internal function]: App\Test\TestCase\Controller\ProductsControllerTest->testView()
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ProductsControllerTest), Array)
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ProductsControllerTest))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#30 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#31 {main}
+
+
+2018-11-07 23:55:28 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "products"
+Request URL: /products/view/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(70): Cake\ORM\Table->get(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ProductsController->view('1')
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(103): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/products/view/...', 'GET')
+#20 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\ProductsControllerTest.php(87): Cake\TestSuite\IntegrationTestCase->get('/products/view/...')
+#21 [internal function]: App\Test\TestCase\Controller\ProductsControllerTest->testView()
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ProductsControllerTest), Array)
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ProductsControllerTest))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#30 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#31 {main}
+
+
+2018-11-08 00:02:37 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "products"
+Request URL: /products/view/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(70): Cake\ORM\Table->get(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ProductsController->view('1')
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(103): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/products/view/...', 'GET')
+#20 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\ProductsControllerTest.php(85): Cake\TestSuite\IntegrationTestCase->get('/products/view/...')
+#21 [internal function]: App\Test\TestCase\Controller\ProductsControllerTest->testView()
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ProductsControllerTest), Array)
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ProductsControllerTest))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#30 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#31 {main}
+
+
+2018-11-08 00:04:03 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "products"
+Request URL: /products/view/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(70): Cake\ORM\Table->get(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ProductsController->view('1')
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(103): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/products/view/...', 'GET')
+#20 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\ProductsControllerTest.php(87): Cake\TestSuite\IntegrationTestCase->get('/products/view/...')
+#21 [internal function]: App\Test\TestCase\Controller\ProductsControllerTest->testView()
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ProductsControllerTest), Array)
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ProductsControllerTest))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#30 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#31 {main}
+
+
+2018-11-08 18:02:42 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "products"
+Request URL: /products/view/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(70): Cake\ORM\Table->get(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ProductsController->view('1')
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(103): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/products/view/...', 'GET')
+#20 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\ProductsControllerTest.php(87): Cake\TestSuite\IntegrationTestCase->get('/products/view/...')
+#21 [internal function]: App\Test\TestCase\Controller\ProductsControllerTest->testView()
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ProductsControllerTest), Array)
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ProductsControllerTest))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#30 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#31 {main}
+
+
+2018-11-08 18:02:51 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "products"
+Request URL: /products/view/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(70): Cake\ORM\Table->get(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ProductsController->view('1')
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(103): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/products/view/...', 'GET')
+#20 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\ProductsControllerTest.php(87): Cake\TestSuite\IntegrationTestCase->get('/products/view/...')
+#21 [internal function]: App\Test\TestCase\Controller\ProductsControllerTest->testView()
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ProductsControllerTest), Array)
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ProductsControllerTest))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#30 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#31 {main}
+
+
+2018-11-08 18:05:33 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "products"
+Request URL: /products/view/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(70): Cake\ORM\Table->get(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ProductsController->view('1')
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(103): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/products/view/...', 'GET')
+#20 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\ProductsControllerTest.php(87): Cake\TestSuite\IntegrationTestCase->get('/products/view/...')
+#21 [internal function]: App\Test\TestCase\Controller\ProductsControllerTest->testView()
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ProductsControllerTest), Array)
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ProductsControllerTest))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#30 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#31 {main}
+
+
+2018-11-11 11:48:07 Error: [Cake\Database\Exception] Cannot describe stores. It has 0 columns.
+Request URL: /
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('stores', Array)
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('stores')
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Query.php(271): Cake\ORM\Table->getSchema()
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Query.php(526): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\StoresTable))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Query.php(479): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\ProductsTable), Object(Cake\Database\TypeMap), Array)
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Query.php(840): Cake\ORM\Query->contain(Array)
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(2402): Cake\ORM\Query->applyOptions(Array)
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1353): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Datasource\Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(200): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\ProductsTable), Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(872): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ProductsTable), Array)
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(53): Cake\Controller\Controller->paginate(Object(App\Model\Table\ProductsTable))
+#12 [internal function]: App\Controller\ProductsController->index('home')
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(51): call_user_func_array(Array, Array)
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/', 'GET')
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\PagesControllerTest.php(37): Cake\TestSuite\IntegrationTestCase->get('/')
+#30 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMultipleGet()
+#31 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#32 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#33 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#34 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#35 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#36 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#37 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#38 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#39 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#40 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#41 {main}
+
+
+2018-11-11 11:48:08 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\ProductTypesNameTranslationFixture" not found. Fixture "app.product_types_name_translation" was referenced in test case "App\Test\TestCase\Controller\ProductTypesControllerTest". in C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 228
+Request URL: /pages/../Layout/ajax
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(103): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Controller\ProductTypesControllerTest))
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Controller\ProductTypesControllerTest))
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\ProductTypesControllerTest))
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\ProductTypesControllerTest))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ProductTypesControllerTest))
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#11 {main}
+
+
+2018-11-11 11:49:13 Error: [Cake\Database\Exception] Cannot describe stores. It has 0 columns.
+Request URL: /
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('stores', Array)
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('stores')
+#2 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Query.php(271): Cake\ORM\Table->getSchema()
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Query.php(526): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\StoresTable))
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Query.php(479): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\ProductsTable), Object(Cake\Database\TypeMap), Array)
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Query.php(840): Cake\ORM\Query->contain(Array)
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(2402): Cake\ORM\Query->applyOptions(Array)
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1353): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Datasource\Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(200): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\ProductsTable), Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Controller\Controller.php(872): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ProductsTable), Array)
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(53): Cake\Controller\Controller->paginate(Object(App\Model\Table\ProductsTable))
+#12 [internal function]: App\Controller\ProductsController->index('home')
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(51): call_user_func_array(Array, Array)
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/', 'GET')
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\PagesControllerTest.php(37): Cake\TestSuite\IntegrationTestCase->get('/')
+#30 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMultipleGet()
+#31 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#32 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#33 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#34 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#35 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#36 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#37 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#38 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#39 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#40 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#41 {main}
+
+
+2018-11-11 11:49:20 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "products"
+Request URL: /products/view/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(71): Cake\ORM\Table->get(Array, Array)
+#2 [internal function]: App\Controller\ProductsController->view('1')
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(51): call_user_func_array(Array, Array)
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/products/view/...', 'GET')
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\ProductsControllerTest.php(87): Cake\TestSuite\IntegrationTestCase->get('/products/view/...')
+#20 [internal function]: App\Test\TestCase\Controller\ProductsControllerTest->testView()
+#21 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ProductsControllerTest), Array)
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ProductsControllerTest))
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#30 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#31 {main}
+
+
+2018-11-11 11:49:26 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "products"
+Request URL: /products/edit/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\ProjectFrederik\src\Controller\ProductsController.php(170): Cake\ORM\Table->get(Array, Array)
+#2 [internal function]: App\Controller\ProductsController->edit('1')
+#3 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(51): call_user_func_array(Array, Array)
+#4 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#5 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductsController))
+#6 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(149): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#17 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(495): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#18 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(375): Cake\TestSuite\IntegrationTestCase->_sendRequest('/products/edit/...', 'GET')
+#19 C:\Program Files (x86)\Ampps\www\ProjectFrederik\tests\TestCase\Controller\ProductsControllerTest.php(154): Cake\TestSuite\IntegrationTestCase->get('/products/edit/...')
+#20 [internal function]: App\Test\TestCase\Controller\ProductsControllerTest->testEdit()
+#21 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\ProductsControllerTest), Array)
+#22 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#23 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#24 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\ProductsControllerTest))
+#25 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#26 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#27 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#29 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#30 C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#31 {main}
+
+

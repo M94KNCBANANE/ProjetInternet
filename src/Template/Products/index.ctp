@@ -24,7 +24,6 @@ $loguser = $this->request->session()->read('Auth.User');
         <li><?= $this->Html->link(__('List Product Types'), ['controller' => 'ProductTypes', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Product'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('New Product Type'), ['controller' => 'ProductTypes', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
         
         <?php endif;
@@ -34,7 +33,6 @@ $loguser = $this->request->session()->read('Auth.User');
         <li><?= $this->Html->link(__('List of Order'), ['controller' => 'OrderItems', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Store Representative'), ['controller' => 'Users', 'action' => 'addStore']) ?></li>
         <li><?= $this->Html->link(__('List Stores'), ['controller' => 'Stores', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Product Type'), ['controller' => 'ProductTypes', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Product Types'), ['controller' => 'ProductTypes', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
@@ -50,6 +48,7 @@ $loguser = $this->request->session()->read('Auth.User');
                 <th scope="col"><?= $this->Paginator->sort('price') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('productType_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('store_id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('city_id') ?></th>
                 <?php if($loguser['type'] == 3 || $loguser['type'] == 2) :?>
                 <th scope="col"><?= $this->Paginator->sort('deleted') ?></th>
                 <?php endif;  ?> 
@@ -67,6 +66,7 @@ $loguser = $this->request->session()->read('Auth.User');
                 <td><?= $this->Number->currency($product->price, "USD") ?></td>
                 <td><?= $product->has('product_type') ? $this->Html->link($product->product_type->name, ['controller' => 'ProductTypes', 'action' => 'view', $product->product_type->id]) : '' ?></td>
                 <td><?= $product->has('store') ? $this->Html->link($product->store->name, ['controller' => 'Stores', 'action' => 'view', $product->store->id]) : '' ?></td>
+                <td><?= $product->has('city') ? $this->Html->link($product->city->name, ['controller' => 'City', 'action' => 'view', $product->city->id]) : '' ?></td>
                 <?php if($loguser['type'] == 3 || $loguser['type'] == 2) {
                     $deleted = ($product->deleted == true ? 'Yes' : 'No');
                     echo "<td> $deleted </td>";
@@ -76,6 +76,8 @@ $loguser = $this->request->session()->read('Auth.User');
                 <td class="actions">
                     <?php if($loguser['type'] >= 1):?>    
                      <?= $this->Html->link(__('View'), ['action' => 'view', $product->id]) ?>
+                     <?= $this->Html->link(__('pdf'), ['action' => 'view', $product->id . '.pdf']) ?>
+                     
                      <?php endif; 
                      if($loguser['type'] == 1):?>
                     <?= $this->Html->link(__('Order'), ['controller' => 'OrderItems', 'action' => 'add', $product->id ]) ?>

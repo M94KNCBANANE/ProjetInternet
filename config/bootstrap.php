@@ -65,6 +65,18 @@ use Cake\Utility\Security;
  * idea to create multiple configuration files, and separate the configuration
  * that changes from configuration that does not. This makes deployment simpler.
  */
+
+Configure::write('CakePdf', [
+    'engine' => [
+        'className' => 'CakePdf.WkHtmlToPdf',
+        'binary' => 'C:\\wkhtmltopdf\\bin\\wkhtmltopdf.exe'
+
+    ],
+    'orientation' => 'landscape',
+    'download' => true
+]);
+
+Plugin:: load('CakePdf' , ['bootstrap' => true]);
 try {
     Configure::config('default', new PhpConfig());
     Configure::load('app', 'default', false);

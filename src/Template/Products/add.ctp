@@ -1,9 +1,28 @@
 <?php
+$urlToLinkedListFilter = $this->Url->build(
+["controller" => "city",
+"action"=> "getByCountry",
+"_ext"=> "json"]);
+echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
+echo $this->Html->script('Products/add', ['block'=> 'scriptBottom']);
+
+$loguser = $this->request->session()->read('Auth.User');
+
+$urlToEditorsAutocompleteJson = $this->Url->build([
+    "controller" => "products",
+    "action" => "findTypes",
+    "_ext" => "json"
+        ]);
+echo $this->Html->scriptBlock('var urlToAutocompleteAction = "' . $urlToEditorsAutocompleteJson . '";', ['block' => true]);
+echo $this->Html->script('ProductTypes/autocomplete', ['block' => 'scriptBottom']);
+
+?>
+
+<?php
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Product $product
  */
-$loguser = $this->request->session()->read('Auth.User');
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
@@ -12,7 +31,6 @@ $loguser = $this->request->session()->read('Auth.User');
         <?php if($loguser['type']%3 == 2 ):  ?>
         <li><?= $this->Html->link(__('List Products'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Product Types'), ['controller' => 'ProductTypes', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Product Type'), ['controller' => 'ProductTypes', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
         <?php 
@@ -20,7 +38,6 @@ $loguser = $this->request->session()->read('Auth.User');
         if($loguser['type'] == 3):  ?>
         <li><?= $this->Html->link(__('List Products'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Product Types'), ['controller' => 'ProductTypes', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Product Type'), ['controller' => 'ProductTypes', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Stores'), ['controller' => 'Stores', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Store'), ['controller' => 'Stores', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Order Items'), ['controller' => 'OrderItems', 'action' => 'index']) ?></li>
@@ -34,12 +51,14 @@ $loguser = $this->request->session()->read('Auth.User');
     <?= $this->Form->create($product) ?>
     <fieldset>
         <legend><?= __('Add Product') ?></legend>
-        <?php     
+        <?php 
             echo $this->Form->control('name');
             echo $this->Form->control('files._ids', ['options' => $files]);
             echo $this->Form->control('price');
             echo $this->Form->control('description');
-            echo $this->Form->control('productType_id', ['options' => $productTypes]);
+            echo $this->Form->control('country_id', ['options' => $country]);
+            echo $this->Form->control('city_id', ['options' => $city]);
+            echo $this->Form->control('productType_id' , ['id' => 'autocomplete', 'type' => 'text']);
             if($loguser['type']%3 == 2){
                 echo $this->Form->hidden('store_id', ['value' => $stores['id']]);
             }else{

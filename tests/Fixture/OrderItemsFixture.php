@@ -17,26 +17,18 @@ class OrderItemsFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
-        'customer_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
-        'product_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
-        'quantity' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
-        'price' => ['type' => 'float', 'length' => 4, 'precision' => 2, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => ''],
-        'date' => ['type' => 'date', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
-        'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
-        'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
-        '_indexes' => [
-            'order_orderItem' => ['type' => 'index', 'columns' => ['customer_id'], 'length' => []],
-            'order_product' => ['type' => 'index', 'columns' => ['product_id'], 'length' => []],
-        ],
+        'id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => false, 'default' => null, 'autoIncrement' => true, 'precision' => null, 'comment' => null],
+        'customer_id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'autoIncrement' => null],
+        'product_id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'autoIncrement' => null],
+        'quantity' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'autoIncrement' => null],
+        'price' => ['type' => 'float', 'length' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null],
+        'date' => ['type' => 'date', 'length' => null, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null],
+        'created' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null],
+        'modified' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
-            'order_items_ibfk_2' => ['type' => 'foreign', 'columns' => ['product_id'], 'references' => ['Products', 'id'], 'update' => 'cascade', 'delete' => 'cascade', 'length' => []],
-            'order_items_ibfk_3' => ['type' => 'foreign', 'columns' => ['customer_id'], 'references' => ['Customers', 'id'], 'update' => 'cascade', 'delete' => 'cascade', 'length' => []],
-        ],
-        '_options' => [
-            'engine' => 'InnoDB',
-            'collation' => 'latin1_swedish_ci'
+            'product_id_fk' => ['type' => 'foreign', 'columns' => ['product_id'], 'references' => ['Products', 'id'], 'update' => 'cascade', 'delete' => 'cascade', 'length' => []],
+            'customer_id_fk' => ['type' => 'foreign', 'columns' => ['customer_id'], 'references' => ['Customers', 'id'], 'update' => 'cascade', 'delete' => 'cascade', 'length' => []],
         ],
     ];
     // @codingStandardsIgnoreEnd
@@ -53,11 +45,31 @@ class OrderItemsFixture extends TestFixture
                 'id' => 1,
                 'customer_id' => 1,
                 'product_id' => 1,
-                'quantity' => 1,
-                'price' => 1,
-                'date' => '2018-09-29',
-                'created' => '2018-09-29 11:44:07',
-                'modified' => '2018-09-29 11:44:07'
+                'quantity' => 3,
+                'price' => 45,
+                'date' => '2018-11-07',
+                'created' => '2018-11-07 17:40:55',
+                'modified' => '2018-11-07 17:40:55'
+            ],
+            [
+                'id' => 2,
+                'customer_id' => 2,
+                'product_id' => 2,
+                'quantity' => 50,
+                'price' => 30,
+                'date' => '2018-11-07',
+                'created' => '2018-11-07 17:40:55',
+                'modified' => '2018-11-07 17:40:55'
+            ],
+            [
+                'id' => 3,
+                'customer_id' => 1,
+                'product_id' => 3,
+                'quantity' => 500,
+                'price' => 6,
+                'date' => '2018-11-07',
+                'created' => '2018-11-07 17:40:55',
+                'modified' => '2018-11-07 17:40:55'
             ],
         ];
         parent::init();

@@ -53,6 +53,38 @@ class StoresTableTest extends TestCase
         parent::tearDown();
     }
 
+    public function testSaving(){
+        $data = [
+            'id' => 3,
+                'name' => 'StoreTest',
+                'phone' => '5148636593',
+                'created' => '2018-11-07 17:40:57',
+                'modified' => '2018-11-07 17:40:57',
+                'user_id' => 3
+        ];
+        
+        $store = $this->Stores->newEntity($data);
+        $countBeforeSave = $this->Stores->find()->count();
+        $this->Stores->save($store);
+        $countAfterSave = $this->Stores->find()->count();
+        $this->assertEquals($countAfterSave, $countBeforeSave + 1);
+
+    }
+
+    public function testEditing() {
+        $store = $this->Stores->find('all')->first();
+        $store->phone = '5556669999';
+        $this->Stores->save($store);
+        $this->assertEquals('5556669999', $store->phone);
+    }
+    public function testDeleting() {
+        $countBeforeDelete = $this->Stores->find()->count();
+        $store = $this->Stores->find()->first();
+        $this->Stores->delete($store);
+        $countAfterDelete = $this->Stores->find()->count();
+        $this->assertEquals($countAfterDelete, $countBeforeDelete - 1);
+    }
+
     /**
      * Test initialize method
      *

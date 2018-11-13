@@ -1,7 +1,5 @@
 <h1> Bienvenue sur mon merveilleux site </h1>
-<h3> Ce site a été conçu par Frédérik Sylvain <br/>
-<h3>420-5b7 MO Applications internet.<br/>
-Automne 2018, Collège Montmorency. </h3>
+<h3> Ce site a été conçu par Frédérik Sylvain </h3>
 <br/><br/>
 <h4>En tant que Visiteur</h4>
 <p>Il est possible de: <br/>
@@ -44,5 +42,12 @@ Automne 2018, Collège Montmorency. </h3>
  Mot de passe : admin<br/>
 </p>
 <?php echo $this->Html->image("bd.PNG", ["alt" => "Base de données" ]);?>
-<a href="http://www.databaseanswers.org/data_models/customers_and_products_generic/data_model_with_attributes.htm"> Diagramme Original </a>
- 
+
+<h2> TP2 <h2>
+<p> Afin d'avoir accès a toute les fonctionnalité, je vous conseil de vous connecter en tant qu'admin.<br/>
+Pour le one page app, je l'ai completer sur la table des types de produits.<br/>
+Le test du modele se fait sur la table products, les test du controleur sont fait sur Stores<br/>
+Liste liées et l'autocomplete se fait dans la page add des produits (liste: country, pays ; autocomplete: productType)<br/>
+Interface de routage admin est disponible pour la page products<br/>
+L'affichage en document pdf se fait aussi dans l'index de products<br/>
+ <a href="../../ProjectFrederik/coverage/index.html"> Lien pour le coverage </a>

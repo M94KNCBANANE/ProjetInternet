@@ -20,11 +20,31 @@ class ProductTypesControllerTest extends IntegrationTestCase
     ];
 
     /**
+     * Test isAuthorized method
+     *
+     * @return void
+     */
+    public function testIsAuthorized()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
      * Test index method
      *
      * @return void
      */
     public function testIndex()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test findType method
+     *
+     * @return void
+     */
+    public function testFindType()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
