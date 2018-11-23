@@ -1,7 +1,7 @@
 <?php
 $urlToLinkedListFilter = $this->Url->build(
-["controller" => "city",
-"action"=> "getByCountry",
+["controller" => "country",
+"action"=> "getCountries",
 "_ext"=> "json"]);
 echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
 echo $this->Html->script('Products/add', ['block'=> 'scriptBottom']);
@@ -47,7 +47,7 @@ echo $this->Html->script('ProductTypes/autocomplete', ['block' => 'scriptBottom'
         <?php endif; ?>
     </ul>
 </nav>
-<div class="products form large-9 medium-8 columns content">
+<div class="products form large-9 medium-8 columns content" ng-app="linkedlists" ng-controller="countryController">
     <?= $this->Form->create($product) ?>
     <fieldset>
         <legend><?= __('Add Product') ?></legend>
@@ -56,8 +56,29 @@ echo $this->Html->script('ProductTypes/autocomplete', ['block' => 'scriptBottom'
             echo $this->Form->control('files._ids', ['options' => $files]);
             echo $this->Form->control('price');
             echo $this->Form->control('description');
-            echo $this->Form->control('country_id', ['options' => $country]);
-            echo $this->Form->control('city_id', ['options' => $city]);
+            ?>
+            <div>
+            Country:
+            <select name="Country_id"
+                    id="country-id"
+                    ng-model="country"
+                    ng-options="country.name for country in countries track by country.id">
+                    
+                    <option value=''>Select</option>
+                    </select>
+            </div>
+            <div>
+            City:
+            <select name="city_id"
+                    id="city-id"
+                    ng-disabled="!country"
+                    ng-model="city"
+                    ng-options="CurrentCity.name for CurrentCity in country.city track by CurrentCity.id"
+                    >
+                    <option value=''>Select</option>
+                    </select>
+            </div>
+            <?php
             echo $this->Form->control('productType_id' , ['id' => 'autocomplete', 'type' => 'text']);
             if($loguser['type']%3 == 2){
                 echo $this->Form->hidden('store_id', ['value' => $stores['id']]);

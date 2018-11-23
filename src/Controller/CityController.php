@@ -35,9 +35,18 @@ class CityController extends AppController
 
     public function getByCountry(){
         $country_id = $this->request->query('country_id');
+
         $city = $this->City->find('all', ['conditions' => ['City.country_id' => $country_id],]);
+
         $this->set('city', $city);
         $this->set('_serialize', ['city']);
+    }
+
+    public function getCitiesSortedByCountries(){
+        $countries = $this->City->Country->find('all', ['contain' => ['City']]);
+        $this->set('countries', $countries);
+        $this->set('_serialize', ['countries']);
+        
     }
 
     /**

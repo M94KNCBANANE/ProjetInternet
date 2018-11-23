@@ -1,7 +1,7 @@
 <?php
 $urlToLinkedListFilter = $this->Url->build(
-["controller" => "city",
-"action"=> "getByCountry",
+["controller" => "country",
+"action"=> "getCountry",
 "_ext"=> "json"]);
 echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
 echo $this->Html->script('Products/add', ['block'=> 'scriptBottom']);

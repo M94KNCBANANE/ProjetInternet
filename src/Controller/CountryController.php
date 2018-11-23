@@ -85,4 +85,14 @@ class CountryController extends AppController
         $this->set(compact('country'));
     }
 
+    public function getCountries(){
+        $this->autoRender = false;
+
+        $countries = $this->Country->find('all',['contain' => ['City']]);
+        $countriesJ = json_encode($countries);
+        $this->response->type('json');
+        $this->response->body($countriesJ);
+
+    }
+
 }

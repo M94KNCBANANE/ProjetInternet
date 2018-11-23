@@ -1,89 +1,137 @@
-function getProductTypes() {
-    $.ajax({
-        type: 'GET',
-        url: urlToRestApi,
-        dataType: "json",
-        success:
-                function (productTypes) {
-                    var productTypesTable = $('#productTypesData');
-                    productTypesTable.empty();
-                    var count = 1;
-                    $.each(productTypes.data, function (key, value)
-                    {
-                        var editDeleteButtons = '</td><td>' +
-                                '<a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editproductTypes(' + value.id + ')"></a>' +
-                                '<a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm(\'Are you sure to delete data?\') ? productTypesAction(\'delete\', ' + value.id + ') : false;"></a>' +
-                                '</td></tr>';
-                        productTypesTable.append('<tr><td>' + value.id + '</td><td>' + value.name + editDeleteButtons);
-                        count++;
-                    });
-                 }
-    });
-}
- /* Function takes a jquery form
- and converts it to a JSON dictionary */
-function convertFormToJSON(form) {
-    var array = $(form).serializeArray();
-    var json = {};
-     $.each(array, function () {
-        json[this.name] = this.value || '';
-    });
-     return json;
-}
- /*
- $('#productTypesAddForm').submit(function (e) {
- e.preventDefault();
- var data = convertFormToJSON($(this));
- alert(data);
- console.log(data);
- });
- */
- function productTypesAction(type, id) {
-    id = (typeof id == "undefined") ? '' : id;
-    var statusArr = {add: "added", edit: "updated", delete: "deleted"};
-    var requestType = '';
-    var productTypesData = '';
-    var ajaxUrl = urlToRestApi;
-    if (type == 'add') {
-        requestType = 'POST';
-        productTypesData = convertFormToJSON($("#addForm").find('.form'));
-    } else if (type == 'edit') {
-        requestType = 'PUT';
-		ajaxUrl = ajaxUrl + "/" + idEdit.value;
-        productTypesData = convertFormToJSON($("#editForm").find('.form'));
-		
-    } else {
-        requestType = 'DELETE';
-        ajaxUrl = ajaxUrl + "/" + id;
+var app = angular.module('app',[]);
+
+app.controller('ProductTypeCRUDCtrl', ['$scope','ProductTypeCRUDService', function ($scope,ProductTypeCRUDService) {
+	  
+    $scope.updateProductType = function () {
+        ProductTypeCRUDService.updateProductType($scope.productType.id,$scope.productType.name)
+          .then(function success(response){
+              $scope.message = 'Product Type data updated!';
+              $scope.errorMessage = '';
+              $scope.productType.id = '';
+                $scope.productType.name = '';
+              $scope.getAllProductTypes();
+          },
+          function error(response){
+              $scope.errorMessage = 'Error updating Product Type!';
+              $scope.message = '';
+          });
     }
-    $.ajax({
-        type: requestType,
-        url: ajaxUrl,
-        dataType: "json",
-        contentType: "application/json; charset=utf-8",
-        data: JSON.stringify(productTypesData),
-        success: function (msg) {
-            if (msg) {
-                alert('Product Types data has been ' + statusArr[type] + ' successfully.');
-                getProductTypes();
-                $('.form')[0].reset();
-                $('.formData').slideUp();
-            } else {
-                alert('Some problem occurred, please try again.');
-            }
+    
+    $scope.getProductType = function ($id) {
+
+        ProductTypeCRUDService.getProductType($id)
+          .then(function success(response){
+              $scope.productType = response.data.data;
+              $scope.productType.id = $id;
+              $scope.message='';
+              $scope.errorMessage = '';
+              $scope.getAllProductTypes();
+              
+          },
+          function error (response ){
+              $scope.message = '';
+              if (response.status === 404){
+                  $scope.errorMessage = 'Product Type not found!';
+              }
+              else {
+                  $scope.errorMessage = "Error getting Product Type!";
+              }
+          });
+    }
+    
+    $scope.addProductType = function () {
+        if ($scope.productType != null && $scope.productType.name) {
+            ProductTypeCRUDService.addProductType($scope.productType.name)
+              .then (function success(response){
+                  $scope.message = 'Product Type added!';
+                  $scope.errorMessage = '';
+                  $scope.productType.id = '';
+                  $scope.productType.name = '';
+                  $scope.getAllProductTypes();
+              },
+              function error(response){
+                  $scope.errorMessage = 'Error adding Product Type!';
+                  $scope.message = '';
+            });
         }
-    });
-}
- /*** à déboguer ... ***/
-function editproductTypes(id) {
-    $.ajax({
-        type: 'GET',
-        dataType: 'JSON',
-        url: urlToRestApi+ "/" + id,
-        success: function (data) {
-            $('#idEdit').val(data.data.id);
-            $('#nameEdit').val(data.data.name);
-            $('#editForm').slideDown();
+        else {
+            $scope.errorMessage = 'Please enter a name!';
+            $scope.message = '';
         }
-    });
-} 
+    }
+    
+    $scope.deleteProductType = function ($id) {
+        ProductTypeCRUDService.deleteProductType($id)
+          .then (function success(response){
+              $scope.message = 'Product Type deleted!';
+              $scope.productType = null;
+              $scope.errorMessage='';
+              $scope.getAllProductTypes();
+          },
+          function error(response){
+              $scope.errorMessage = 'Error deleting Product Type!';
+              $scope.message='';
+          })
+    }
+    
+    $scope.getAllProductTypes = function () {
+        ProductTypeCRUDService.getAllProductTypes()
+          .then(function success(response){
+              $scope.productTypes = response.data.data;
+              $scope.message='';
+              $scope.errorMessage = '';
+          },
+          function error (response ){
+              $scope.message='';
+              $scope.errorMessage = 'Error getting Product Types!';
+          });
+    }
+    $scope.getAllProductTypes();
+}]);
+
+app.service('ProductTypeCRUDService',['$http', function ($http) {
+	
+    this.getProductType = function getProductType(productTypeId){
+        return $http({
+          method: 'GET',
+          url: urlToRestApi+'/'+productTypeId,
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        });
+	}
+	
+    this.addProductType = function addProductType(name){
+        return $http({
+          method: 'POST',
+          url: urlToRestApi,
+          data: {name:name},
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        });
+    }
+	
+    this.deleteProductType = function deleteProductType(id){
+        return $http({
+          method: 'DELETE',
+          url: urlToRestApi+'/'+id ,
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        })
+    }
+	
+    this.updateProductType = function updateProductType(id,name){
+        return $http({
+          method: 'PATCH',
+          url: urlToRestApi+'/'+id,
+          data: {name:name},
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        })
+    }
+	
+    this.getAllProductTypes = function getAllProductTypes(){
+        return $http({
+          method: 'GET',
+          url: urlToRestApi,
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+
+        });
+    }
+
+}]);

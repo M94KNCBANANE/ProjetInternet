@@ -50,4 +50,5 @@ Le test du modele se fait sur la table products, les test du controleur sont fai
 Liste liées et l'autocomplete se fait dans la page add des produits (liste: country, pays ; autocomplete: productType)<br/>
 Interface de routage admin est disponible pour la page products<br/>
 L'affichage en document pdf se fait aussi dans l'index de products<br/>
- <a href="../../ProjectFrederik/coverage/index.html"> Lien pour le coverage </a>
+<?php echo $this->Html->link("Lien pour le coverage", ['controller' => 'webroot/coverage', 'action' => 'index.html']); ?>
+
