@@ -4,8 +4,13 @@
  * @var \App\Model\Entity\Product[]|\Cake\Collection\CollectionInterface $products
  */
 $loguser = $this->request->session()->read('Auth.User');
+$urlToRestApi = $this->Url->build('/api/product_types',true);
+echo $this->Html->scriptBlock('var urlToRestApi = "' . $urlToRestApi . '";', ['block' => true]);
+echo $this->Html->script('ProductTypes/index', ['block' => 'scriptBottom']);
 ?>
+
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
+
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <?php 

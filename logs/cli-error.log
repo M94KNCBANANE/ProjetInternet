@@ -1376,3 +1376,339 @@ Stack Trace:
 #31 {main}
 
 
+2018-12-03 18:31:36 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 959]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 959
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:31:36 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 959]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 959
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:31:36 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 959]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 959
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:31:36 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 959]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 959
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:31:36 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 965]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 965
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:31:36 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 965]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 965
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:31:36 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 965]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 965
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:31:36 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 965]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 965
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:38:54 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 959]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 959
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:38:54 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 959]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 959
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:38:54 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 959]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 959
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:38:54 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 959]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 959
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:38:54 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 965]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 965
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:38:54 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 965]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 965
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:38:54 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 965]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 965
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:38:54 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 965]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 965
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:42:27 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 959]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 959
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:42:27 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 959]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 959
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:42:27 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 959]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 959
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:42:27 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 959]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 959
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:42:27 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 965]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 965
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:42:27 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 965]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 965
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:42:27 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 965]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 965
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-12-03 18:42:27 Warning: Warning (2): preg_match(): Unknown modifier 'j' in [C:\Program Files (x86)\Ampps\www\ProjectFrederik\vendor\cakephp\cakephp\src\Console\ConsoleOptionParser.php, line 965]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+preg_match - [internal], line ??
+Cake\Console\ConsoleOptionParser::findClosestItem() - CORE\src\Console\ConsoleOptionParser.php, line 965
+Cake\Console\ConsoleOptionParser::getCommandError() - CORE\src\Console\ConsoleOptionParser.php, line 870
+Cake\Console\ConsoleOptionParser::help() - CORE\src\Console\ConsoleOptionParser.php, line 827
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 536
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+

@@ -16,6 +16,7 @@ a {
 </style>
 </head>
 <body>
+
 	<div ng-controller="ProductTypeCRUDCtrl">
 			<table>
 				<tr>

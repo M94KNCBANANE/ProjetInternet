@@ -21,8 +21,15 @@ echo $this->Html->script([
             "https://code.jquery.com/jquery-3.3.1.slim.min.js",
             "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
             "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js",
-            "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        ]);
+            "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js",
+            'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js',
+            'https://code.jquery.com/jquery-1.12.4.js',
+            'https://code.jquery.com/ui/1.12.1/jquery-ui.js'
+                ], ['block' => 'scriptLibraries']);
+
+$urlToRestApi = $this->Url->build('/api/users',true);
+echo $this->Html->scriptBlock('var urlToRestApi = "' . $urlToRestApi . '";', ['block' => true]);
+echo $this->Html->script('login', ['block' => 'scriptBottom']);
 ?>
 <!DOCTYPE html>
 <html>
@@ -42,13 +49,6 @@ echo $this->Html->script([
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 
-    <?php
-        echo $this->Html->script([
-            'https://code.jquery.com/jquery-1.12.4.js',
-            'https://code.jquery.com/ui/1.12.1/jquery-ui.js'
-                ], ['block' => 'scriptLibraries']
-        );
-        ?>
 </head>
 <body>
 
@@ -59,7 +59,29 @@ echo $this->Html->script([
             </li>
 			
         </ul>
-       
+        <div class="left">
+        <div class="dropright">
+    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownLoginButton" data-toggle="dropdown">
+    Login
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownLoginButton">
+  
+			<table>
+				<tr > 
+					<td >Email:</td>
+					<td ><input type="email" id="username" ng-model="users.email" /></td>
+				</tr>
+				<tr>
+					<td >Password:</td>
+					<td ><input type="password" id="password" ng-model="users.password" /></td>
+				</tr>
+			</table>
+
+			<a ng-click="login()" class="dropdown-item">Login</a> 
+
+    </div>
+    </div>
+    </div>
    
         <?php 
         $loguser = $this->request->getSession()->read('Auth.User');
@@ -69,8 +91,7 @@ echo $this->Html->script([
             $emailaddress = $loguser['email'];
             $uuidparam = $loguser['uuid'];
              if ($type > 3){
-                echo $this->Html->link('Please validate your account. Click to resend confirmation email.', ['controller' => 'emails', 'action' => 'index', '?'=>['email'=>$emailaddress, 'uuid'=>$uuidparam]]);
-                
+                echo $this->Html->link('Please validate your account. Click to resend confirmation email.', ['controller' => 'emails', 'action' => 'index', '?'=>['email'=>$emailaddress, 'uuid'=>$uuidparam]]);                
             }
             ?>  
              <div class="right">
@@ -79,7 +100,7 @@ echo $this->Html->script([
     Menu Item
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-
+  
             
                 <?php
 echo $this->Html->link($user, ['controller' => 'Users', 'action' => 'view', $loguser['id']], array('class' => 'dropdown-item'));
