@@ -45,6 +45,7 @@ public function token()
     $this->set([
         'success' => true,
         'data' => [
+            'id' => $user['id'],
             'token' => JWT::encode([
                 'sub' => $user['id'],
                 'exp' =>  time() + 604800

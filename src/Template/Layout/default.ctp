@@ -20,16 +20,16 @@ echo $this->Html->css(["https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/b
 echo $this->Html->script([
             "https://code.jquery.com/jquery-3.3.1.slim.min.js",
             "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
-            "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js",
+            "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js",
             "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js",
             'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js',
             'https://code.jquery.com/jquery-1.12.4.js',
             'https://code.jquery.com/ui/1.12.1/jquery-ui.js'
                 ], ['block' => 'scriptLibraries']);
 
-$urlToRestApi = $this->Url->build('/api/users',true);
-echo $this->Html->scriptBlock('var urlToRestApi = "' . $urlToRestApi . '";', ['block' => true]);
-echo $this->Html->script('login', ['block' => 'scriptBottom']);
+//$urlToRestApi = $this->Url->build('/api/users',true);
+//echo $this->Html->scriptBlock('var urlToRestApi = "' . $urlToRestApi . '";', ['block' => true]);
+//echo $this->Html->script('login', ['block' => 'scriptBottom']);
 ?>
 <!DOCTYPE html>
 <html>
@@ -59,7 +59,7 @@ echo $this->Html->script('login', ['block' => 'scriptBottom']);
             </li>
 			
         </ul>
-        <div class="left">
+        <!--<div class="left">
         <div class="dropright">
     <button class="btn btn-info dropdown-toggle" type="button" id="dropdownLoginButton" data-toggle="dropdown">
     Login
@@ -81,7 +81,7 @@ echo $this->Html->script('login', ['block' => 'scriptBottom']);
 
     </div>
     </div>
-    </div>
+    </div> -->
    
         <?php 
         $loguser = $this->request->getSession()->read('Auth.User');

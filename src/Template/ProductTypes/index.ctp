@@ -2,7 +2,7 @@
 <html ng-app="app">
 <head>
 <meta charset="ISO-8859-1">
-<title>ProductType CRUD</title>
+<title>Product Type CRUD</title>
     <?php
 $urlToRestApi = $this->Url->build('/api/product_types',true);
 echo $this->Html->scriptBlock('var urlToRestApi = "' . $urlToRestApi . '";', ['block' => true]);
@@ -16,7 +16,6 @@ a {
 </style>
 </head>
 <body>
-
 	<div ng-controller="ProductTypeCRUDCtrl">
 			<table>
 				<tr>
@@ -58,7 +57,6 @@ a {
                                         </td>
                                     </tr>
                     </table>
-                   
 	</div>
 </body>
 </html>

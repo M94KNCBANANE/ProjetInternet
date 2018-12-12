@@ -3,8 +3,12 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\File[]|\Cake\Collection\CollectionInterface $files
  */
+
 $loguser = $this->request->session()->read('Auth.User');
+echo $this->Html->css('dropzone');
+echo $this->Html->script('dropzone', ['block' => 'scriptLibraries']);
 ?>
+
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
@@ -16,6 +20,11 @@ $loguser = $this->request->session()->read('Auth.User');
 </nav>
 <div class="files index large-9 medium-8 columns content">
     <h3><?= __('Files') ?></h3>
+    <div class="image_upload_div">
+    <?php  echo $this->Form->create('image',array('url'=>array('action'=>'add'),'method'=>'post','id'=>'my-awesome-dropzone','class'=>'dropzone','type'=>'file','autocomplete'=>'off'));?>
+                        
+    <?php  echo $this->Form->end();?>
+    </div>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>

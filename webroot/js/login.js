@@ -1,7 +1,7 @@
 var app = angular.module('app',[]);
 
 
-app.controller('usersCtrl', function ($scope, $http) {
+app.controller('usersCtrl', function ($scope, $compile,$http) {
     // more angular JS codes will be here
 
     // Login Process
@@ -15,27 +15,39 @@ app.controller('usersCtrl', function ($scope, $http) {
                 'Content-Type': 'application/json'
             },
             data: {username: $scope.username, password: $scope.password}
+
         }
         // fields in key-value pairs
         $http(req)
                 .success(function (jsonData, status, headers, config) {
-                    // console.log(jsonData.data.token);
-                    // tell the user was logged
-                    Materialize.toast('User sucessfully logged in', 4000);
+                    
                     localStorage.setItem('token', jsonData.data.token);
                     localStorage.setItem('user_id', jsonData.data.id);
-  
+                    $('#logDiv').html(
+                        $compile('<a href="javascript:void(0);" class="glyphicon glyphicon-log-out" id="login-btn" onclick="javascript:$(\'#changeForm\').slideToggle();">Logout/Modify</a>')($scope)
+                    );
+
+                    $('#loginForm').slideUp();
+                    $scope.errorLogin ='';
                 })
                 .error(function (data, status, headers, config) {
-                    //console.log(data.response.result);
-                    // tell the user was not logged
-                    Materialize.toast(data.message, 4000);
+                    $scope.messageLogin = '';
+                    $scope.errorLogin = 'Invalid credentials';
                 });
 
     }
     // Login Process
     $scope.logout = function () {
         localStorage.setItem('token', "no token");
+
+        $('#logDiv').html(
+            $compile('<a href="javascript:void(0);" class="glyphicon glyphicon-log-in" id="login-btn" onclick="javascript:$(\'#loginForm\').slideToggle();">Login</a>')($scope)
+        );
+
+        $('#changeForm').slideUp();
+        $scope.messageLogin = 'You have logged out';
+        $scope.errorLogin = '';
+
     }
     $scope.changePassword = function () {
         var req = {
@@ -49,16 +61,14 @@ app.controller('usersCtrl', function ($scope, $http) {
             data: {'password': $scope.newPassword}
         }
         $http(req)
-                .success(function (response) {
-                    // tell the user subcategory record was updated
-                    Materialize.toast('Password successfully changed', 4000);
+        .success(function (response) {
+            $('#changeForm').slideUp();
+            $scope.messageLogin = 'Password has been changed! ';
+            emptyInputPass();
+        })
+        .error(function (response) {
+            $scope.errorLogin = 'Cannot change the password!';
 
-                })
-                .error(function (response) {
-                    // tell the user subcategory record was not updated
-                    //console.log(response);
-                    Materialize.toast('Could not update Password', 4000);
-
-                });
+        });
     }
 });

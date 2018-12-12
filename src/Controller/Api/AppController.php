@@ -28,7 +28,7 @@ class AppController extends Controller
             ]
         ]);
         $this->loadComponent('Auth', [
-            'storage' => 'Memory',
+            //'storage' => 'Memory',
             'authenticate' => [
                 'Form' => [
                     'scope' => ['Users.active' => 1]
@@ -38,7 +38,8 @@ class AppController extends Controller
                     'userModel' => 'Users',
                     'scope' => ['Users.active' => 1],
                     'fields' => [
-                        'username' => 'id'
+                        'username' => 'username',
+                        'password' => 'password'
                     ],
                     'queryDatasource' => true
                 ]
