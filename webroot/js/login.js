@@ -1,3 +1,10 @@
+var onloadCallback = function() {
+    widgetId1 = grecaptcha.render('example1', {
+        'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI',
+        'theme' : 'light'
+    });
+};
+
 var app = angular.module('app',[]);
 
 
@@ -6,7 +13,11 @@ app.controller('usersCtrl', function ($scope, $compile,$http) {
 
     // Login Process
     $scope.login = function () {
-
+        
+        if(grecaptcha.getResponse(widgetId1)==''){
+            $scope.captcha_status='Please verify captha.';
+            return;
+        }
         var req = {
             method: 'POST',
             url: 'api/users/token',

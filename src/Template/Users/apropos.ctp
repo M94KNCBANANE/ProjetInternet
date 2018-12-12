@@ -1,5 +1,16 @@
 <h1> Bienvenue sur mon merveilleux site </h1>
 <h3> Ce site a été conçu par Frédérik Sylvain </h3>
+<br/>
+<h2> L'intérêt de mon prototype d'application web </h2>
+<p> Je crois que mon site serait pratique car il est possible de l'utiliser pour plusieurs choses.
+Premièrement, il y a déjà un système de compte multiple intégré donc il serait pratique pour une entreprise
+qui aurrait différente accès nécessaire. Par exemple, livreur et gestionnaire. Il est possible d'un coté de créer 
+des commandes et d'un autre coté de créer des produits. Il manquerait simplement a implémenter un système d'inventaire
+afin d'optimiser le site. Il serait aussi pratique pour de la vente en ligne car comme mentionner. Il est possible de se
+connecter en tant que fournisseur (différentes entreprises utilisant le site) afin de mettre ses produits en ligne ou en tant
+que client afin de commander des produits en ligne. Il manquerait a implémenter un système de paiement et de livraison
+</p>
+
 <br/><br/>
 <h4>En tant que Visiteur</h4>
 <p>Il est possible de: <br/>
@@ -50,5 +61,22 @@ Le test du modele se fait sur la table products, les test du controleur sont fai
 Liste liées et l'autocomplete se fait dans la page add des produits (liste: country, pays ; autocomplete: productType)<br/>
 Interface de routage admin est disponible pour la page products<br/>
 L'affichage en document pdf se fait aussi dans l'index de products<br/>
+
+<h1> TP3 </h1>
+<br/>
+<p> - La connection en "One Page" se passe sur la page index de produit, accessible par le boutton "Menu Principal"
+situé dans la barre en haut a droite. La connection permet de modifier le mot de passe mais on doit quand même se connecter
+de l'ancienne façon pour les droits sur le site. Le "One page" permet seulement de modifier le mot de passe. Il faut cocher le
+ "captcha" afin de pouvoir se connecter<br/>
+- Le "OnePage CRUD" se situe sur la page des types de produit. Le plus simple est de se connecter en tant qu'admin et un lien est disponible sur la droite.
+Pour modifier un produit, il faut pèser sur le symbole de modification afin de mettre les données dans les champs en haut. Par la suite faire les modifications
+voulus et sauvegarder le tout. Pour ajouter il suffit de remplir le champ nom et ajouter.<br/>
+- Les listes liées avec AngularJS sont disponible lorsque l'on crée un produit. <br/>
+- Le "drag and drop" est disponible sur l'index de la page fichier. Dès l'ajout d'un fichier, la page rafraichit.<br/>
+
+</p>
+
 <?php echo $this->Html->link("Lien pour le coverage", ['controller' => 'webroot/coverage', 'action' => 'index.html']); ?>
+
+
 

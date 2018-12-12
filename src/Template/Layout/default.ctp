@@ -31,6 +31,11 @@ echo $this->Html->script([
 //echo $this->Html->scriptBlock('var urlToRestApi = "' . $urlToRestApi . '";', ['block' => true]);
 //echo $this->Html->script('login', ['block' => 'scriptBottom']);
 ?>
+
+
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+async defer></script>
+
 <!DOCTYPE html>
 <html>
 <head>

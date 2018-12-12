@@ -7,7 +7,15 @@
 $loguser = $this->request->session()->read('Auth.User');
 echo $this->Html->css('dropzone');
 echo $this->Html->script('dropzone', ['block' => 'scriptLibraries']);
+
+$urlRedirectToIndex = $this->Url->build([
+    "controller" => "Files",
+    "action" => "index"
+        ]);
+echo $this->Html->scriptBlock('var urlRedirectToIndex = "' . $urlRedirectToIndex . '";', ['block' => true]);
+echo $this->Html->script('RedirectToIndex', ['block' => 'scriptBottom']);
 ?>
+
 
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">

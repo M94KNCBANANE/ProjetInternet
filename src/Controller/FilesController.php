@@ -67,9 +67,9 @@ class FilesController extends AppController {
                     $file = $this->Files->patchEntity($file, $this->request->getData());
                     $file->name = $fileName;
                     $file->path = $uploadPath;
+                    $file->status = 1;
                     if ($this->Files->save($file)) {
                         $this->Flash->success(__('File has been uploaded and inserted successfully.'));
-                        return $this->redirect(['action' => 'index']);
                     } else {
                         $this->Flash->error(__('Unable to upload file, please try again.'));
                     }
@@ -79,19 +79,12 @@ class FilesController extends AppController {
             } else {
                 $this->Flash->error(__('Please choose a file to upload.'));
             }
+                    
         }
                    
         $this->set(compact('file'));
         $this->set('_serialize', ['file']);
     }
-
-    /**
-     * Edit method
-     *
-     * @param string|null $id File id.
-     * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
-     * @throws \Cake\Network\Exception\NotFoundException When record not found.
-     */
 
     /**
      * Delete method

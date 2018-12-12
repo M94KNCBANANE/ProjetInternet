@@ -64,6 +64,9 @@ echo $this->Html->script('login', ['block' => 'scriptBottom']);
                         <input ng-model="username" type="text" class="form-control" id="username" name="username" style="width: 250px" />
                         <label>Password</label>
                         <input ng-model="password" type="password" class="form-control" id="password" name="password"  style="width: 250px"/>
+                        <div id="example1"></div> 
+                        <p style="color:red;">{{ captcha_status }}</p>
+                        
                     </div>
                     <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#loginForm').slideUp(); emptyInput();">Cancel</a>
                     <a href="javascript:void(0);" class="btn btn-success" ng-click="login()">Submit</a>
